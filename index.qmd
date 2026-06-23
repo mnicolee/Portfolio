@@ -8,7 +8,7 @@ title: ""
 [Behavioral neuroscience | Optogenetics | Hardware prototyping | Estimation statistics | Data analysis & visualization]{.tagline}
 
 <!-- 📷 NICOLE: add headshot → images/nicole.jpg (square crop works best) -->
-![](images/nicole.jpg){.headshot width="150"}
+![](images/nicole.png){.headshot width="150"}
 :::
 
 I'm a **neuroscientist** and Research Fellow in the **ACC Lab** (Adam Claridge-Chang) at
