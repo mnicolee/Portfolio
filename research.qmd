@@ -4,38 +4,66 @@ title: "Research"
 
 [Selected research]{.eyebrow}
 
-My work runs across three layers of one question, how small neural circuits drive
-behaviour: the **molecular tools**, the **instruments** that deploy them, and the
-**statistics** that keep the answers honest.
+::: {.paper-item}
+### [Untangling internal state from locomotion using behavioral ethomics](papers/valence/index.qmd){.stretched-link}
+[PhD thesis · first-author · unpublished data]{.paper-meta}
 
-### Untangling reward from running
-*Optogenetic screen of the mushroom body output neuron (MBON) split-GAL4 library, using
-bidirectional manipulation across two custom assays, revealing how valence and locomotion
-are entangled in* Drosophila *circuits.*
-[Role: PhD thesis work · first-author manuscript in preparation]{.role}
-<!-- 🎞️ NICOLE: optional, add a short behaviour clip → images/mbon-assay.mp4 -->
+An optogenetic screen of the mushroom body output neuron (MBON) split-GAL4 library across
+two custom assays, asking how internal state and movement get entangled in *Drosophila* circuits.
 
-### One flash, lasting silence
-*A brief pulse of light on an opto-GPCR produces prolonged behavioural inhibition in*
-Drosophila*, a new silencing tool for circuit work.*
-[Role: co-first author · manuscript submitted for review]{.role}
+[Read more →](papers/valence/index.qmd){.read-more}
+:::
 
-### A cleaner neural off-switch
-*Kalium channelrhodopsins as potassium-selective optogenetic inhibitors. I led the
-experimental design, data processing, analysis, and visualisation for all* C. elegans
-*experiments. Covered in* The Straits Times *(2024).*
-[Role: co-author · Nature Communications, 2024]{.role}
+::: {.paper-item}
+### [The silence after the light](papers/opn3/index.qmd){.stretched-link}
+[co-first author · preprint · bioRxiv, 2026]{.paper-meta}
 
-### Separating chromosomes in fused cells
-*Asymmetric chromatin retention and nuclear envelopes keep genomes apart after cell
-fusion; earlier work on cell division in neuroblasts.*
-[Role: co-author · Communications Biology, 2022]{.role}
+A single brief flash of green light on the bistable opto-GPCR OPN3 silences *Drosophila*
+neurons for minutes — a low-toxicity silencing tool for circuit and behavior work.
+
+[Read more →](papers/opn3/index.qmd){.read-more}
+:::
+
+::: {.paper-item}
+### [A cleaner neural off-switch](papers/kcr/index.qmd){.stretched-link}
+[co-author · Nature Communications, 2024]{.paper-meta}
+
+Kalium channelrhodopsins (KCRs) tested as potassium-selective optogenetic silencers across
+*Drosophila*, *C. elegans*, and zebrafish. I led all the *C. elegans* work.
+
+[Read more →](papers/kcr/index.qmd){.read-more}
+:::
+
+::: {.paper-item}
+### [Separating chromosomes in fused cells](papers/chromosomes/index.qmd){.stretched-link}
+[co-author · Communications Biology, 2022]{.paper-meta}
+
+How fused *Drosophila* cells keep two genomes apart, through asymmetric chromatin retention
+and nuclear-envelope boundaries.
+
+[Read more →](papers/chromosomes/index.qmd){.read-more}
+:::
+
+::: {.paper-item}
+### [Sibling cell size asymmetry](papers/sibling/index.qmd){.stretched-link}
+[co-author · iScience, 2019]{.paper-meta}
+
+The biophysical forces, hydrostatic pressure and cortical actomyosin, that let a dividing
+neural stem cell produce two unequal-sized daughters.
+
+[Read more →](papers/sibling/index.qmd){.read-more}
+:::
 
 []{.section-rule}
 
 [Tools & open source]{.eyebrow}
 
-### DABEST 2.0: estimation statistics
-*Contributed to the estimation-graphics toolbox (in revision at* Nature Methods*):
-validated the proportion-plots feature and ran real-data testing.*
-[See the package →](https://acclab.github.io/DABEST-python/) · [Role: co-author]{.role}
+::: {.paper-item}
+### [DABEST 2.0: estimation statistics](papers/dabest/index.qmd){.stretched-link}
+[co-author · in revision, Nature Methods]{.paper-meta}
+
+The estimation-graphics toolbox for effect sizes over p-values. I validated the
+proportion-plots feature and ran real-data testing.
+
+[Read more →](papers/dabest/index.qmd){.read-more}
+:::

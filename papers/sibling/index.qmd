@@ -1,0 +1,32 @@
+---
+title: "Sibling cell size asymmetry"
+---
+
+[← Back to research](../../research.qmd){.back-link}
+
+[co-author · iScience, 2019]{.paper-meta}
+
+An early collaboration from my developmental biology years, on which I was a co-author. Many cells
+divide to produce two *unequal-sized* daughters, an asymmetry that depends on spindle
+geometry and the distribution of the motor protein myosin, but whose underlying mechanics
+were unclear.
+
+Using atomic force microscopy together with live-cell imaging in dividing *Drosophila*
+neural stem cells, we separated the forces at work. Initial apical expansion is driven by
+**hydrostatic pressure**, which peaks just after anaphase onset and is enabled by a release
+of actomyosin tension on the apical cortex. A subsequent rise in contractile tension at the
+cleavage furrow, combined with relocalized myosin, drives basal expansion and sustains the
+apical one. When either input is disrupted, a dynamically repositioning cleavage furrow can
+compensate to still establish the size asymmetry.
+
+![](graphical-abstract.jpg){.graphical-abstract fig-alt="Graphical abstract of the 2019 iScience paper on sibling cell size asymmetry in Drosophila neuroblasts"}
+
+[Graphical abstract reproduced from Pham T.T., Monnard A., Helenius J., Lund E., Lee N.,
+Müller D.J. &amp; Cabernard C. (2019). *Spatiotemporally Controlled Myosin Relocalization and
+Internal Pressure Generate Sibling Cell Size Asymmetry.* **iScience** 13, 9–19.
+[doi:10.1016/j.isci.2019.02.002](https://doi.org/10.1016/j.isci.2019.02.002). © 2019 The
+Author(s). Reproduced under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).]{.figure-credit}
+
+To learn more: [10.1016/j.isci.2019.02.002](https://doi.org/10.1016/j.isci.2019.02.002)
+
+[]{.section-rule}

@@ -1,0 +1,21 @@
+---
+title: "Untangling internal state from locomotion using behavioral ethomics"
+---
+
+[← Back to research](../../research.qmd){.back-link}
+
+[PhD thesis · first-author, manuscript in preparation]{.paper-meta}
+
+My PhD thesis work. Using an optogenetic screen of the mushroom body output neuron (MBON)
+split-GAL4 library, I applied bidirectional manipulation, activating and silencing defined
+MBON populations, across two custom-built behavioral assays. The MBONs are the output
+layer of the mushroom body, the fly's center for learning and memory, and are widely
+treated as carrying the "value" (reward vs. punishment) of a stimulus.
+
+The screen was designed to separate two things that are easy to confound: the *valence* a
+circuit assigns and the *locomotion* it drives. By reading behavior across both assays, the
+work maps where, and how, these two signals become entangled in *Drosophila* circuits.
+
+To learn more: [see my Google Scholar](https://scholar.google.com/citations?user=EzArXBQAAAAJ&hl=en) — first-author manuscript in preparation.
+
+[]{.section-rule}

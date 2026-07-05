@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  # Ensure embedded media (e.g. the C. elegans tracking clips) are copied into _site.
+  resources:
+    - "papers/kcr/*.mp4"
   # NOTE (future): Jupyter notebooks (.ipynb) are NOT used yet. They are reserved
   # for future executable demo pages (e.g. a live DABEST estimation-statistics
   # figure). When such a page is added, Quarto can execute the notebook at render

@@ -1,0 +1,19 @@
+---
+title: "DABEST 2.0: estimation statistics"
+---
+
+[← Back to research](../../research.qmd){.back-link}
+
+[co-author · in revision, Nature Methods]{.paper-meta}
+
+DABEST (Data Analysis with Bootstrap-coupled ESTimation) is an open-source toolbox for
+*estimation statistics*: it reports effect sizes with bootstrap confidence intervals and
+plots every datapoint, rather than reducing an experiment to a p-value.
+
+For the 2.0 release I contributed to the package by validating the new proportion-plots
+feature and running real-data testing to make sure the graphics and statistics held up on
+messy experimental data.
+
+To learn more: [the DABEST package →](https://acclab.github.io/DABEST-python/)
+
+[]{.section-rule}

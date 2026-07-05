@@ -1,0 +1,50 @@
+---
+title: "The silence after the light"
+---
+
+[← Back to research](../../research.qmd){.back-link}
+
+[co-first author · preprint · bioRxiv, 2026]{.paper-meta}
+
+Most optogenetic silencers, like the light-gated chloride channel GtACR1, only silence for as
+long as the light stays on: the neuron switches back on the moment you switch the light off.
+That is a problem for behavior, where continuous actuating light can itself confound the very
+thing you are trying to measure.
+
+This paper characterizes a different kind of tool. **OPN3** — Opsin3 from the mosquito
+*Anopheles stephensi* — is a *bistable* Gi/o-coupled GPCR: a single brief flash of green light
+sets off an intracellular signaling cascade that keeps the neuron inhibited long after the
+light is gone. We screened three optoGPCRs in adult *Drosophila*; OPN3 came out clearly ahead
+and, to our knowledge, is the **first GPCR opsin shown to inhibit behavior in adult
+*Drosophila***. A pulse as short as 5 seconds silenced behavior for *minutes*, and one such
+pulse was enough to erase aversive olfactory learning across a one-minute training epoch.
+Benchmarked head-to-head against GtACR1 in walking and memory assays, OPN3's silencing potency
+was comparable across most neuron classes tested — but with **substantially lower developmental
+toxicity and better viability**.
+
+Because the silencing outlasts the light, you can flash once and then record in the dark. That
+decoupling matters most in experiments where the actuating light is itself a confound: it adds
+cumulative light exposure over long sessions, clashes with concurrent calcium imaging, and
+brings heating and phototoxicity. A clear example is **vision** — in work on the visual system,
+the light you would need to keep a conventional silencer switched on also stimulates the very
+photoreceptors and circuits you are studying. With OPN3 you deliver one brief pulse, then
+observe freely in darkness, so the tool that silences the neuron no longer interferes with what
+you are trying to see.
+
+The second finding is about the chromophore that makes any opsin work. Rearing flies on food
+supplemented with **all-trans-retinal (ATR)** throughout development, rather than only in
+adulthood, improved *both* survival to adulthood *and* how strongly the light silenced
+neurons — and it did so for GtACR1 as well as OPN3. In other words, developmental retinal
+availability is a lever on optogenetic performance itself, not just a housekeeping detail.
+
+![](graphical-abstract.png){.graphical-abstract fig-alt="Graphical abstract: a brief green light pulse gives GtACR1 transient inhibition but OPN3, a bistable Gi/o GPCR, prolonged inhibition; OPN3 silencing is tested in Drosophila memory and locomotion assays"}
+
+[Graphical abstract from Lee N.M., Mai Y., Dalberg L., Anns J.C., Suresh D.D., Zhang Z. &amp;
+Claridge-Chang A. (2026). *Brief illumination of an optoGPCR elicits prolonged inhibition of
+Drosophila behavior.* **bioRxiv**.]{.figure-credit}
+
+To learn more: read the preprint on
+[bioRxiv](https://www.biorxiv.org/content/10.64898/2026.05.26.727874v1) —
+[doi:10.64898/2026.05.26.727874](https://doi.org/10.64898/2026.05.26.727874).
+
+[]{.section-rule}

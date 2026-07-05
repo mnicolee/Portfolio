@@ -8,7 +8,7 @@ $navbar-bg:    #EFEBE0;
 $primary:      #1E3A6E;
 
 /*-- scss:rules --*/
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Serif+Display&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Serif+Display&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@600;700&family=Jost:wght@400;500&display=swap');
 
 // --- Palette: navy + gold on warm cream (colorblind-safe) ---
 :root {
@@ -38,38 +38,156 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 .navbar-brand { font-family: "Great Vibes", cursive; font-size: 1.9rem; color: #1C2433 !important;
   padding-right: .7rem; margin-right: 1rem; overflow: visible; }
 // Menu items = Jost (confirmed by Nicole)
-.navbar-nav .nav-link { font-family: "Jost", sans-serif; font-size: 0.95rem; text-transform: lowercase; letter-spacing: .02em; }
+.navbar-nav .nav-link { font-family: "Jost", sans-serif; font-size: 1.1rem; text-transform: lowercase; letter-spacing: .02em; }
 
 // Eyebrow label + two-channel signature dot (navy dot, faint gold shadow)
-.eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; letter-spacing: .16em;
-  text-transform: uppercase; color: #1E3A6E; display: flex; align-items: center; gap: .6rem; margin-bottom: .9rem; }
+.eyebrow { font-family: "Inter", sans-serif; font-size: 0.85rem; letter-spacing: .16em;
+  text-transform: uppercase; color: #1E3A6E; font-weight: 700; display: flex; align-items: center;
+  gap: .6rem; margin-bottom: .9rem; }
 .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #1E3A6E;
   box-shadow: 9px 0 0 -1px #C29B2E; }
+
+// "What I do" section header: centered + enlarged variant of the eyebrow (bigger text + dots)
+.eyebrow.whatido { justify-content: center; font-size: 1.15rem; letter-spacing: .18em;
+  gap: 1.8rem; margin-top: 2.2rem; margin-bottom: 1.8rem; font-weight: 700; }
+.eyebrow.whatido::before { width: 12px; height: 12px; box-shadow: 14px 0 0 -1px #C29B2E; }
 
 // Role tags / dates
 .role { font-family: "IBM Plex Mono", monospace; font-size: 0.65rem; text-transform: uppercase;
   letter-spacing: .05em; color: #717784; }
 
+// --- Research listing: title + few-line teaser + "read more" link per paper ---
+// Padding gives the hover card breathing room; the matching negative margin keeps text
+// aligned with the rest of the page (no shift on hover).
+.paper-item { position: relative; padding: 1.5rem 1.3rem; margin: 0 -1.3rem; border-radius: 10px;
+  border-bottom: 1px solid #DAD3C4;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+// Hover: lift + soft glowing edges (navy glow, faint gold rim), divider hidden so it reads as a card
+.paper-item:hover { transform: translateY(-4px); background: #F7F4EC;
+  box-shadow: 0 0 0 1px rgba(194, 155, 46, .5), 0 10px 24px rgba(30, 58, 110, .14);
+  border-bottom-color: transparent; }
+
+// Respect users who prefer reduced motion: keep the visual cues, drop the movement
+@media (prefers-reduced-motion: reduce) {
+  .triptych .panel, .paper-item { transition: box-shadow .18s ease, border-color .18s ease; }
+  .triptych .panel:hover, .paper-item:hover { transform: none; }
+}
+.paper-item h3 { margin: 0 0 .35rem; font-size: 1.4rem; line-height: 1.2; }
+.paper-item h3 a { color: #1C2433; text-decoration: none; }
+.paper-item h3 a:hover { color: #1E3A6E; }
+.paper-item p { margin: .4rem 0; }
+// Metadata line (venue · year · role) under a title
+.paper-meta { display: block; font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
+  text-transform: uppercase; letter-spacing: .05em; color: #717784; margin-bottom: .5rem; }
+// "Read more →" call to action
+.read-more { font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
+  letter-spacing: .03em; text-decoration: none; }
+.read-more:hover { text-decoration: underline; }
+// Non-clickable "coming soon" marker for unpublished entries
+.coming-soon { font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
+  letter-spacing: .03em; color: #717784; font-style: italic; }
+
+// --- Paper detail pages: back link + reused figure + attribution credit ---
+.back-link { font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
+  letter-spacing: .03em; text-decoration: none; display: inline-block; margin-bottom: 1rem; }
+.back-link:hover { text-decoration: underline; }
+.graphical-abstract { display: block; max-width: 460px; width: 100%; height: auto;
+  border: 1px solid #DAD3C4; border-radius: 8px; background: #FFFFFF; padding: .5rem;
+  margin: 1.6rem auto .6rem; }
+// Attribution / copyright credit under the (centered) figure
+.figure-credit { display: block; font-size: 0.72rem; line-height: 1.5; color: #717784;
+  max-width: 560px; margin: 0 auto .4rem; text-align: center; }
+.figure-credit a { color: #717784; text-decoration: underline; }
+
+// General figures the author supplies on a paper page (photos, rigs, tracking output)
+.paper-figure { display: block; width: 100%; max-width: 540px; height: auto;
+  border: 1px solid #DAD3C4; border-radius: 8px; margin: 1.4rem auto .5rem; }
+// Author-supplied videos (e.g. tracking clips): same framing as .paper-figure
+.paper-video { display: block; width: 100%; max-width: 540px; height: auto;
+  border: 1px solid #DAD3C4; border-radius: 8px; margin: 1.4rem auto .5rem; background: #000; }
+// Two (or more) clips side by side, wrapping to a stack on narrow screens
+.video-row { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;
+  align-items: flex-start; margin: 1.4rem 0 .6rem; }
+.video-item { flex: 1 1 300px; max-width: 420px; margin: 0; }
+.video-item .paper-video { max-width: 100%; margin: 0 0 .45rem; }
+.video-item figcaption { text-align: center; font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem; letter-spacing: .03em; text-transform: uppercase; color: #717784; }
+// Multi-panel figure legends (author descriptions under a supplied figure)
+.fig-legend { display: block; font-size: 0.82rem; line-height: 1.55; color: #41454F;
+  max-width: 660px; margin: -.1rem auto 1.7rem; }
+.fig-legend strong { color: #1C2433; }
+// Collapsible wrapper for long comparison tables
+.table-details { margin: 1.2rem 0 1.8rem; }
+.table-details > summary { cursor: pointer; font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem; letter-spacing: .02em; color: #1E3A6E; padding: .35rem 0; }
+.table-details > summary:hover { text-decoration: underline; }
+
+// --- Wide data tables (e.g. tracker comparisons): scroll horizontally on narrow screens ---
+.wide-table { overflow-x: auto; margin: 1.4rem 0; border: 1px solid #DAD3C4; border-radius: 8px; }
+.wide-table .table-caption { font-size: 0.8rem; color: #41454F; margin: 0;
+  padding: .7rem .85rem; background: #F7F4EC; border-bottom: 1px solid #DAD3C4; }
+.wide-table table { border-collapse: collapse; min-width: 920px; width: 100%;
+  font-size: 0.78rem; line-height: 1.4; }
+.wide-table th, .wide-table td { border: 1px solid #E4DECF; padding: .5rem .6rem;
+  text-align: left; vertical-align: top; }
+.wide-table thead th { background: #F2EEE3; font-family: "Jost", sans-serif; font-weight: 500; }
+.wide-table td p { margin: 0 0 .3rem; }
+.wide-table sup { color: #1E3A6E; font-weight: 600; }
+
+// --- Reference list: small, hanging indent, numbers preserved from the thesis ---
+.ref-note { font-size: 0.72rem; color: #717784; font-style: italic; margin-bottom: .8rem; }
+.references p { font-size: 0.8rem; line-height: 1.5; color: #41454F; margin: .35rem 0;
+  padding-left: 1.7rem; text-indent: -1.7rem; }
+// Caption under any centered figure on a paper page
+.quarto-figure-center figcaption, figure.figure figcaption.figure-caption {
+  text-align: center; font-family: "IBM Plex Mono", monospace; font-size: 0.72rem;
+  letter-spacing: .02em; color: #717784; margin-bottom: 1.2rem; }
+
 // Hairline section dividers
 .section-rule { display: block; border: 0; border-top: 2px solid #CDC3AC; margin: 2.4rem 0; }
 
 // --- Hero (About header): name + tagline left, headshot right; stacks on mobile ---
-.hero { display: flex; align-items: center; gap: 1.6rem; flex-wrap: wrap; }
-.hero > * { flex: 1 1 320px; }
-.hero h1 { margin-top: 0; font-size: 3rem; line-height: 1.08; }
-// Tagline: pipe-separated skill areas under the name
-.tagline { font-family: "IBM Plex Mono", monospace; font-size: 1.05rem; line-height: 1.7;
-  letter-spacing: .01em; color: #41454F; display: block; }
-// Headshot sits at the right edge of its column (aligned with the body text edge).
+// Name+tagline (left) and headshot (right) share one row. `nowrap` stops the photo
+// dropping below; `min-width: 0` lets the text column shrink so the tagline wraps to ~2
+// lines instead of forcing the photo out. (Hero is raw HTML — see index.qmd.)
+.hero { display: flex; flex-wrap: nowrap; align-items: center; gap: 2rem; margin-bottom: 2.6rem; }
+.hero-text { flex: 1 1 auto; min-width: 0; }
+// A <div>, not an <h1>, so Quarto can't promote it into the page title block. Styled to
+// match the heading font. aria-level=1 keeps the semantic heading role for screen readers.
+.hero .hero-name { font-family: "DM Serif Display", Georgia, serif; font-size: 3rem;
+  line-height: 1.08; color: #1C2433; }
+// Hide the auto title block if Quarto emits an empty one on this page.
+#title-block-header:empty { display: none; }
+// Headshot is the fixed-width right column.
 .headshot { border-radius: 50%; border: 1px solid #DAD3C4; object-fit: cover;
-  display: block; margin-left: auto; }
+  display: block; flex: 0 0 auto; width: 300px; height: auto; }
+// Tagline: pipe-separated skill areas tucked under the name, wrapping to ~2 lines.
+.tagline { font-family: "IBM Plex Mono", monospace; font-size: 0.95rem; line-height: 1.7;
+  letter-spacing: .01em; color: #41454F; display: block; margin-top: 1.1rem; margin-bottom: 0; }
 @media (max-width: 600px) {
-  .hero { flex-direction: column; align-items: flex-start; }
+  .hero { flex-wrap: wrap; flex-direction: column; align-items: flex-start; }
+  .headshot { width: 100%; max-width: 300px; }
 }
 
-// --- Triptych: molecule / machine / math, 3-col responsive grid ---
+// --- Triptych: neuroscience / nuts & bolts / numbers, 3-col responsive grid of outlined boxes ---
 .triptych { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
-.triptych h3 { margin-top: 0; font-size: 1.15rem; }
+.triptych .panel { position: relative; border: 1px solid #DAD3C4; border-radius: 10px;
+  padding: 1.3rem 1.4rem; background: #F7F4EC;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+// The whole panel is a link (stretched-link on the h3): keep the heading looking like a heading,
+// not a blue underlined link. Cursor turns to a pointer over the whole card.
+.triptych .panel h3 a { color: inherit; text-decoration: none; }
+.triptych .panel:hover h3 a { color: #1E3A6E; }
+// Hover: lift the box toward the reader, cast a soft navy shadow, warm the border to gold
+.triptych .panel:hover { transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(30, 58, 110, .16); border-color: #C29B2E; }
+// Card icon at the top of each panel: emoji (span) or image (svg/png)
+.triptych .panel-icon { display: block; text-align: center; font-size: 2.4rem;
+  line-height: 1; margin-bottom: .5rem; }
+.triptych .panel-icon-img { display: block; height: 2.7rem; width: auto;
+  margin: 0 auto .5rem; }
+.triptych .panel > p:has(.panel-icon), .triptych .panel > p:has(.panel-icon-img) { margin: 0; }
+.triptych h3 { margin-top: 0; font-size: 1.15rem; text-align: center; }
 @media (max-width: 700px) {
   .triptych { grid-template-columns: 1fr; }
 }
