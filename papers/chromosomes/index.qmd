@@ -24,7 +24,7 @@ differentiating daughters (a ganglion mother cell, or GMC), two molecularly and
 epigenetically distinct cell types, turning the fused cell into a live stage for following
 two genomes at once.
 
-![](figure1.jpg){.paper-figure style="max-width:640px" fig-alt="Figure 1: acute laser-induced fusion of a Drosophila neuroblast and a ganglion mother cell, and the possible fates of the two chromosome sets, which independently align at the metaphase plate"}
+![](figure1.jpg){.paper-figure fig-alt="Figure 1: acute laser-induced fusion of a Drosophila neuroblast and a ganglion mother cell, and the possible fates of the two chromosome sets, which independently align at the metaphase plate"}
 
 [Figure 1 reproduced from Sunchu B., Lee N. M., Taylor J. A., Segura R. C., Roubinet C. &amp;
 Cabernard C. (2022). *Asymmetric chromatin retention and nuclear envelopes separate

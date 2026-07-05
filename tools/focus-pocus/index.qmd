@@ -1,0 +1,70 @@
+---
+title: "Focus Pocus"
+---
+
+[← Back to tools](../../tools.qmd){.back-link}
+
+[Desktop app · Electron · in development]{.paper-meta}
+
+Writing a PhD thesis is a long exercise in accountability with no one watching. I wanted
+something that *would* watch, not to shame me, but to catch the moment I drifted and pull me
+back before an hour disappeared. So I built **Focus Pocus**: a small desktop timer that sits in
+the corner while you work, notices when you have wandered off, and nudges you back to the page.
+
+There are plenty of focus tools out there, and many are built around the Pomodoro idea of fixed
+work-and-break blocks. Focus Pocus keeps the timer, but the point of this one is *your own
+accountability*. Instead of just counting down, it pays attention to whether you are actually
+working, and it speaks up when you are not.
+
+![](app-interface.png){.paper-figure style="max-width:340px" fig-alt="The Focus Pocus timer window: a running 00:42:17 timer, Working status, START/PAUSE/PLAY/STOP controls, a last-session efficiency note, and Daily/Weekly/Monthly stats buttons"}
+
+[The main window while you are working: a running timer, a countdown to the next nudge, and your
+last session's efficiency.]{.fig-legend}
+
+## The nudge, and the escalating beep
+
+You set an *inactivity threshold*, say ten minutes. If your mouse and keyboard go quiet for
+longer than that, or if a known time-sink takes over your screen, Focus Pocus pops up and beeps.
+Ignore it and it does not give up. Each unanswered nudge comes back *louder*, with more beeps
+than the last, until you deal with it. Gentle at first, hard to tune out by the third.
+
+![](alert-youtube.png){.paper-figure style="max-width:560px" fig-alt="A Focus Pocus alert card with a bell icon reading 'Watching YouTube? Time to get back to work!' and a Dismiss button"}
+
+[What it looks like when you are *not* studying. Drift onto YouTube or start scrolling (say,
+TikTok or a manga reader) and it calls you out.]{.fig-legend}
+
+## It watches your habits, not your screen
+
+This is the part I care about most. Focus Pocus is **not** looking at your screen, and it records
+nothing about *what* you are doing:
+
+- **Idleness** is read from the operating system's idle timer. Has the mouse or keyboard moved
+  recently? That is a single number, not a recording.
+- **Distractions** are caught by reading the *title* of your active window (does it say
+  "YouTube"?), never the contents of the page and never a screenshot.
+- **Nothing leaves your computer.** Every session is written to a plain local file on your own
+  machine. There is no account, no server, and no upload, so there is nothing to leak.
+
+You get the accountability without the surveillance.
+
+## What it tells you afterwards
+
+Each session logs how long you focused, how long you paused, how many times you got nudged, and
+a self-rating of how the session felt. Over a month that adds up to a picture of when and how you
+actually work, including the honest gap between how efficient you *felt* and how efficient you
+*were*.
+
+![](stats-dashboard.png){.paper-figure style="max-width:900px" fig-alt="A four-panel Focus Pocus statistics dashboard: focus time per day, measured vs. self-assessed efficiency over time, sessions by weekday, and a histogram of self-ratings"}
+
+[A month of my own real sessions. The measured focus efficiency (navy) sits high while my
+self-assessment (gold) runs lower, so it turns out I under-rate myself.]{.fig-legend}
+
+## Still building
+
+Focus Pocus is a work in progress. I am expanding the list of distraction sites it recognises,
+cleaning up the session data, and turning these charts into a proper in-app dashboard. It was
+designed, built, and iterated with large language models as a coding partner.
+
+[View the code on GitHub →](https://github.com/lnicole08/Focus-Pocus){.read-more}
+
+[]{.section-rule}

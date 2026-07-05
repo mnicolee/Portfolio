@@ -4,66 +4,84 @@ title: "Research"
 
 [Selected research]{.eyebrow}
 
-::: {.paper-item}
-### [Untangling internal state from locomotion using behavioral ethomics](papers/valence/index.qmd){.stretched-link}
+::::: {.card-grid}
+
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
+
+::: {.pcard-body}
+### Untangling internal state from locomotion using behavioral ethomics
 [PhD thesis · first-author · unpublished data]{.paper-meta}
 
 An optogenetic screen of the mushroom body output neuron (MBON) split-GAL4 library across
 two custom assays, asking how internal state and movement get entangled in *Drosophila* circuits.
-
-[Read more →](papers/valence/index.qmd){.read-more}
 :::
 
-::: {.paper-item}
+::::
+
+:::: {.pcard}
+<img class="pcard-media" src="papers/opn3/graphical-abstract.png" alt="Graphical abstract of the OPN3 silencing paper">
+
+::: {.pcard-body}
 ### [The silence after the light](papers/opn3/index.qmd){.stretched-link}
 [co-first author · preprint · bioRxiv, 2026]{.paper-meta}
 
 A single brief flash of green light on the bistable opto-GPCR OPN3 silences *Drosophila*
 neurons for minutes — a low-toxicity silencing tool for circuit and behavior work.
-
-[Read more →](papers/opn3/index.qmd){.read-more}
 :::
 
-::: {.paper-item}
-### [A cleaner neural off-switch](papers/kcr/index.qmd){.stretched-link}
-[co-author · Nature Communications, 2024]{.paper-meta}
+::::
 
-Kalium channelrhodopsins (KCRs) tested as potassium-selective optogenetic silencers across
-*Drosophila*, *C. elegans*, and zebrafish. I led all the *C. elegans* work.
+:::: {.pcard}
+<div class="pcard-ph"></div>
 
-[Read more →](papers/kcr/index.qmd){.read-more}
-:::
-
-::: {.paper-item}
-### [Separating chromosomes in fused cells](papers/chromosomes/index.qmd){.stretched-link}
-[co-author · Communications Biology, 2022]{.paper-meta}
-
-How fused *Drosophila* cells keep two genomes apart, through asymmetric chromatin retention
-and nuclear-envelope boundaries.
-
-[Read more →](papers/chromosomes/index.qmd){.read-more}
-:::
-
-::: {.paper-item}
-### [Sibling cell size asymmetry](papers/sibling/index.qmd){.stretched-link}
-[co-author · iScience, 2019]{.paper-meta}
-
-The biophysical forces, hydrostatic pressure and cortical actomyosin, that let a dividing
-neural stem cell produce two unequal-sized daughters.
-
-[Read more →](papers/sibling/index.qmd){.read-more}
-:::
-
-[]{.section-rule}
-
-[Tools & open source]{.eyebrow}
-
-::: {.paper-item}
+::: {.pcard-body}
 ### [DABEST 2.0: estimation statistics](papers/dabest/index.qmd){.stretched-link}
 [co-author · in revision, Nature Methods]{.paper-meta}
 
 The estimation-graphics toolbox for effect sizes over p-values. I validated the
 proportion-plots feature and ran real-data testing.
-
-[Read more →](papers/dabest/index.qmd){.read-more}
 :::
+
+::::
+
+:::: {.pcard}
+<img class="pcard-media" src="papers/kcr/kcr-06.png" alt="Figure 5 C. elegans results from the KCR paper">
+
+::: {.pcard-body}
+### [A cleaner neural off-switch](papers/kcr/index.qmd){.stretched-link}
+[co-author · Nature Communications, 2024]{.paper-meta}
+
+Kalium channelrhodopsins (KCRs) tested as potassium-selective optogenetic silencers across
+*Drosophila*, *C. elegans*, and zebrafish. I led all the *C. elegans* work.
+:::
+
+::::
+
+:::: {.pcard}
+<img class="pcard-media" src="papers/chromosomes/figure1.jpg" alt="Figure 1 from the chromosomes-in-fused-cells paper">
+
+::: {.pcard-body}
+### [Separating chromosomes in fused cells](papers/chromosomes/index.qmd){.stretched-link}
+[co-author · Communications Biology, 2022]{.paper-meta}
+
+How fused *Drosophila* cells keep two genomes apart, through asymmetric chromatin retention
+and nuclear-envelope boundaries.
+:::
+
+::::
+
+:::: {.pcard}
+<img class="pcard-media" src="papers/sibling/graphical-abstract.jpg" alt="Graphical abstract of the sibling cell size asymmetry paper">
+
+::: {.pcard-body}
+### [Sibling cell size asymmetry](papers/sibling/index.qmd){.stretched-link}
+[co-author · iScience, 2019]{.paper-meta}
+
+The biophysical forces, hydrostatic pressure and cortical actomyosin, that let a dividing
+neural stem cell produce two unequal-sized daughters.
+:::
+
+::::
+
+:::::

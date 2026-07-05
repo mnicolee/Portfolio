@@ -8,7 +8,7 @@ $navbar-bg:    #EFEBE0;
 $primary:      #1E3A6E;
 
 /*-- scss:rules --*/
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Serif+Display&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@600;700&family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Serif+Display&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;700&family=Inter:ital,wght@0,600;0,700;1,400&family=Jost:wght@400;500&display=swap');
 
 // --- Palette: navy + gold on warm cream (colorblind-safe) ---
 :root {
@@ -69,9 +69,41 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 
 // Respect users who prefer reduced motion: keep the visual cues, drop the movement
 @media (prefers-reduced-motion: reduce) {
-  .triptych .panel, .paper-item { transition: box-shadow .18s ease, border-color .18s ease; }
-  .triptych .panel:hover, .paper-item:hover { transform: none; }
+  .triptych .panel, .paper-item, .pcard { transition: box-shadow .18s ease, border-color .18s ease; }
+  .triptych .panel:hover, .paper-item:hover, .pcard:hover { transform: none; }
 }
+
+// --- Card grid: clickable image+title cards (research + hardware). 3 cols -> 2 -> 1 ---
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin: 1.6rem 0; }
+@media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
+.pcard { position: relative; display: flex; flex-direction: column; overflow: hidden;
+  border: 1px solid #DAD3C4; border-radius: 12px; background: #F7F4EC;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.pcard:hover { transform: translateY(-6px); background: #FFFFFF; border-color: #C29B2E;
+  box-shadow: 0 0 0 1.5px rgba(194, 155, 46, .65), 0 18px 40px rgba(30, 58, 110, .24); }
+// the image sits in a wrapping <p>; kill its margin so it's flush to the top edge
+.pcard > p { margin: 0; line-height: 0; }
+// media band: center-crop the figure (shows the middle, not the whole thing)
+.pcard-media { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  object-position: center; background: #EAE4D6; border-bottom: 1px solid #DAD3C4; }
+// muted placeholder tile when there is no image (or "coming soon")
+.pcard-ph { display: flex; align-items: center; justify-content: center; width: 100%;
+  aspect-ratio: 16 / 9; background: #EAE4D6; border-bottom: 1px solid #DAD3C4;
+  font-family: "Inter", sans-serif; font-size: calc(0.95rem + 5px); font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase; color: #8C8472; }
+.pcard-body { padding: .95rem 1.1rem 1.15rem; }
+// All card headers identical: force the heading font/size/weight, and make the linked
+// titles (<a>) inherit it exactly so linked and non-linked cards match everywhere.
+.pcard-body h3 { margin: 0 0 .35rem; font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.15rem; font-weight: 700; line-height: 1.25; color: #1C2433; }
+.pcard-body h3 a { font: inherit; color: inherit; text-decoration: none; }
+.pcard:hover h3 a { color: #1E3A6E; }
+.pcard-body p { margin: .3rem 0 0; font-size: 0.9rem; line-height: 1.5; }
+.pcard-body .paper-meta { margin-bottom: .2rem; }
+// "Coming soon" cards: not clickable, so no lift/pointer
+.pcard.is-soon { cursor: default; }
+.pcard.is-soon:hover { transform: none; background: #F7F4EC; border-color: #DAD3C4; box-shadow: none; }
 .paper-item h3 { margin: 0 0 .35rem; font-size: 1.4rem; line-height: 1.2; }
 .paper-item h3 a { color: #1C2433; text-decoration: none; }
 .paper-item h3 a:hover { color: #1E3A6E; }
@@ -79,19 +111,20 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 // Metadata line (venue · year · role) under a title
 .paper-meta { display: block; font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
   text-transform: uppercase; letter-spacing: .05em; color: #717784; margin-bottom: .5rem; }
-// "Read more →" call to action
-.read-more { font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
-  letter-spacing: .03em; text-decoration: none; }
+// "Read more →" call to action (italic, +0.5px per Nicole)
+.read-more { font-family: "IBM Plex Mono", monospace; font-size: calc(0.78rem + 0.5px);
+  font-style: italic; letter-spacing: .03em; text-decoration: none; }
 .read-more:hover { text-decoration: underline; }
-// Non-clickable "coming soon" marker for unpublished entries
-.coming-soon { font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
+// Non-clickable "coming soon" marker for unpublished entries (italic, +0.5px)
+.coming-soon { font-family: "Inter", sans-serif; font-size: calc(0.78rem + 0.5px);
   letter-spacing: .03em; color: #717784; font-style: italic; }
 
 // --- Paper detail pages: back link + reused figure + attribution credit ---
-.back-link { font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
-  letter-spacing: .03em; text-decoration: none; display: inline-block; margin-bottom: 1rem; }
+// Back link: italic, +2px per Nicole
+.back-link { font-family: "Inter", sans-serif; font-size: calc(0.78rem + 2px);
+  font-style: italic; letter-spacing: .03em; text-decoration: none; display: inline-block; margin-bottom: 1rem; }
 .back-link:hover { text-decoration: underline; }
-.graphical-abstract { display: block; max-width: 460px; width: 100%; height: auto;
+.graphical-abstract { display: block; max-width: 400px; width: 100%; height: auto;
   border: 1px solid #DAD3C4; border-radius: 8px; background: #FFFFFF; padding: .5rem;
   margin: 1.6rem auto .6rem; }
 // Attribution / copyright credit under the (centered) figure
@@ -100,7 +133,7 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 .figure-credit a { color: #717784; text-decoration: underline; }
 
 // General figures the author supplies on a paper page (photos, rigs, tracking output)
-.paper-figure { display: block; width: 100%; max-width: 540px; height: auto;
+.paper-figure { display: block; width: 100%; max-width: 440px; height: auto;
   border: 1px solid #DAD3C4; border-radius: 8px; margin: 1.4rem auto .5rem; }
 // Author-supplied videos (e.g. tracking clips): same framing as .paper-figure
 .paper-video { display: block; width: 100%; max-width: 540px; height: auto;
@@ -176,18 +209,19 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 // The whole panel is a link (stretched-link on the h3): keep the heading looking like a heading,
 // not a blue underlined link. Cursor turns to a pointer over the whole card.
-.triptych .panel h3 a { color: inherit; text-decoration: none; }
+.triptych .panel h3 a { font: inherit; color: inherit; text-decoration: none; }
 .triptych .panel:hover h3 a { color: #1E3A6E; }
 // Hover: lift the box toward the reader, cast a soft navy shadow, warm the border to gold
-.triptych .panel:hover { transform: translateY(-6px);
-  box-shadow: 0 12px 26px rgba(30, 58, 110, .16); border-color: #C29B2E; }
+.triptych .panel:hover { transform: translateY(-6px); background: #FFFFFF; border-color: #C29B2E;
+  box-shadow: 0 0 0 1.5px rgba(194, 155, 46, .65), 0 18px 40px rgba(30, 58, 110, .24); }
 // Card icon at the top of each panel: emoji (span) or image (svg/png)
 .triptych .panel-icon { display: block; text-align: center; font-size: 2.4rem;
   line-height: 1; margin-bottom: .5rem; }
 .triptych .panel-icon-img { display: block; height: 2.7rem; width: auto;
   margin: 0 auto .5rem; }
 .triptych .panel > p:has(.panel-icon), .triptych .panel > p:has(.panel-icon-img) { margin: 0; }
-.triptych h3 { margin-top: 0; font-size: 1.15rem; text-align: center; }
+.triptych h3 { margin-top: 0; font-family: "Source Serif 4", Georgia, serif; font-weight: 700;
+  font-size: 1.15rem; text-align: center; }
 @media (max-width: 700px) {
   .triptych { grid-template-columns: 1fr; }
 }

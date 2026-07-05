@@ -410,7 +410,7 @@ dedicated *C. elegans* optogenetics-and-tracking rig from the ground up: custom 
 chambers held together with magnets, a 3D-printed camera adapter, infrared and optogenetic
 illumination, and a DeepLabCut tracker trained on our own footage.
 
-[Click here to see how we made it → the *C. elegans* tracking rig](../../hardware.qmd){.read-more}
+[Click here to see how we made it → the *C. elegans* tracking rig](../../hardware/celegans/index.qmd){.read-more}
 
 ## What we found
 
