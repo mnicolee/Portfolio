@@ -61,9 +61,18 @@ self-assessment (gold) runs lower, so it turns out I under-rate myself.]{.fig-le
 
 ## Still building
 
-Focus Pocus is a work in progress. I am expanding the list of distraction sites it recognises,
-cleaning up the session data, and turning these charts into a proper in-app dashboard. It was
-designed, built, and iterated with large language models as a coding partner.
+Focus Pocus is a work in progress. Right now it works from two low-level signals: whether your
+mouse and keyboard have moved, and the title of the window in front of you. I am expanding the
+list of distraction sites it recognises, cleaning up the session data, and turning these charts
+into a proper in-app dashboard.
+
+One feature I am planning will let you add your own list of apps for the program to watch, so it
+can tell whether a distraction you care about is open, rather than relying on window titles alone.
+In keeping with the rest of the app, that check will not save what it sees or read anything else
+on your machine. It only asks a yes-or-no question, is this app open, and then forgets the answer.
+That one is still to come.
+
+Focus Pocus was designed, built, and iterated with large language models as a coding partner.
 
 [View the code on GitHub →](https://github.com/lnicole08/Focus-Pocus){.read-more}
 

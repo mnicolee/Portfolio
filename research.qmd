@@ -33,14 +33,14 @@ neurons for minutes — a low-toxicity silencing tool for circuit and behavior w
 ::::
 
 :::: {.pcard}
-<div class="pcard-ph"></div>
+<img class="pcard-media" style="object-position:top" src="papers/dabest/figure3-white.png" alt="DABEST 2.0 proportion estimation plot: a bar chart of seizures beside the proportion difference with a bootstrapped 95% confidence interval">
 
 ::: {.pcard-body}
 ### [DABEST 2.0: estimation statistics](papers/dabest/index.qmd){.stretched-link}
 [co-author · in revision, Nature Methods]{.paper-meta}
 
-The estimation-graphics toolbox for effect sizes over p-values. I validated the
-proportion-plots feature and ran real-data testing.
+Estimation graphics for effect sizes over p-values. I built the proportion plot for binary
+data, and the literature survey behind it.
 :::
 
 ::::
@@ -49,7 +49,7 @@ proportion-plots feature and ran real-data testing.
 <img class="pcard-media" src="papers/kcr/kcr-06.png" alt="Figure 5 C. elegans results from the KCR paper">
 
 ::: {.pcard-body}
-### [A cleaner neural off-switch](papers/kcr/index.qmd){.stretched-link}
+### [Kalium channelrhodopsins](papers/kcr/index.qmd){.stretched-link}
 [co-author · Nature Communications, 2024]{.paper-meta}
 
 Kalium channelrhodopsins (KCRs) tested as potassium-selective optogenetic silencers across

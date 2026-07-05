@@ -2,12 +2,30 @@
 title: "Tools"
 ---
 
-[Built with AI]{.eyebrow}
+Tools I built with the help of large language models. Each one started the same way: I hit a gap
+in how I work or live, and decided to close it myself. They are grouped by the need they answer,
+my research and data work on one side, everyday life on the other.
 
-Software I design and build myself, with large language models as a coding partner. Each one
-started as a real friction in my own days, a way to procrastinate less, reflect more, or make
-sense of my own data, and grew into a working app I actually use. Same instinct as the lab
-tools: find the thing that's missing, then build it.
+[Research & data]{.eyebrow}
+
+::::: {.card-grid}
+
+:::: {.pcard}
+<img class="pcard-media" src="tools/viset/venn-drug-targets.png" alt="A VISET proportional Venn diagram of drug-target genes for Fluoxetine, Ibuprofen and Acetaminophen, with every gene name printed inside its region">
+
+::: {.pcard-body}
+### [VISET](tools/viset/index.qmd){.stretched-link}
+[Python library · open source]{.paper-meta}
+
+Area-proportional Venn/Euler and UpSet diagrams that print the actual member names inside each
+region, not just the counts. Built in Python for comparing gene sets at a glance.
+:::
+
+::::
+
+:::::
+
+[Lifestyle]{.eyebrow}
 
 ::::: {.card-grid}
 
@@ -20,32 +38,6 @@ tools: find the thing that's missing, then build it.
 
 A focus timer that notices when you drift off, whether it's an idle mouse or a YouTube tab, and
 beeps you back louder and louder until you return. Built to get my PhD thesis written.
-:::
-
-::::
-
-:::: {.pcard .is-soon}
-<div class="pcard-ph">Coming soon</div>
-
-::: {.pcard-body}
-### Dear Diary
-[Desktop app]{.paper-meta}
-
-A private daily journal with a quick "simple" mode and a free-writing "chatty" mode, plus a
-stats view that turns a month of entries into moods, sleep, and habits.
-:::
-
-::::
-
-:::: {.pcard .is-soon}
-<div class="pcard-ph">Coming soon</div>
-
-::: {.pcard-body}
-### Gratitude Journal
-[Progressive web app]{.paper-meta}
-
-A lightweight gratitude practice with daily prompts, mood tracking, and streaks, that runs in the
-browser and keeps everything on your own device.
 :::
 
 ::::
