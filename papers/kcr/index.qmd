@@ -1,5 +1,5 @@
 ---
-title: "A cleaner neural off-switch"
+title: "Kalium channelrhodopsins"
 ---
 
 [← Back to research](../../research.qmd){.back-link}
