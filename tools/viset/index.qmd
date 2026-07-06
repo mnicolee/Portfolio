@@ -44,6 +44,6 @@ it.]{.fig-legend}
 UpSet plots have an interactive version too, with the same hover-to-read behaviour as the Venn
 above.
 
-The code and full documentation live on [GitHub](https://github.com/leenioo/VISET).
+The code and full documentation live on [GitHub](https://github.com/mnicolee/VISET).
 
 []{.section-rule}

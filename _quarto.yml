@@ -29,7 +29,7 @@ website:
         text: contact
     right:
       - icon: github
-        href: "https://github.com/leenioo"
+        href: "https://github.com/mnicolee"
         aria-label: GitHub
       - text: "{{< ai orcid >}}"          # via Academicons extension (see README)
         href: https://orcid.org/0000-0001-6953-2177
