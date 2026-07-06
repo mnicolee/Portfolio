@@ -37,7 +37,7 @@ neurons for minutes — a low-toxicity silencing tool for circuit and behavior w
 
 ::: {.pcard-body}
 ### [DABEST 2.0: estimation statistics](papers/dabest/index.qmd){.stretched-link}
-[co-author · in revision, Nature Methods]{.paper-meta}
+[co-author · in revision, Nature Methods, 2026]{.paper-meta}
 
 Estimation graphics for effect sizes over p-values. I built the proportion plot for binary
 data, and the literature survey behind it.

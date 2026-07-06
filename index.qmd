@@ -21,9 +21,9 @@ neural circuits in behavior**: building the molecular tools, the instruments, an
 quantitative methods (statistics, data analysis, and ethomics) needed to ask how small
 circuits in the *Drosophila* brain shape what an animal does.
 
-Before the flies, I spent years in cell-division and cell-fusion biology, cancer
-drug-resistance, and DNA-repair tools, so my work has spanned molecules, microscopes, and
-behavior.
+Before the flies, I spent years working in developlemntal biology, cancer
+drug-resistance models, the biochemistry of collagen degradation and 
+receptor signaling in the stress response. Beyond the science, I paint, game, and build apps.
 
 []{.section-rule}
 

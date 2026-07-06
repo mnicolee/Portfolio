@@ -6,15 +6,22 @@ title: "Focus Pocus"
 
 [Desktop app · Electron · in development]{.paper-meta}
 
-Writing a PhD thesis is a long exercise in accountability with no one watching. I wanted
-something that *would* watch, not to shame me, but to catch the moment I drifted and pull me
-back before an hour disappeared. So I built **Focus Pocus**: a small desktop timer that sits in
-the corner while you work, notices when you have wandered off, and nudges you back to the page.
+Writing a PhD thesis is a long exercise in accountability with no one watching. Mine ran to
+**280 pages**, and getting there meant sitting down to write on days when every other tab looked
+more appealing, the procrastination, the slow drift, the hour that vanishes before you notice.
+I needed something that *would* watch, not to shame me, but to catch the moment I wandered and
+pull me back before the hour was gone.
 
-There are plenty of focus tools out there, and many are built around the Pomodoro idea of fixed
-work-and-break blocks. Focus Pocus keeps the timer, but the point of this one is *your own
-accountability*. Instead of just counting down, it pays attention to whether you are actually
-working, and it speaks up when you are not.
+I looked at the focus apps already out there and didn't want them. Too many are built around
+harvesting what you do, your habits, your schedule, your attention, and selling it on or holding
+it on a server you don't control. I wasn't willing to trade my privacy for a timer. So I built my
+own: **Focus Pocus**, a small desktop app that sits in the corner while you work, notices when you
+have drifted, and nudges you back, and keeps every scrap of your data on your own machine.
+
+There are plenty of focus tools built around the Pomodoro idea of fixed work-and-break blocks.
+Focus Pocus keeps a timer, but the point of this one is *your own accountability*: instead of just
+counting down, it pays attention to whether you are actually working, and it speaks up when you
+are not.
 
 ![](app-interface.png){.paper-figure style="max-width:340px" fig-alt="The Focus Pocus timer window: a running 00:42:17 timer, Working status, START/PAUSE/PLAY/STOP controls, a last-session efficiency note, and Daily/Weekly/Monthly stats buttons"}
 
@@ -33,19 +40,22 @@ than the last, until you deal with it. Gentle at first, hard to tune out by the 
 [What it looks like when you are *not* studying. Drift onto YouTube or start scrolling (say,
 TikTok or a manga reader) and it calls you out.]{.fig-legend}
 
-## It watches your habits, not your screen
+## Your data never leaves your machine
 
-This is the part I care about most. Focus Pocus is **not** looking at your screen, and it records
-nothing about *what* you are doing:
+This is the part I care about most. Focus Pocus is **not** watching your screen, and it holds on
+to nothing on its own:
 
-- **Idleness** is read from the operating system's idle timer. Has the mouse or keyboard moved
-  recently? That is a single number, not a recording.
+- **Idleness** comes from the operating system's idle timer, has the mouse or keyboard moved
+  recently? That is a single number, read in the moment and never recorded.
 - **Distractions** are caught by reading the *title* of your active window (does it say
-  "YouTube"?), never the contents of the page and never a screenshot.
-- **Nothing leaves your computer.** Every session is written to a plain local file on your own
-  machine. There is no account, no server, and no upload, so there is nothing to leak.
+  "YouTube"?), never the contents of a page and never a screenshot.
+- **Nothing is kept unless you choose to keep it, and nothing is ever uploaded.** There is no
+  account and no server, so the app has no way to send your data anywhere. If you want a record of
+  your sessions, you can save it yourself to a plain file on your own computer, an offline copy
+  that stays with you, never the cloud, never GitHub.
 
-You get the accountability without the surveillance.
+You get the accountability without the surveillance. I think everyone deserves that: to be the one
+in charge of their own data.
 
 ## What it tells you afterwards
 
@@ -56,8 +66,9 @@ actually work, including the honest gap between how efficient you *felt* and how
 
 ![](stats-dashboard.png){.paper-figure style="max-width:900px" fig-alt="A four-panel Focus Pocus statistics dashboard: focus time per day, measured vs. self-assessed efficiency over time, sessions by weekday, and a histogram of self-ratings"}
 
-[A month of my own real sessions. The measured focus efficiency (navy) sits high while my
-self-assessment (gold) runs lower, so it turns out I under-rate myself.]{.fig-legend}
+[A month of my own real sessions. Throughout, **navy is what the app measured** and **gold is how
+I rated myself**. My measured focus efficiency runs high while my own rating sits lower, so it
+turns out I under-rate myself.]{.fig-legend}
 
 ## Still building
 
@@ -71,6 +82,14 @@ can tell whether a distraction you care about is open, rather than relying on wi
 In keeping with the rest of the app, that check will not save what it sees or read anything else
 on your machine. It only asks a yes-or-no question, is this app open, and then forgets the answer.
 That one is still to come.
+
+## The catch: it can't focus for you
+
+Focus Pocus is a nudge, not a cure-all. No app can do the hard part for you, at the end of the day
+the accountability has to be yours. The timer can catch you drifting and call you back, but sitting
+down and doing the work is still on you. What it gave me was a little more honesty about where my
+hours actually went, and a louder conscience when I wandered. The thesis still had to be written
+one page at a time.
 
 Focus Pocus was designed, built, and iterated with large language models as a coding partner.
 

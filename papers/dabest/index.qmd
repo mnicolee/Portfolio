@@ -4,7 +4,7 @@ title: "DABEST 2.0: estimation statistics"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[co-author · in revision, Nature Methods]{.paper-meta}
+[co-author · in revision, Nature Methods, 2026]{.paper-meta}
 
 Most papers still lean on the p-value: a single number that says *whether* something happened,
 but not by how much or how sure you can be. Estimation statistics is the alternative. **DABEST**

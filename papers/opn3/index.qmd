@@ -11,6 +11,8 @@ long as the light stays on: the neuron switches back on the moment you switch th
 That is a problem for behavior, where continuous actuating light can itself confound the very
 thing you are trying to measure.
 
+## The tool: a light-triggered, self-sustaining silencer (OPN3)
+
 This paper characterizes a different kind of tool. **OPN3** — Opsin3 from the mosquito
 *Anopheles stephensi* — is a *bistable* Gi/o-coupled GPCR: a single brief flash of green light
 sets off an intracellular signaling cascade that keeps the neuron inhibited long after the
@@ -31,11 +33,30 @@ photoreceptors and circuits you are studying. With OPN3 you deliver one brief pu
 observe freely in darkness, so the tool that silences the neuron no longer interferes with what
 you are trying to see.
 
-The second finding is about the chromophore that makes any opsin work. Rearing flies on food
-supplemented with **all-trans-retinal (ATR)** throughout development, rather than only in
-adulthood, improved *both* survival to adulthood *and* how strongly the light silenced
-neurons — and it did so for GtACR1 as well as OPN3. In other words, developmental retinal
-availability is a lever on optogenetic performance itself, not just a housekeeping detail.
+## The second finding: developmental retinal (ATR) is a lever on performance
+
+Every opsin is only half a tool on its own. The protein is an apoprotein: it needs a small
+light-absorbing molecule, the chromophore **retinal**, bound inside it before it can respond to
+light at all. *Drosophila* don't make enough of it on their own, so optogenetics in flies almost
+always means feeding them **all-trans-retinal (ATR)** — and by convention that feeding starts in
+*adulthood*, once the neurons you want to control are already wired up.
+
+We asked whether *when* the retinal is available matters. Rearing flies on ATR-supplemented food
+throughout **development**, rather than only in adulthood, improved *both* survival to adulthood
+*and* how strongly the light silenced neurons — and it did so for the chloride channel GtACR1 as
+well as for OPN3. That the same simple change helped two mechanistically unrelated tools points at
+something upstream of either one: developmental retinal availability is a **lever on optogenetic
+performance itself**, not just a housekeeping detail. Practically, it is a cheap tweak to how flies
+are reared that buys both healthier animals and a stronger effect — worth building into the
+protocol rather than treating as an afterthought.
+
+<!-- TODO(ATR figure): drop the ATR-specific figure here once supplied.
+     1. Add the image file to this folder (e.g. atr-figure.png).
+     2. Uncomment the block below and update the filename, fig-alt, and credit.
+![](atr-figure.png){.paper-figure style="max-width:760px" fig-alt="TODO: describe the ATR figure"}
+
+[TODO caption / figure credit for the ATR figure.]{.figure-credit}
+-->
 
 ![](graphical-abstract.png){.graphical-abstract fig-alt="Graphical abstract: a brief green light pulse gives GtACR1 transient inhibition but OPN3, a bistable Gi/o GPCR, prolonged inhibition; OPN3 silencing is tested in Drosophila memory and locomotion assays"}
 

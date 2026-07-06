@@ -2,7 +2,7 @@
 title: "Tools"
 ---
 
-Tools I built with the help of large language models. Each one started the same way: I hit a gap
+Tools I built with the help of LLMs. Each one started the same way: I hit a gap
 in how I work or live, and decided to close it myself. They are grouped by the need they answer,
 my research and data work on one side, everyday life on the other.
 
