@@ -81,7 +81,7 @@ Videos were down-sampled to 512 × 512 px (a worm spans roughly 17 × 80 px); I 
 key points head-to-tail across 280 frames from 14 videos and trained a ResNet-50 network for
 over 500,000 iterations. Above a 0.6 confidence threshold the model reached a root-mean-square
 error of 1.47 px on training and 3.97 px on test data, about 5% of body length. A custom Python
-package ([Celegans_tracking](https://github.com/lnicole08/Celegans_tracking)) then converts the
+package ([Celegans_tracking](https://github.com/leenioo/Celegans_tracking)) then converts the
 key-point coordinates into baseline-normalized worm speed, with effect sizes reported via the
 DABEST estimation framework.
 

@@ -74,6 +74,6 @@ That one is still to come.
 
 Focus Pocus was designed, built, and iterated with large language models as a coding partner.
 
-[View the code on GitHub →](https://github.com/lnicole08/Focus-Pocus){.read-more}
+[View the code on GitHub →](https://github.com/leenioo/Focus-Pocus){.read-more}
 
 []{.section-rule}
