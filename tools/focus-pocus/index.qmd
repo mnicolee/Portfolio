@@ -4,7 +4,7 @@ title: "Focus Pocus"
 
 [← Back to tools](../../tools.qmd){.back-link}
 
-[Desktop app · Electron · in development]{.paper-meta}
+[Desktop app · Electron · Windows · in development]{.paper-meta}
 
 Writing a PhD thesis is a long exercise in accountability with no one watching. Mine ran to
 **280 pages**, and getting there meant sitting down to write on days when every other tab looked
@@ -40,18 +40,35 @@ than the last, until you deal with it. Gentle at first, hard to tune out by the 
 [What it looks like when you are *not* studying. Drift onto YouTube or start scrolling (say,
 TikTok or a manga reader) and it calls you out.]{.fig-legend}
 
+## Bring your own distractions
+
+Everyone's rabbit hole is a different shape, so Focus Pocus lets you build your own blocklist. In
+the settings you add whatever tends to pull you away, one at a time, by the name you would see on
+its browser tab or in its title bar: `youtube`, `tiktok`, `netflix`, a comfort game, a manga
+reader. From then on it watches for those words in whatever window is in front of you, and speaks
+up when one of them lingers too long. Your list is kept in a plain file on your own machine and,
+like everything else here, never leaves it.
+
+A blocklist is a nudge, though, not a locked door. Nothing stops you closing the app, renaming a
+tab, or talking yourself into a workaround, and Focus Pocus will not wrestle you over it. But if
+you go hunting for the gap, the only person waiting on the other side is you. This was always meant
+to be a mirror you hold up to your own focus rather than a cage, so how honestly you use it is, in
+the end, entirely yours to decide.
+
 ## Your data never leaves your machine
 
-This is the part I care about most. Focus Pocus is **not** watching your screen, and it holds on
-to nothing on its own:
+This is the part I care about most. Focus Pocus is **not** watching your screen, and it never
+records *what* you were looking at:
 
 - **Idleness** comes from the operating system's idle timer, has the mouse or keyboard moved
-  recently? That is a single number, read in the moment and never recorded.
+  recently? That is a single number, read in the moment and never saved.
 - **Distractions** are caught by reading the *title* of your active window (does it say
-  "YouTube"?), never the contents of a page and never a screenshot.
-- **Nothing is kept unless you choose to keep it, and nothing is ever uploaded.** There is no
-  account and no server, so the app has no way to send your data anywhere. If you want a record of
-  your sessions, you can save it yourself to a plain file on your own computer, an offline copy
+  "YouTube"?), never the contents of a page and never a screenshot, and that reading is checked in
+  the moment and never saved either.
+- **The only thing kept is the tally, and it never leaves your machine.** There is no account and
+  no server, so the app has no way to send your data anywhere. Each session's *numbers* (how long
+  you focused, how many times you were nudged, your own rating) are written to a plain file on your
+  own computer; the window titles and pages themselves are never stored. It is an offline record
   that stays with you, never the cloud, never GitHub.
 
 You get the accountability without the surveillance. I think everyone deserves that: to be the one
@@ -66,9 +83,9 @@ actually work, including the honest gap between how efficient you *felt* and how
 
 ![](stats-dashboard.png){.paper-figure style="max-width:900px" fig-alt="A four-panel Focus Pocus statistics dashboard: focus time per day, measured vs. self-assessed efficiency over time, sessions by weekday, and a histogram of self-ratings"}
 
-[A month of my own real sessions. Throughout, **navy is what the app measured** and **gold is how
-I rated myself**. My measured focus efficiency runs high while my own rating sits lower, so it
-turns out I under-rate myself.]{.fig-legend}
+[Two months of my own real sessions, 35 of them between January and March 2026. Throughout, **navy is what
+the app measured** and **gold is how I rated myself**. My measured focus efficiency runs high (98%
+on average) while my own rating sits lower (82%), so it turns out I under-rate myself.]{.fig-legend}
 
 ## Still building
 
@@ -77,11 +94,9 @@ mouse and keyboard have moved, and the title of the window in front of you. I am
 list of distraction sites it recognises, cleaning up the session data, and turning these charts
 into a proper in-app dashboard.
 
-One feature I am planning will let you add your own list of apps for the program to watch, so it
-can tell whether a distraction you care about is open, rather than relying on window titles alone.
-In keeping with the rest of the app, that check will not save what it sees or read anything else
-on your machine. It only asks a yes-or-no question, is this app open, and then forgets the answer.
-That one is still to come.
+Adding your own distractions is now built in. The gap still left is the rare site that gives its
+name away nowhere, not even in its tab, so there is no word to catch it by; handling those cleanly
+is the next thing I want to solve.
 
 ## The catch: it can't focus for you
 
@@ -92,6 +107,8 @@ hours actually went, and a louder conscience when I wandered. The thesis still h
 one page at a time.
 
 Focus Pocus was designed, built, and iterated with large language models as a coding partner.
+
+[Requirements: Windows · Node.js (to run from source)]{.paper-meta}
 
 [View the code on GitHub →](https://github.com/mnicolee/Focus-Pocus){.read-more}
 
