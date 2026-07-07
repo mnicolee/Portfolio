@@ -22,9 +22,7 @@ matched ACR1's potency while causing less toxicity and performing better in puta
 high-chloride cells, establishing KCRs as a next-generation inhibitory tool for circuit
 analysis in behaving animals.
 
-[]{.section-rule}
-
-## My contribution: the *C. elegans* arm
+## The *C. elegans* arm
 
 My part of the study was the *C. elegans* behavioral work: testing whether KCRs could silence
 the worm's neurons and reading that out as a measurable change in locomotion. Because no
@@ -38,19 +36,21 @@ Before building anything, I surveyed the automated worm-tracking landscape. Our 
 CRITTA system, built for insects, was unsuitable: the low-contrast stereoscope video gave too
 little foreground–background separation, and its single centroid-and-heading output cannot
 represent a body that constantly bends and coils. Among purpose-built worm trackers, classical
-computer-vision pose estimators need high spatial resolution^291--297^ and adequate
-contrast^294,298--300^ to extract limb edges reliably; low contrast defeats edge detectors
-regardless of pixel count^297,301--304^, and coiling or overlap forces most trackers to discard
-those events or require manual re-linking^293^. Skeleton-based systems such as Tierpsy
-Tracker^305,306^ extract more than 256 features but typically need ≥1280×1024 resolution with
+computer-vision pose estimators need high spatial resolution^2--8^ and adequate
+contrast^5,9--11^ to extract limb edges reliably; low contrast defeats edge detectors
+regardless of pixel count^8,12--15^, and coiling or overlap forces most trackers to discard
+those events or require manual re-linking^4^. Skeleton-based systems such as Tierpsy
+Tracker^16,17^ extract more than 256 features but typically need ≥1280×1024 resolution with
 good contrast, and many high-end platforms require expensive specialized hardware, confocal
-microscopes, motorized stages, or high-speed cameras^260,307--313^. Deep-learning trackers are
-more robust to image-quality variation, including YOLO-based^298,314^ and Swin Transformer^315^
-architectures. I tested classical tools (Tierpsy Tracker^305,306^ and wrMTrck^316^), but they
+microscopes, motorized stages, or high-speed cameras^1,18--24^. Deep-learning trackers are
+more robust to image-quality variation, including YOLO-based^9,25^ and Swin Transformer^26^
+architectures. I tested classical tools (Tierpsy Tracker^16,17^ and wrMTrck^27^), but they
 failed to detect worms in our low-contrast video, and worm-specific deep-learning systems were
-hard to implement at our resolution. I therefore chose **DeepLabCut (DLC)**^317^, a
+hard to implement at our resolution. I therefore chose **DeepLabCut (DLC)**^28^, a
 general-purpose pose-estimation framework I could train on our own data. Full comparisons are
 in Tables D.4 and D.5 below.
+
+::: {.column-page}
 
 <details class="table-details">
 <summary>Full comparison — Tables D.4 &amp; D.5 (classical &amp; machine-learning worm trackers)</summary>
@@ -88,7 +88,7 @@ in Tables D.4 and D.5 below.
 </thead>
 <tbody>
 <tr>
-<td><strong>Worm Tracker 2.0</strong> <sup>339</sup></td>
+<td><strong>Worm Tracker 2.0</strong> <sup>29</sup></td>
 <td>640x480</td>
 <td>Motorized x-y stage, DinoLite AM413T camera with zoom magnification</td>
 <td>Single</td>
@@ -102,7 +102,7 @@ in Tables D.4 and D.5 below.
 <td>702 features</td>
 </tr>
 <tr>
-<td><strong>Nemo</strong> <sup>340</sup></td>
+<td><strong>Nemo</strong> <sup>30</sup></td>
 <td>800x600</td>
 <td>Zeiss Stemi SV11 stereomicroscope + Moticam 2000 CCD</td>
 <td>Single</td>
@@ -116,7 +116,7 @@ in Tables D.4 and D.5 below.
 <td>Speed, direction change, wavelength, amplitude, body thickness</td>
 </tr>
 <tr>
-<td><strong>Parallel Worm Tracker</strong> <sup>291</sup></td>
+<td><strong>Parallel Worm Tracker</strong> <sup>2</sup></td>
 <td>640x480 pixels</td>
 <td>DCAM-compatible video camera (XCD-900, Sony), + zoom lens with C -mount adapter</td>
 <td>Multiple (parallel tracking)</td>
@@ -129,7 +129,7 @@ in Tables D.4 and D.5 below.
 <td>Speed, paralysis fraction</td>
 </tr>
 <tr>
-<td><strong>Track-A-Worm</strong> <sup>293</sup></td>
+<td><strong>Track-A-Worm</strong> <sup>4</sup></td>
 <td>1920x1080</td>
 <td>Stereomicroscope, motorized x-y stage, camera</td>
 <td>Single</td>
@@ -143,7 +143,7 @@ in Tables D.4 and D.5 below.
 <td>Speed, distance, direction, bending frequency, amplitude</td>
 </tr>
 <tr>
-<td><strong>Multi-Worm Tracker</strong> <sup>292</sup></td>
+<td><strong>Multi-Worm Tracker</strong> <sup>3</sup></td>
 <td>2,352 x 1,728 pixels</td>
 <td>Dalsa Falcon 4M30, frame grabber, backlight</td>
 <td>5-120</td>
@@ -156,7 +156,7 @@ in Tables D.4 and D.5 below.
 <td>Speed, angular speed, area, spine length, curvature, body bends</td>
 </tr>
 <tr>
-<td><strong>CeleST</strong> <sup>341</sup></td>
+<td><strong>CeleST</strong> <sup>31</sup></td>
 <td>0.02 mm/pixel minimum, 696 x 520pixel</td>
 <td>Digital Camera</td>
 <td>1-5</td>
@@ -169,7 +169,7 @@ in Tables D.4 and D.5 below.
 <td>10 swimming parameters</td>
 </tr>
 <tr>
-<td><strong>wrMTrck</strong> <sup>316</sup></td>
+<td><strong>wrMTrck</strong> <sup>27</sup></td>
 <td>640x480 (flexible)</td>
 <td>USB microscope</td>
 <td>Multiple (~8)</td>
@@ -182,7 +182,7 @@ in Tables D.4 and D.5 below.
 <td>Size, velocity, BLPS, BBPS</td>
 </tr>
 <tr>
-<td><strong>CoLBeRT</strong> <sup>342</sup></td>
+<td><strong>CoLBeRT</strong> <sup>32</sup></td>
 <td>~30 µm (swimming), ~5 µm limit (crawling)</td>
 <td>10X Nikon Eclipse TE2000-U with PhotonFocus MV2-D1280-640CL (high-speed)</td>
 <td>Single</td>
@@ -195,7 +195,7 @@ in Tables D.4 and D.5 below.
 <td>Centroid, curvature, bending wave speed, head/tail position</td>
 </tr>
 <tr>
-<td><strong>WF-NTP</strong> <sup>294</sup></td>
+<td><strong>WF-NTP</strong> <sup>5</sup></td>
 <td>≥6 megapixel recommended</td>
 <td>6MP camera (Edmund Optics, model no. GS3-U3-41C6M-C) + flat-field illumination</td>
 <td>Up to 5,000</td>
@@ -208,7 +208,7 @@ in Tables D.4 and D.5 below.
 <td>Speed, paralysis, area</td>
 </tr>
 <tr>
-<td><strong>3D-worm tracker</strong> <sup>343</sup></td>
+<td><strong>3D-worm tracker</strong> <sup>33</sup></td>
 <td>550x550 (trajectory analysis); 1024x1024 + 1600x1200 (kinematic)</td>
 <td>FASTCAM SA1.1 + PCO.1600 dual cameras (stereoscopic)</td>
 <td>Single</td>
@@ -221,7 +221,7 @@ in Tables D.4 and D.5 below.
 <td>3D trajectory, 3D posture, bending vectors</td>
 </tr>
 <tr>
-<td><strong>Tierpsy Tracker</strong> <sup>305,306</sup></td>
+<td><strong>Tierpsy Tracker</strong> <sup>16,17</sup></td>
 <td>&gt;75pixels/mm or 1280 x 1024</td>
 <td>Standard camera + light source</td>
 <td>Single and multi-worm</td>
@@ -271,7 +271,7 @@ in Tables D.4 and D.5 below.
 <tbody>
 <tr>
 <td><p><strong>Deep</strong></p>
-<p><strong>Tangle</strong><sup>296</sup></p></td>
+<p><strong>Tangle</strong><sup>7</sup></p></td>
 <td>512 x 512 resolution</td>
 <td>Standard microscopy</td>
 <td>Multiple, up to 6000</td>
@@ -287,7 +287,7 @@ in Tables D.4 and D.5 below.
 <tr>
 <td><p><strong>Deep</strong></p>
 <p><strong>Tangle</strong></p>
-<p><strong>Crawl</strong> <sup>299</sup></p></td>
+<p><strong>Crawl</strong> <sup>10</sup></p></td>
 <td>12.4 µm/pixel</td>
 <td>Megapixel camera arrays</td>
 <td>Multiple</td>
@@ -300,7 +300,7 @@ in Tables D.4 and D.5 below.
 <td>256 features similar to Tierpsy</td>
 </tr>
 <tr>
-<td><strong>Deep-Worm-Tracker</strong> <sup>298</sup></td>
+<td><strong>Deep-Worm-Tracker</strong> <sup>9</sup></td>
 <td>0.8 MP, 2 MP, 5 MP</td>
 <td>CMOS camera + Leica stereo microscope</td>
 <td>Multiple</td>
@@ -314,7 +314,7 @@ in Tables D.4 and D.5 below.
 </tr>
 <tr>
 <td><p><strong>Worm</strong></p>
-<p><strong>Swin</strong> <sup>315</sup></p></td>
+<p><strong>Swin</strong> <sup>26</sup></p></td>
 <td>800px x 1333px</td>
 <td>N/A</td>
 <td>Multiple</td>
@@ -328,7 +328,7 @@ in Tables D.4 and D.5 below.
 </tr>
 <tr>
 <td><p><strong>Worm</strong></p>
-<p><strong>YOLO</strong> <sup>314</sup></p></td>
+<p><strong>YOLO</strong> <sup>25</sup></p></td>
 <td>640 x 480</td>
 <td>Standard microscopy</td>
 <td>Multiple</td>
@@ -341,7 +341,7 @@ in Tables D.4 and D.5 below.
 <td>Head/body/tail bend count, max bend speed, body length, frames where head-tail distance &lt; 20% body length</td>
 </tr>
 <tr>
-<td><strong>YOLOv8</strong> <sup>344</sup></td>
+<td><strong>YOLOv8</strong> <sup>34</sup></td>
 <td>1024 x 1024 pixels</td>
 <td>Olympus SZX7 stereo microscope + DP20 camera; Custom microscope + Mshiwi SUA134GC/M industrial camera</td>
 <td>Multiple</td>
@@ -355,7 +355,7 @@ in Tables D.4 and D.5 below.
 </tr>
 <tr>
 <td><p><strong>Worm</strong></p>
-<p><strong>Pose</strong> <sup>345</sup></p></td>
+<p><strong>Pose</strong> <sup>35</sup></p></td>
 <td>Not specified</td>
 <td>Standard microscopy setup</td>
 <td>Single</td>
@@ -369,7 +369,7 @@ in Tables D.4 and D.5 below.
 <td>Posture angles</td>
 </tr>
 <tr>
-<td><strong>Deep Lab Cut (DLC)</strong> <sup>317</sup></td>
+<td><strong>Deep Lab Cut (DLC)</strong> <sup>28</sup></td>
 <td>minimum 640 x 480 (low-res)</td>
 <td>N/A</td>
 <td>Multiple</td>
@@ -384,7 +384,7 @@ in Tables D.4 and D.5 below.
 <tr>
 <td><p><strong>Social LEAP Estimates Animal Poses</strong></p>
 <p><strong>(SLEAP)</strong></p>
-<p><sup>346</sup></p></td>
+<p><sup>36</sup></p></td>
 <td>1,024 x 1,024 pixels</td>
 <td>No specific camera required</td>
 <td>Multiple</td>
@@ -401,7 +401,11 @@ in Tables D.4 and D.5 below.
 </div>
 
 
+
+
 </details>
+
+:::
 
 ## So we built our own
 
@@ -414,18 +418,15 @@ illumination, and a DeepLabCut tracker trained on our own footage.
 
 ## What we found
 
-![](kcr-06.png){.paper-figure style="max-width:640px" fig-alt="Truncated crop of Figure 5 showing the C. elegans results: pan-neuronally expressed opsins slow worm movement during green illumination"}
+![](kcr-06.png){.paper-figure style="max-width:760px" fig-alt="Truncated crop of Figure 5 showing the C. elegans results: pan-neuronally expressed opsins slow worm movement during green illumination"}
 
-[**Figure 5 (truncated).** A crop of the paper's Figure 5 showing only the *C. elegans* results,
-the part I worked on. Pan-neuronally expressed opsins reduce worm movement during green
-illumination, with rapid recovery once the light is off.]{.fig-legend}
-
-[Figure 5 (cropped to the *C. elegans* results) from Ott S., Xu S., Lee N., Hong I., Anns J.,
-Suresh D. D., Zhang Z., Zhang X., Harion R., Ye W., Chandramouli V., Jesuthasan S., Saheki Y.
-&amp; Claridge-Chang A. (2024). *Kalium channelrhodopsins effectively inhibit neurons.*
-**Nature Communications** 15, 3480.
-[doi:10.1038/s41467-024-47203-w](https://doi.org/10.1038/s41467-024-47203-w). © 2024 The
-Author(s). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).]{.figure-credit}
+[A crop of the paper's Figure 5 showing the *C. elegans* results — the part I worked on: pan-neuronally
+expressed opsins reduce worm movement during green illumination, with rapid recovery once the light is
+off. Figure 5 (cropped to the *C. elegans* results) from Ott S., Xu S., Lee N., Hong I., Anns J.,
+Suresh D. D., Zhang Z., Zhang X., Harion R., Ye W., Chandramouli V., Jesuthasan S., Saheki Y. &amp;
+Claridge-Chang A. (2024). *Kalium channelrhodopsins effectively inhibit neurons.* **Nature
+Communications** 15, 3480. [doi:10.1038/s41467-024-47203-w](https://doi.org/10.1038/s41467-024-47203-w).
+© 2024 The Author(s). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).]{.fig-legend style="max-width:760px"}
 
 To read out silencing, worms expressing each opsin pan-neuronally were reared on a range of
 all-*trans*-retinal (ATR) concentrations and filmed on the rig. Every opsin-expressing line
@@ -447,80 +448,78 @@ To learn more: [10.1038/s41467-024-47203-w](https://doi.org/10.1038/s41467-024-4
 
 ## References
 
-<p class="ref-note">Citation numbers follow the original thesis, so the sequence begins at 260 and 291.</p>
-
 ::: {.references}
 
-260\. Stephens, G. J., Johnson-Kerner, B., Bialek, W. & Ryu, W. S. Dimensionality and dynamics in the behavior of C. elegans. *PLoS Comput. Biol.* **4**, e1000028 (2008).
+1\. Stephens, G. J., Johnson-Kerner, B., Bialek, W. & Ryu, W. S. Dimensionality and dynamics in the behavior of C. elegans. *PLoS Comput. Biol.* **4**, e1000028 (2008).
 
-291\. Ramot, D., Johnson, B. E., Berry, T. L., Jr, Carnell, L. & Goodman, M. B. The Parallel Worm Tracker: a platform for measuring average speed and drug-induced paralysis in nematodes. *PLoS One* **3**, e2208 (2008).
+2\. Ramot, D., Johnson, B. E., Berry, T. L., Jr, Carnell, L. & Goodman, M. B. The Parallel Worm Tracker: a platform for measuring average speed and drug-induced paralysis in nematodes. *PLoS One* **3**, e2208 (2008).
 
-292\. Swierczek, N. A., Giles, A. C., Rankin, C. H. & Kerr, R. A. High-throughput behavioral analysis in C. elegans. *Nat. Methods* **8**, 592--598 (2011).
+3\. Swierczek, N. A., Giles, A. C., Rankin, C. H. & Kerr, R. A. High-throughput behavioral analysis in C. elegans. *Nat. Methods* **8**, 592--598 (2011).
 
-293\. Wang, S. J. & Wang, Z.-W. Track-a-worm, an open-source system for quantitative assessment of C. elegans locomotory and bending behavior. *PLoS One* **8**, e69653 (2013).
+4\. Wang, S. J. & Wang, Z.-W. Track-a-worm, an open-source system for quantitative assessment of C. elegans locomotory and bending behavior. *PLoS One* **8**, e69653 (2013).
 
-294\. Koopman, M. *et al.* Assessing motor-related phenotypes of Caenorhabditis elegans with the wide field-of-view nematode tracking platform. *Nat. Protoc.* **15**, 2071--2106 (2020).
+5\. Koopman, M. *et al.* Assessing motor-related phenotypes of Caenorhabditis elegans with the wide field-of-view nematode tracking platform. *Nat. Protoc.* **15**, 2071--2106 (2020).
 
-295\. Layana Castro, P. E., Puchalt, J. C., García Garví, A. & Sánchez-Salmerón, A.-J. Caenorhabditis elegans multi-tracker based on a modified skeleton algorithm. *Sensors (Basel)* **21**, 5622 (2021).
+6\. Layana Castro, P. E., Puchalt, J. C., García Garví, A. & Sánchez-Salmerón, A.-J. Caenorhabditis elegans multi-tracker based on a modified skeleton algorithm. *Sensors (Basel)* **21**, 5622 (2021).
 
-296\. Alonso, A. & Kirkegaard, J. B. Fast detection of slender bodies in high density microscopy data. *Commun. Biol.* **6**, 754 (2023).
+7\. Alonso, A. & Kirkegaard, J. B. Fast detection of slender bodies in high density microscopy data. *Commun. Biol.* **6**, 754 (2023).
 
-297\. Layana Castro, P. E., García Garví, A., Navarro Moya, F. & Sánchez-Salmerón, A.-J. Skeletonizing Caenorhabditis elegans based on U-Net architectures trained with a multi-worm low-resolution synthetic dataset. *Int. J. Comput. Vis.* **131**, 2408--2424 (2023).
+8\. Layana Castro, P. E., García Garví, A., Navarro Moya, F. & Sánchez-Salmerón, A.-J. Skeletonizing Caenorhabditis elegans based on U-Net architectures trained with a multi-worm low-resolution synthetic dataset. *Int. J. Comput. Vis.* **131**, 2408--2424 (2023).
 
-298\. Banerjee, S. C., Khan, K. A. & Sharma, R. Deep-worm-tracker: Deep learning methods for accurate detection and tracking for behavioral studies in C. elegans. *Appl. Anim. Behav. Sci.* **266**, 106024 (2023).
+9\. Banerjee, S. C., Khan, K. A. & Sharma, R. Deep-worm-tracker: Deep learning methods for accurate detection and tracking for behavioral studies in C. elegans. *Appl. Anim. Behav. Sci.* **266**, 106024 (2023).
 
-299\. Weheliye, W. H. *et al.* A neural network model enables worm tracking in challenging conditions and increases signal-to-noise ratio in phenotypic screens. *PLoS Comput. Biol.* **21**, e1013345 (2025).
+10\. Weheliye, W. H. *et al.* A neural network model enables worm tracking in challenging conditions and increases signal-to-noise ratio in phenotypic screens. *PLoS Comput. Biol.* **21**, e1013345 (2025).
 
-300\. Benji, N. A guide to robust edge detection with OpenCV. *Medium* https://medium.com/@noel.benji/a-guide-to-robust-edge-detection-with-opencv-1d703506e014 (2025).
+11\. Benji, N. A guide to robust edge detection with OpenCV. *Medium* https://medium.com/@noel.benji/a-guide-to-robust-edge-detection-with-opencv-1d703506e014 (2025).
 
-301\. Roussel, N., Sprenger, J., Tappan, S. J. & Glaser, J. R. Robust tracking and quantification of C. elegans body shape and locomotion through coiling, entanglement, and omega bends. *Worm* **3**, e982437 (2014).
+12\. Roussel, N., Sprenger, J., Tappan, S. J. & Glaser, J. R. Robust tracking and quantification of C. elegans body shape and locomotion through coiling, entanglement, and omega bends. *Worm* **3**, e982437 (2014).
 
-302\. Spontón, H. & Cardelino, J. A review of classic edge detectors. *Image Process. Line* **5**, 90--123 (2015).
+13\. Spontón, H. & Cardelino, J. A review of classic edge detectors. *Image Process. Line* **5**, 90--123 (2015).
 
-303\. Ofir, N. *et al.* On detection of faint edges in noisy images. *arXiv \[cs.CV\]* (2017).
+14\. Ofir, N. *et al.* On detection of faint edges in noisy images. *arXiv \[cs.CV\]* (2017).
 
-304\. Muntarina, K., Mostafiz, R., Shorif, S. B. & Shorif Uddin, M. Deep learning-based edge detection for random natural images. *Neurosci. Inform.* **5**, 100183 (2025).
+15\. Muntarina, K., Mostafiz, R., Shorif, S. B. & Shorif Uddin, M. Deep learning-based edge detection for random natural images. *Neurosci. Inform.* **5**, 100183 (2025).
 
-305\. Javer, A. *et al.* An open-source platform for analyzing and sharing worm-behavior data. *Nat. Methods* **15**, 645--646 (2018).
+16\. Javer, A. *et al.* An open-source platform for analyzing and sharing worm-behavior data. *Nat. Methods* **15**, 645--646 (2018).
 
-306\. Barlow, I. L. *et al.* Megapixel camera arrays enable high-resolution animal tracking in multiwell plates. *Commun. Biol.* **5**, 253 (2022).
+17\. Barlow, I. L. *et al.* Megapixel camera arrays enable high-resolution animal tracking in multiwell plates. *Commun. Biol.* **5**, 253 (2022).
 
-307\. Wang, W., Sun, Y., Dixon, S. J., Alexander, M. & Roy, P. J. An automated micropositioning system for investigating C. elegans locomotive behavior. *J. Lab. Autom.* **14**, 269--276 (2009).
+18\. Wang, W., Sun, Y., Dixon, S. J., Alexander, M. & Roy, P. J. An automated micropositioning system for investigating C. elegans locomotive behavior. *J. Lab. Autom.* **14**, 269--276 (2009).
 
-308\. Stirman, J. N., Brauner, M., Gottschalk, A. & Lu, H. High-throughput study of synaptic transmission at the neuromuscular junction enabled by optogenetics and microfluidics. *J. Neurosci. Methods* **191**, 90--93 (2010).
+19\. Stirman, J. N., Brauner, M., Gottschalk, A. & Lu, H. High-throughput study of synaptic transmission at the neuromuscular junction enabled by optogenetics and microfluidics. *J. Neurosci. Methods* **191**, 90--93 (2010).
 
-309\. Stirman, J. N. *et al.* Real-time multimodal optical control of neurons and muscles in freely behaving Caenorhabditis elegans. *Nat. Methods* **8**, 153--158 (2011).
+20\. Stirman, J. N. *et al.* Real-time multimodal optical control of neurons and muscles in freely behaving Caenorhabditis elegans. *Nat. Methods* **8**, 153--158 (2011).
 
-310\. Leifer, A. M., Fang-Yen, C., Gershow, M., Alkema, M. J. & Samuel, A. D. T. Optogenetic manipulation of neural activity in freely moving Caenorhabditis elegans. *Nat. Methods* **8**, 147--152 (2011).
+21\. Leifer, A. M., Fang-Yen, C., Gershow, M., Alkema, M. J. & Samuel, A. D. T. Optogenetic manipulation of neural activity in freely moving Caenorhabditis elegans. *Nat. Methods* **8**, 147--152 (2011).
 
-311\. Faumont, S. *et al.* An image-free opto-mechanical system for creating virtual environments and imaging neuronal activity in freely moving Caenorhabditis elegans. *PLoS One* **6**, e24666 (2011).
+22\. Faumont, S. *et al.* An image-free opto-mechanical system for creating virtual environments and imaging neuronal activity in freely moving Caenorhabditis elegans. *PLoS One* **6**, e24666 (2011).
 
-312\. Gengyo-Ando, K. *et al.* A new platform for long-term tracking and recording of neural activity and simultaneous optogenetic control in freely behaving Caenorhabditis elegans. *J. Neurosci. Methods* **286**, 56--68 (2017).
+23\. Gengyo-Ando, K. *et al.* A new platform for long-term tracking and recording of neural activity and simultaneous optogenetic control in freely behaving Caenorhabditis elegans. *J. Neurosci. Methods* **286**, 56--68 (2017).
 
-313\. Qiu, Z. *et al.* An integrated platform enabling optogenetic illumination of Caenorhabditis elegans neurons and muscular force measurement in microstructured environments. *Biomicrofluidics* **9**, 014123 (2015).
+24\. Qiu, Z. *et al.* An integrated platform enabling optogenetic illumination of Caenorhabditis elegans neurons and muscular force measurement in microstructured environments. *Biomicrofluidics* **9**, 014123 (2015).
 
-314\. Dong, B. & Chen, W. A high precision method of segmenting complex postures in Caenorhabditis elegans and deep phenotyping to analyze lifespan. *Sci. Rep.* **15**, 8870 (2025).
+25\. Dong, B. & Chen, W. A high precision method of segmenting complex postures in Caenorhabditis elegans and deep phenotyping to analyze lifespan. *Sci. Rep.* **15**, 8870 (2025).
 
-315\. Deserno, M. & Bozek, K. WormSwin: Instance segmentation of C. elegans using vision transformer. *Sci. Rep.* **13**, 11021 (2023).
+26\. Deserno, M. & Bozek, K. WormSwin: Instance segmentation of C. elegans using vision transformer. *Sci. Rep.* **13**, 11021 (2023).
 
-316\. Nussbaum-Krammer, C. I., Neto, M. F., Brielmann, R. M., Pedersen, J. S. & Morimoto, R. I. Investigating the spreading and toxicity of prion-like proteins using the metazoan model organism C. elegans. *J. Vis. Exp.* 52321 (2015).
+27\. Nussbaum-Krammer, C. I., Neto, M. F., Brielmann, R. M., Pedersen, J. S. & Morimoto, R. I. Investigating the spreading and toxicity of prion-like proteins using the metazoan model organism C. elegans. *J. Vis. Exp.* 52321 (2015).
 
-317\. Mathis, A. *et al.* DeepLabCut: markerless pose estimation of user-defined body parts with deep learning. *Nat. Neurosci.* **21**, 1281--1289 (2018).
+28\. Mathis, A. *et al.* DeepLabCut: markerless pose estimation of user-defined body parts with deep learning. *Nat. Neurosci.* **21**, 1281--1289 (2018).
 
-339\. Yemini, E., Jucikas, T., Grundy, L. J., Brown, A. E. X. & Schafer, W. R. A database of Caenorhabditis elegans behavioral phenotypes. *Nat. Methods* **10**, 877--879 (2013).
+29\. Yemini, E., Jucikas, T., Grundy, L. J., Brown, A. E. X. & Schafer, W. R. A database of Caenorhabditis elegans behavioral phenotypes. *Nat. Methods* **10**, 877--879 (2013).
 
-340\. Tsibidis, G. D. & Tavernarakis, N. Nemo: a computational tool for analyzing nematode locomotion. *BMC Neurosci.* **8**, 86 (2007).
+30\. Tsibidis, G. D. & Tavernarakis, N. Nemo: a computational tool for analyzing nematode locomotion. *BMC Neurosci.* **8**, 86 (2007).
 
-341\. Restif, C. *et al.* CeleST: computer vision software for quantitative analysis of C. elegans swim behavior reveals novel features of locomotion. *PLoS Comput. Biol.* **10**, e1003702 (2014).
+31\. Restif, C. *et al.* CeleST: computer vision software for quantitative analysis of C. elegans swim behavior reveals novel features of locomotion. *PLoS Comput. Biol.* **10**, e1003702 (2014).
 
-342\. Yu, X. *et al.* Fast deep neural correspondence for tracking and identifying neurons in C. elegans using semi-synthetic training. *Elife* **10**, e66410 (2021).
+32\. Yu, X. *et al.* Fast deep neural correspondence for tracking and identifying neurons in C. elegans using semi-synthetic training. *Elife* **10**, e66410 (2021).
 
-343\. Kwon, N., Pyo, J., Lee, S.-J. & Je, J. H. 3-D worm tracker for freely moving C. elegans. *PLoS One* **8**, e57484 (2013).
+33\. Kwon, N., Pyo, J., Lee, S.-J. & Je, J. H. 3-D worm tracker for freely moving C. elegans. *PLoS One* **8**, e57484 (2013).
 
-344\. Liu, X. *et al.* Automated C. elegans behavior analysis via deep learning-based detection and tracking. *PLoS Comput. Biol.* **21**, e1013707 (2025).
+34\. Liu, X. *et al.* Automated C. elegans behavior analysis via deep learning-based detection and tracking. *PLoS Comput. Biol.* **21**, e1013707 (2025).
 
-345\. Hebert, L., Ahamed, T., Costa, A. C., O'Shaughnessy, L. & Stephens, G. J. WormPose: Image synthesis and convolutional networks for pose estimation in C. elegans. *PLoS Comput. Biol.* **17**, e1008914 (2021).
+35\. Hebert, L., Ahamed, T., Costa, A. C., O'Shaughnessy, L. & Stephens, G. J. WormPose: Image synthesis and convolutional networks for pose estimation in C. elegans. *PLoS Comput. Biol.* **17**, e1008914 (2021).
 
-346\. Pereira, T. D. *et al.* SLEAP: A deep learning system for multi-animal pose tracking. *Nat. Methods* **19**, 486--495 (2022).
+36\. Pereira, T. D. *et al.* SLEAP: A deep learning system for multi-animal pose tracking. *Nat. Methods* **19**, 486--495 (2022).
 
 :::

@@ -6,36 +6,134 @@ title: "DABEST 2.0: estimation statistics"
 
 [co-author · in revision, Nature Methods, 2026]{.paper-meta}
 
-Most papers still lean on the p-value: a single number that says *whether* something happened,
-but not by how much or how sure you can be. Estimation statistics is the alternative. **DABEST**
-(Data Analysis with Bootstrap-coupled ESTimation) reports the effect size itself, wraps it in a
-bootstrapped confidence interval, and plots every datapoint, so a reader sees the size of an
-effect and its precision at a glance rather than a lone asterisk.
+Most papers still lean on the p-value: a single number that says *whether* something happened, not
+by how much or how sure you can be. **DABEST** (Data Analysis with Bootstrap-coupled ESTimation) is
+the estimation-statistics alternative — it reports the effect size itself, wraps it in a bootstrapped
+confidence interval, and plots every datapoint. **DABEST 2.0** extends that to the messy, multi-group
+designs biology actually uses: shared-control comparisons, repeated measures, two-way factorial
+designs, and meta-analysis.
 
-DABEST 2.0 extends that idea to the messy, multi-group designs biology actually uses:
-shared-control comparisons, repeated measures, two-way factorial experiments, and meta-analysis
-across replicates. It is the successor to the original estimation-graphics toolbox, built so that
-complicated experiments can be read as effect sizes instead of ANOVA tables.
+Some of the most important questions have binary answers — did the animal seize, did the patient
+survive? My part of DABEST 2.0 was the **proportion plot** for exactly this yes-or-no data, along
+with a survey of how it is currently reported. What I found was bleak: binary outcomes often get no
+figure at all, or the plainest bar chart — no error bars, no effect size, no sense of how large or
+precise the difference is.
 
-## My contribution: plotting proportions
+Under the standard null-hypothesis framework, binary data — the kind that fills clinical trials and
+genomic studies — is usually analysed with **[Fisher's exact test](https://doi.org/10.5395/rde.2017.42.2.152)**. It is powerful at small sample
+sizes, but it carries the familiar problems of omnibus tests: multiple comparisons need post-hoc
+correction (an open door to p-hacking), its p-values are [acutely sensitive to sample size](https://doi.org/10.1002/sim.2832), and, as it
+is typically used, it discloses neither the observational data nor the effect size. Each comparison
+collapses into a yes/no verdict on a p-value.
 
-Some of the most important questions in science have binary answers. Did the animal have a
-seizure? Did the subject respond to the drug? Did the patient survive? I spent months
-investigating how scientists actually report this kind of yes-or-no data, and what I found
-was bleak. Binary outcomes are often reported with no figure at all, sometimes just a Fisher's
-exact p-value buried in a table. When a figure does appear, it is usually the plainest possible
-bar chart, with no error bars, no effect size, and no sense of how large or how precise the
-difference really is.
+Surveying the papers returned by searching *"Fisher's exact test"* and *"proportion"* makes the gap
+concrete (Table 1): where a figure appears at all it is usually a plain bar chart without error bars,
+and across **every** category surveyed, the effect size was reported exactly zero times.
 
-My part of DABEST 2.0 was the **proportion plot**: the tool that closes this gap, together with a
-supplementary table surveying how binary data is currently reported across the literature.
+<div class="wide-table">
+<p class="table-caption"><strong>Table 1 &mdash; How binary data is reported in the literature.</strong> Papers returned by searching <em>"Fisher's exact test"</em> and <em>"proportion"</em>, scored for the test used, whether the data was visualised (Graphics / No Graphics), whether any measure of error was shown (Error: Y/N), the count and percentage in each category, and whether an effect size was reported. The effect-size column is zero throughout.</p>
+<table>
+<colgroup>
+<col style="width:16%" />
+<col style="width:14%" />
+<col style="width:16%" />
+<col style="width:10%" />
+<col style="width:12%" />
+<col style="width:12%" />
+<col style="width:14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Search type</th>
+<th>Type of test</th>
+<th>Visualization</th>
+<th>Error</th>
+<th>Count</th>
+<th>%</th>
+<th>Effect sizes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">"Fisher's Exact test"</td>
+<td rowspan="2">Fishers</td>
+<td rowspan="2">Graphics</td>
+<td>N</td>
+<td>19</td>
+<td>47.5</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>10</td>
+<td>25.0</td>
+<td>0</td>
+</tr>
+<tr>
+<td rowspan="2">Fishers</td>
+<td rowspan="2">No Graphics</td>
+<td>N</td>
+<td>6</td>
+<td>15.0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>5</td>
+<td>12.5</td>
+<td>0</td>
+</tr>
+<tr>
+<td rowspan="6">"Proportion"</td>
+<td rowspan="2">Fishers</td>
+<td rowspan="2">Graphics</td>
+<td>N</td>
+<td>5</td>
+<td>16.1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>3</td>
+<td>9.7</td>
+<td>0</td>
+</tr>
+<tr>
+<td rowspan="2">Fishers</td>
+<td rowspan="2">No Graphics</td>
+<td>N</td>
+<td>1</td>
+<td>3.2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>4</td>
+<td>12.9</td>
+<td>0</td>
+</tr>
+<tr>
+<td rowspan="2">Mixed</td>
+<td rowspan="2">Others</td>
+<td>N</td>
+<td>12</td>
+<td>38.7</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>6</td>
+<td>19.4</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-The figure below shows why it matters. Panel **a** is the conventional bar chart. Most placebo
-animals had seizures and most drug-treated animals did not, so something clearly happened, but
-the chart stops there. Panel **b** reframes the same data as proportions and plots the difference
-alongside its bootstrapped 95% confidence interval. Now you can read that the drug cut the
-seizure rate by 68%, and how certain that estimate is. Panel **c** carries the idea into
-repeated-measures designs, following each group day by day.
+The figure shows why it matters. Panel **a** is the conventional bar chart — something clearly
+happened, but it stops there. Panel **b** reframes the same data as proportions with a bootstrapped
+95% confidence interval, so you can read that the drug cut the seizure rate by **68%** and how certain
+that is. Panel **c** carries the idea into repeated-measures designs.
 
 ![](figure3-white.png){.paper-figure style="max-width:760px" fig-alt="DABEST 2.0 Figure 3. Panel a: a conventional stacked bar chart of seizures in placebo versus drug-treated mutants. Panel b: the same data as a proportion estimation plot, showing a proportion difference of minus 0.68 with a bootstrapped 95% confidence interval. Panel c: repeated-measures proportion plots tracking each group across four days."}
 
@@ -43,11 +141,10 @@ repeated-measures designs, following each group day by day.
 how much (a 68% reduction) and with what certainty. Figure 3 from Lu Z., Anns J., Mai Y., Zhang R.,
 Lian K., Lee N.M., Hashir S., Wang Zhouyu L., Li Y., Gonzalez A.R.C., Ho J., Choi H., Xu S. &amp;
 Claridge-Chang A. (2026). *Getting over ANOVA: estimation graphics for multi-group comparisons.*
-**bioRxiv**. [doi:10.64898/2026.01.26.701654](https://doi.org/10.64898/2026.01.26.701654).]{.fig-legend}
+**bioRxiv**. [doi:10.64898/2026.01.26.701654](https://doi.org/10.64898/2026.01.26.701654).]{.fig-legend style="max-width:760px"}
 
-So the next time you have a binary outcome and you are reaching for a bar chart, consider a
-proportion plot instead. It shows not just whether something happened, but by how much and with
-what confidence, keeping the statistics rigorous while giving the reader the full picture.
+So next time you reach for a bar chart on a binary outcome, consider a proportion plot instead — not
+just whether something happened, but by how much and with what confidence.
 
 To learn more: read the
 [preprint on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.01.26.701654v2), or explore

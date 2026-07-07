@@ -11,6 +11,12 @@ long as the light stays on: the neuron switches back on the moment you switch th
 That is a problem for behavior, where continuous actuating light can itself confound the very
 thing you are trying to measure.
 
+![](graphical-abstract.png){.graphical-abstract style="max-width:760px" fig-alt="Graphical abstract: a brief green light pulse gives GtACR1 transient inhibition but OPN3, a bistable Gi/o GPCR, prolonged inhibition; OPN3 silencing is tested in Drosophila memory and locomotion assays"}
+
+[Graphical abstract from Lee N.M., Mai Y., Dalberg L., Anns J.C., Suresh D.D., Zhang Z. &amp;
+Claridge-Chang A. (2026). *Brief illumination of an optoGPCR elicits prolonged inhibition of
+Drosophila behavior.* **bioRxiv**.]{.figure-credit style="max-width:760px"}
+
 ## The tool: a light-triggered, self-sustaining silencer (OPN3)
 
 This paper characterizes a different kind of tool. **OPN3** — Opsin3 from the mosquito
@@ -55,14 +61,8 @@ protocol rather than treating as an afterthought.
      2. Uncomment the block below and update the filename, fig-alt, and credit.
 ![](atr-figure.png){.paper-figure style="max-width:760px" fig-alt="TODO: describe the ATR figure"}
 
-[TODO caption / figure credit for the ATR figure.]{.figure-credit}
+[TODO caption / figure credit for the ATR figure.]{.figure-credit style="max-width:760px"}
 -->
-
-![](graphical-abstract.png){.graphical-abstract fig-alt="Graphical abstract: a brief green light pulse gives GtACR1 transient inhibition but OPN3, a bistable Gi/o GPCR, prolonged inhibition; OPN3 silencing is tested in Drosophila memory and locomotion assays"}
-
-[Graphical abstract from Lee N.M., Mai Y., Dalberg L., Anns J.C., Suresh D.D., Zhang Z. &amp;
-Claridge-Chang A. (2026). *Brief illumination of an optoGPCR elicits prolonged inhibition of
-Drosophila behavior.* **bioRxiv**.]{.figure-credit}
 
 To learn more: read the preprint on
 [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.05.26.727874v1) —

@@ -6,26 +6,33 @@ title: "Sibling cell size asymmetry"
 
 [co-author · iScience, 2019]{.paper-meta}
 
-An early collaboration from my developmental biology years, on which I was a co-author. Many cells
-divide to produce two *unequal-sized* daughters, an asymmetry that depends on spindle
-geometry and the distribution of the motor protein myosin, but whose underlying mechanics
-were unclear.
-
-Using atomic force microscopy together with live-cell imaging in dividing *Drosophila*
-neural stem cells, we separated the forces at work. Initial apical expansion is driven by
-**hydrostatic pressure**, which peaks just after anaphase onset and is enabled by a release
-of actomyosin tension on the apical cortex. A subsequent rise in contractile tension at the
-cleavage furrow, combined with relocalized myosin, drives basal expansion and sustains the
-apical one. When either input is disrupted, a dynamically repositioning cleavage furrow can
-compensate to still establish the size asymmetry.
-
-![](graphical-abstract.jpg){.graphical-abstract fig-alt="Graphical abstract of the 2019 iScience paper on sibling cell size asymmetry in Drosophila neuroblasts"}
+::: {style="float:left; width:558px; max-width:54%; margin:0.3rem 1.6rem 0.8rem 0;"}
+![](graphical-abstract.jpg){.graphical-abstract style="width:100%; max-width:100%"}
 
 [Graphical abstract reproduced from Pham T.T., Monnard A., Helenius J., Lund E., Lee N.,
 Müller D.J. &amp; Cabernard C. (2019). *Spatiotemporally Controlled Myosin Relocalization and
 Internal Pressure Generate Sibling Cell Size Asymmetry.* **iScience** 13, 9–19.
 [doi:10.1016/j.isci.2019.02.002](https://doi.org/10.1016/j.isci.2019.02.002). © 2019 The
 Author(s). Reproduced under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).]{.figure-credit}
+:::
+
+An early collaboration from my developmental biology years, on which I was a co-author. Many cells
+divide into two **unequal-sized daughters**, an asymmetry whose underlying mechanics were unclear.
+
+Using **atomic force microscopy** with live-cell imaging of dividing *Drosophila* neural stem cells, we
+separated the forces at work. Apical expansion is driven by **hydrostatic pressure** peaking just after
+anaphase onset; a later rise in **contractile tension** at the cleavage furrow, with **myosin
+relocalization**, drives basal expansion. When either input is disrupted, a repositioning cleavage furrow
+still **establishes the size asymmetry**.
+
+The result tied a long-standing developmental question, how a dividing cell sets the sizes of its
+two daughters, to concrete, measurable mechanics: **pressure and cortical tension act on different
+timescales**, and the furrow itself can **adapt to preserve the asymmetry** when one force is
+perturbed. For me it was an early, formative lesson in pairing quantitative biophysics (AFM force
+measurements) with live imaging to dissect a mechanism neither approach could resolve alone.
+
+::: {style="clear:both"}
+:::
 
 To learn more: [10.1016/j.isci.2019.02.002](https://doi.org/10.1016/j.isci.2019.02.002)
 

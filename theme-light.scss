@@ -31,6 +31,9 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 // stay readable on big monitors.
 #quarto-content.page-columns { display: block; }
 #quarto-content .content { width: min(92vw, 1100px); max-width: none; margin-inline: auto; }
+.columns.vmiddle { display: flex; align-items: center; }
+.columns.vmiddle > .column { display: block; }
+@media (max-width: 700px) { .columns.vmiddle { display: block; } }
 
 // Navbar brand = cursive signature (NAME ONLY)
 // padding/margin-right + overflow:visible keep the cursive 'Lee' flourish from being
@@ -129,7 +132,7 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
   margin: 1.6rem auto .6rem; }
 // Attribution / copyright credit under the (centered) figure
 .figure-credit { display: block; font-size: 0.72rem; line-height: 1.5; color: #717784;
-  max-width: 560px; margin: 0 auto .4rem; text-align: center; }
+  max-width: 560px; margin: 0 auto .4rem; text-align: left; }
 .figure-credit a { color: #717784; text-decoration: underline; }
 
 // General figures the author supplies on a paper page (photos, rigs, tracking output)
@@ -140,14 +143,14 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
   border: 1px solid #DAD3C4; border-radius: 8px; margin: 1.4rem auto .5rem; background: #000; }
 // Two (or more) clips side by side, wrapping to a stack on narrow screens
 .video-row { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;
-  align-items: flex-start; margin: 1.4rem 0 .6rem; }
+  align-items: flex-start; max-width: 760px; margin: 1.4rem auto .6rem; }
 .video-item { flex: 1 1 300px; max-width: 420px; margin: 0; }
 .video-item .paper-video { max-width: 100%; margin: 0 0 .45rem; }
 .video-item figcaption { text-align: center; font-family: "IBM Plex Mono", monospace;
   font-size: 0.72rem; letter-spacing: .03em; text-transform: uppercase; color: #717784; }
 // Multi-panel figure legends (author descriptions under a supplied figure)
 .fig-legend { display: block; font-size: 0.82rem; line-height: 1.55; color: #41454F;
-  max-width: 660px; margin: -.1rem auto 1.7rem; }
+  max-width: 440px; margin: -.1rem auto 1.7rem; }
 .fig-legend strong { color: #1C2433; }
 // Collapsible wrapper for long comparison tables
 .table-details { margin: 1.2rem 0 1.8rem; }
@@ -156,16 +159,23 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 .table-details > summary:hover { text-decoration: underline; }
 
 // --- Wide data tables (e.g. tracker comparisons): scroll horizontally on narrow screens ---
-.wide-table { overflow-x: auto; margin: 1.4rem 0; border: 1px solid #DAD3C4; border-radius: 8px; }
-.wide-table .table-caption { font-size: 0.8rem; color: #41454F; margin: 0;
-  padding: .7rem .85rem; background: #F7F4EC; border-bottom: 1px solid #DAD3C4; }
-.wide-table table { border-collapse: collapse; min-width: 920px; width: 100%;
-  font-size: 0.78rem; line-height: 1.4; }
-.wide-table th, .wide-table td { border: 1px solid #E4DECF; padding: .5rem .6rem;
+.wide-table { overflow-x: auto; margin: 1.4rem 0; }
+.wide-table .table-caption { font-size: 0.82rem; line-height: 1.55; color: #41454F;
+  margin: 0 0 .5rem; padding: 0; text-align: left; }
+.wide-table .table-caption strong { color: #1C2433; }
+.wide-table table { border-collapse: collapse; min-width: 820px; width: 100%; background: #fff;
+  font-size: 1.05rem; line-height: 1.4; border: 1px solid #DAD3C4; border-radius: 8px; }
+.wide-table th, .wide-table td { border: 1px solid #E4DECF; padding: .42rem .55rem;
   text-align: left; vertical-align: top; }
-.wide-table thead th { background: #F2EEE3; font-family: "Jost", sans-serif; font-weight: 500; }
+.wide-table thead th { background: #fff; font-family: "Jost", sans-serif; font-weight: 500; }
 .wide-table td p { margin: 0 0 .3rem; }
 .wide-table sup { color: #1E3A6E; font-weight: 600; }
+.table-filter { display: block; width: 100%; max-width: 420px; margin: 0 0 .35rem;
+  padding: .5rem .75rem; font-family: "Inter", sans-serif; font-size: 0.85rem; color: #1C2433;
+  border: 1px solid #DAD3C4; border-radius: 8px; background: #FBF9F3; }
+.table-filter:focus { outline: none; border-color: #C29B2E; box-shadow: 0 0 0 2px rgba(194, 155, 46, .25); }
+.table-filter-count { display: block; margin: 0 0 1rem; font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem; letter-spacing: .02em; color: #717784; }
 
 // --- Reference list: small, hanging indent, numbers preserved from the thesis ---
 .ref-note { font-size: 0.72rem; color: #717784; font-style: italic; margin-bottom: .8rem; }

@@ -1,6 +1,6 @@
 import os, glob, json
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
@@ -150,12 +150,36 @@ def ptitle(ax, letter, text):
 def month_day(dt):
     return f"{dt.strftime('%b')} {dt.day}"
 
+def _slot(dt):
+    m = dt.hour * 60 + dt.minute
+    if   5 * 60 <= m < 12 * 60: return "Morning"
+    elif 12 * 60 <= m < 17 * 60: return "Afternoon"
+    elif 17 * 60 <= m < 21 * 60: return "Evening"
+    return "Night"
+TOD = ["Morning", "Afternoon", "Evening", "Night"]
+tod_hrs = {s: 0.0 for s in TOD}; tod_ct = {s: 0 for s in TOD}
+tod_mn = {s: 0.0 for s in TOD}; tod_mw = {s: 0.0 for s in TOD}
+tod_sn = {s: 0.0 for s in TOD}; tod_sw = {s: 0.0 for s in TOD}
+for s in sessions:
+    ts = s.get("timestamp")
+    if not ts:
+        continue
+    start = (datetime.fromisoformat(ts.replace("Z", "+00:00")).replace(tzinfo=None)
+             - timedelta(milliseconds=s["focusTime"] + s.get("pauseTime", 0)))
+    sl = _slot(start); fh = s["focusTime"] / 3600000
+    tod_hrs[sl] += fh; tod_ct[sl] += 1
+    tod_mn[sl] += measured_eff(s) * fh; tod_mw[sl] += fh
+    if "efficiencyRating" in s:
+        tod_sn[sl] += s["efficiencyRating"] * fh; tod_sw[sl] += fh
+tod_meas = [tod_mn[s] / tod_mw[s] if tod_mw[s] else np.nan for s in TOD]
+tod_self = [tod_sn[s] / tod_sw[s] if tod_sw[s] else np.nan for s in TOD]
+
 # ================================================================== figure
-fig = plt.figure(figsize=(13.5, 16.5), dpi=170)
+fig = plt.figure(figsize=(13.5, 19.6), dpi=170)
 fig.patch.set_facecolor(BG)
-gs = fig.add_gridspec(4, 2, height_ratios=[1.0, 1.7, 1.15, 0.32],
+gs = fig.add_gridspec(4, 2, height_ratios=[1.0, 1.7, 1.15, 1.15],
                       hspace=0.5, wspace=0.22,
-                      left=0.075, right=0.965, top=0.925, bottom=0.05)
+                      left=0.075, right=0.965, top=0.935, bottom=0.045)
 fig.suptitle("Focus Pocus  ·  a closer look at the numbers",
              color=NAVY, fontsize=20, fontweight="bold", x=0.075, ha="left", y=0.965)
 
@@ -246,10 +270,36 @@ axE.set_xticklabels(["hours\nworked", "self\nefficiency"], fontsize=8.5)
 axE.set_ylabel("Hedges' g")
 ptitle(axE, "E", "Effect sizes: how far from 'normal'")
 
-# ---- F: reserved ----
-axF = fig.add_subplot(gs[3, :]); axF.axis("off")
-axF.text(0.5, 0.5, "F  ·  reserved", ha="center", va="center",
-         color=AXISC, fontsize=11, style="italic")
+axF = fig.add_subplot(gs[3, :]); clean(axF)
+xF = np.arange(len(TOD))
+hrsF = [tod_hrs[s] for s in TOD]
+axF.bar(xF, hrsF, width=0.60, color=PBLUE, lw=0, zorder=2, label="Focus hours")
+for xi, h in zip(xF, hrsF):
+    axF.annotate(f"{h:.0f} h", (xi, h), xytext=(0, 3), textcoords="offset points",
+                 ha="center", va="bottom", fontsize=9.5, color=INK, fontweight="bold")
+axF.set_ylim(0, (max(hrsF) if hrsF else 1) * 1.28)
+axF.set_ylabel("Focus hours")
+axF.set_xticks(xF)
+axF.set_xticklabels([f"{s}\n{tod_ct[s]} starts" for s in TOD], fontsize=10)
+axF.set_xlim(-0.6, len(TOD) - 0.4)
+ptitle(axF, "F", "When I work · hours, starts and efficiency by time of day")
+axF2 = axF.twinx()
+axF2.plot(xF, tod_meas, "o-", color=NAVY, lw=2, ms=6, mfc=NAVY, mec="white", mew=0.7,
+          label="Measured by the app", zorder=4)
+axF2.plot(xF, tod_self, "s", color=GOLD, ms=6, mfc=GOLD, mec="white", mew=0.7,
+          label="My own rating", zorder=4)
+axF2.plot(xF, tod_self, color=GOLD, lw=2, ls=(0, (5, 3)), zorder=4)
+for xi, v in zip(xF, tod_self):
+    if not np.isnan(v):
+        axF2.annotate(f"{v:.0f}%", (xi, v), xytext=(9, -3), textcoords="offset points",
+                      ha="left", va="center", fontsize=8.5, color=GOLD)
+axF2.set_ylim(0, 108); axF2.set_yticks([0, 50, 100])
+axF2.set_ylabel("% efficiency"); axF2.tick_params(length=0)
+axF2.spines["top"].set_visible(False)
+h1, l1 = axF.get_legend_handles_labels()
+h2, l2 = axF2.get_legend_handles_labels()
+axF.legend(h1 + h2, l1 + l2, loc="upper center", frameon=False, fontsize=9,
+           handlelength=1.6, ncol=3, columnspacing=1.4)
 
 span = f"{day_dt[0].strftime('%b')} to {day_dt[-1].strftime('%b %Y')}"
 footer = f"{len(sessions)} sessions  ·  {len(days)} days  ·  {hours.sum():.0f} h focused  ·  {span}"

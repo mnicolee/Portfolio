@@ -19,8 +19,7 @@ Custom rigs, chambers, and CAD I design and build for behavioral experiments.
 ::::
 
 :::: {.pcard}
-<!-- [TODO: card image] no photo exists yet — replace src with the real climbing-chamber card image, or keep this placeholder until one is available -->
-<div class="pcard-ph">Coming soon</div>
+<img class="pcard-media" src="hardware/climbing/green-led.png" alt="Green-lit climbing assay rig inside the incubator">
 
 ::: {.pcard-body}
 ### [Climbing chamber](hardware/climbing/index.qmd){.stretched-link}
