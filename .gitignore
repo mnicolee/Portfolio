@@ -2,3 +2,6 @@
 /.quarto/
 
 **/*.quarto_ipynb
+
+# Local reference material (papers, PDFs) kept next to tool pages but not published
+tools/reminder-bot/*.pdf

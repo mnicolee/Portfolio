@@ -34,10 +34,25 @@ region, not just the counts. Built in Python for comparing gene sets at a glance
 
 ::: {.pcard-body}
 ### [Focus Pocus](tools/focus-pocus/index.qmd){.stretched-link}
-[Desktop app · in development]{.paper-meta}
+[Desktop app · Windows · in development]{.paper-meta}
 
-A focus timer that notices when you drift off, whether it's an idle mouse or a YouTube tab, and
-beeps you back louder and louder until you return. Built to get my PhD thesis written.
+A focus timer that notices when you drift off, whether it's an idle mouse or a site on your own
+blocklist, and beeps you back louder and louder until you return. Private by design, and built to
+get my PhD thesis written.
+:::
+
+::::
+
+:::: {.pcard}
+<img class="pcard-media" style="object-fit:cover;object-position:top" src="tools/reminder-bot/card.svg" alt="A Discord message from Reminder Bot pinging @Nicole to take her vitamins, with checkmark and cross reactions below">
+
+::: {.pcard-body}
+### [Reminder Bot](tools/reminder-bot/index.qmd){.stretched-link}
+[Discord bot · runs locally]{.paper-meta}
+
+A Discord bot that pings you and your friends when it's time to do a thing, keeps score of who
+actually followed through, and roasts or cheers you in a weekly and monthly report. Runs on your
+own machine, keeps everything offline.
 :::
 
 ::::

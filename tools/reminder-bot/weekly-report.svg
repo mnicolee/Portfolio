@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="452" viewBox="0 0 820 452" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <rect width="820" height="452" fill="#313338"/>
+
+  <!-- header -->
+  <circle cx="52" cy="50" r="20" fill="#5865f2"/>
+  <text x="52" y="57" font-size="20" text-anchor="middle">&#9200;</text>
+  <text x="82" y="44" font-size="15.5" font-weight="700" fill="#f2f3f5">Reminder Bot</text>
+  <rect x="200" y="32" width="38" height="17" rx="4" fill="#5865f2"/>
+  <text x="219" y="45" font-size="10.5" font-weight="700" text-anchor="middle" fill="#ffffff">APP</text>
+  <text x="250" y="44" font-size="12" fill="#949ba4">Monday at 12:01</text>
+
+  <!-- embed -->
+  <rect x="82" y="58" width="700" height="372" rx="8" fill="#2b2d31"/>
+  <rect x="82" y="58" width="5" height="372" rx="2.5" fill="#f1c40f"/>
+
+  <text x="106" y="90" font-size="13" font-weight="700" letter-spacing="0.6" fill="#f2f3f5">&#128202; WEEKLY REPORT</text>
+  <text x="106" y="124" font-size="22" font-weight="800" fill="#ffffff">Week of 12-18 Jan 2026</text>
+
+  <!-- user 1 -->
+  <text x="106" y="166" font-size="15" font-weight="700" fill="#f2f3f5">&#128100; Nicole</text>
+  <text x="106" y="190" font-size="14" fill="#dbdee1"><tspan>@Nicole completed </tspan><tspan font-weight="700" fill="#ffffff">9/13</tspan><tspan> reminders this week!</tspan></text>
+  <text x="106" y="212" font-size="14" fill="#dbdee1">That's <tspan font-weight="700" fill="#ffffff">69%</tspan>! &#128200;</text>
+  <text x="106" y="236" font-size="14" font-style="italic" fill="#b5bac1">You showed up AND stayed? Character development. &#128200;</text>
+
+  <line x1="106" y1="262" x2="758" y2="262" stroke="#3a3c42" stroke-width="1"/>
+
+  <!-- user 2 -->
+  <text x="106" y="296" font-size="15" font-weight="700" fill="#f2f3f5">&#128100; Friend</text>
+  <text x="106" y="320" font-size="14" fill="#dbdee1"><tspan>@Friend completed </tspan><tspan font-weight="700" fill="#ffffff">4/16</tspan><tspan> reminders this week!</tspan></text>
+  <text x="106" y="342" font-size="14" fill="#dbdee1">That's <tspan font-weight="700" fill="#ffffff">25%</tspan>! &#128200;</text>
+  <text x="106" y="366" font-size="14" font-style="italic" fill="#b5bac1">You speedran doing nothing. Impressive, honestly. &#127939;&#65039;&#8205;&#9794;&#65039;&#128168;</text>
+
+  <line x1="106" y1="392" x2="758" y2="392" stroke="#3a3c42" stroke-width="1"/>
+  <text x="106" y="414" font-size="12" fill="#949ba4">Sent automatically every Monday at 12:01am  &#183;  tracks the people tagged in your reminders</text>
+</svg>

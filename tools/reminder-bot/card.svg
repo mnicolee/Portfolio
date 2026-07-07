@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <rect width="800" height="450" fill="#313338"/>
+
+  <!-- avatar -->
+  <circle cx="72" cy="118" r="24" fill="#5865f2"/>
+  <text x="72" y="127" font-size="24" text-anchor="middle">&#9200;</text>
+
+  <!-- header row -->
+  <text x="110" y="108" font-size="18" font-weight="700" fill="#f2f3f5">Reminder Bot</text>
+  <rect x="248" y="94" width="42" height="19" rx="4" fill="#5865f2"/>
+  <text x="269" y="108" font-size="11.5" font-weight="700" text-anchor="middle" fill="#ffffff">APP</text>
+  <text x="302" y="108" font-size="13" fill="#949ba4">Today at 09:00</text>
+
+  <!-- ping -->
+  <rect x="110" y="122" width="72" height="24" rx="5" fill="#3c3f82"/>
+  <text x="120" y="139" font-size="14.5" fill="#c9cdfb">@Nicole</text>
+
+  <!-- embed -->
+  <rect x="110" y="158" width="600" height="196" rx="8" fill="#2b2d31"/>
+  <rect x="110" y="158" width="5" height="196" rx="2.5" fill="#f1c40f"/>
+
+  <text x="138" y="196" font-size="17" font-weight="700" fill="#f2f3f5">&#9200; Take your vitamins</text>
+
+  <text x="138" y="238" font-size="14" font-weight="700" fill="#f2f3f5">&#128196; Details</text>
+  <text x="138" y="262" font-size="15" fill="#dbdee1">Vitamin D and omega-3 with breakfast</text>
+
+  <line x1="138" y1="292" x2="682" y2="292" stroke="#3a3c42" stroke-width="1"/>
+  <text x="138" y="322" font-size="12.5" fill="#949ba4">Set by Nicole  &#183;  ID: 42  &#183;  recurring daily</text>
+
+  <!-- reactions -->
+  <rect x="110" y="372" width="60" height="30" rx="8" fill="#373a53" stroke="#5865f2" stroke-width="1.4"/>
+  <text x="126" y="392" font-size="15">&#9989;</text>
+  <text x="150" y="392" font-size="14" font-weight="700" fill="#c9cdfb">1</text>
+
+  <rect x="180" y="372" width="56" height="30" rx="8" fill="#2b2d31" stroke="#3a3c42" stroke-width="1"/>
+  <text x="196" y="392" font-size="15">&#10060;</text>
+  <text x="221" y="392" font-size="14" fill="#949ba4">0</text>
+</svg>

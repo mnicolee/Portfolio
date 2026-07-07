@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="648" viewBox="0 0 860 648" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <rect width="860" height="648" fill="#313338"/>
+
+  <!-- ===== what you type ===== -->
+  <text x="30" y="34" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#949ba4">YOU TYPE</text>
+  <rect x="30" y="46" width="800" height="150" rx="8" fill="#1e1f22"/>
+  <g font-family="'Consolas','SF Mono',Menlo,monospace" font-size="15">
+    <text x="52" y="78"><tspan fill="#c9cdfb" font-weight="700">/set_reminder</tspan></text>
+    <text x="52" y="106"><tspan fill="#8ab4f8">time:</tspan><tspan fill="#dcddde"> 09:00    </tspan><tspan fill="#8ab4f8">date:</tspan><tspan fill="#dcddde"> 2026-07-07</tspan></text>
+    <text x="52" y="132"><tspan fill="#8ab4f8">title:</tspan><tspan fill="#dcddde"> Take vitamins    </tspan><tspan fill="#8ab4f8">recurring:</tspan><tspan fill="#dcddde"> 1d</tspan></text>
+    <text x="52" y="158"><tspan fill="#8ab4f8">description:</tspan><tspan fill="#dcddde"> Vitamin D and omega-3 with breakfast</tspan></text>
+    <text x="52" y="184"><tspan fill="#8ab4f8">mentions:</tspan><tspan fill="#dcddde"> @Nicole</tspan></text>
+  </g>
+
+  <!-- ===== the bot replies ===== -->
+  <text x="30" y="240" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#949ba4">THE BOT REPLIES</text>
+
+  <circle cx="52" cy="284" r="20" fill="#5865f2"/>
+  <text x="52" y="291" font-size="20" text-anchor="middle">&#9200;</text>
+  <text x="82" y="278" font-size="15.5" font-weight="700" fill="#f2f3f5">Reminder Bot</text>
+  <rect x="200" y="266" width="38" height="17" rx="4" fill="#5865f2"/>
+  <text x="219" y="279" font-size="10.5" font-weight="700" text-anchor="middle" fill="#ffffff">APP</text>
+  <text x="250" y="278" font-size="12" fill="#949ba4">Today at 09:00</text>
+
+  <rect x="82" y="292" width="740" height="300" rx="8" fill="#2b2d31"/>
+  <rect x="82" y="292" width="5" height="300" rx="2.5" fill="#23a55a"/>
+
+  <text x="106" y="326" font-size="16" font-weight="700" fill="#f2f3f5">&#9989; Reminder Created!</text>
+
+  <g font-size="14">
+    <text x="106" y="366" font-weight="700" fill="#f2f3f5">&#128221; Title</text>
+    <text x="300" y="366" fill="#dbdee1">Take vitamins</text>
+
+    <text x="106" y="402" font-weight="700" fill="#f2f3f5">&#128196; Description</text>
+    <text x="300" y="402" fill="#dbdee1">Vitamin D and omega-3 with breakfast</text>
+
+    <text x="106" y="438" font-weight="700" fill="#f2f3f5">&#128197; Scheduled For</text>
+    <text x="300" y="438" fill="#dbdee1">2026-07-07 at 09:00</text>
+
+    <text x="106" y="474" font-weight="700" fill="#f2f3f5">&#128205; Channel</text>
+    <text x="300" y="474" fill="#dbdee1">#reminders</text>
+
+    <text x="106" y="510" font-weight="700" fill="#f2f3f5">&#128260; Recurring</text>
+    <text x="300" y="510" fill="#dbdee1">Every 1 day</text>
+
+    <text x="106" y="546" font-weight="700" fill="#f2f3f5">&#128276; Will Ping</text>
+    <text x="300" y="546" fill="#dbdee1">@Nicole</text>
+  </g>
+
+  <line x1="106" y1="566" x2="798" y2="566" stroke="#3a3c42" stroke-width="1"/>
+  <text x="106" y="584" font-size="12" fill="#949ba4">Reminder ID: 42</text>
+
+  <!-- ===== other commands ===== -->
+  <text x="30" y="628" font-size="13" fill="#949ba4">Also: <tspan fill="#c9cdfb" font-family="'Consolas',monospace">/list_reminders</tspan>  <tspan fill="#c9cdfb" font-family="'Consolas',monospace">/edit_reminder</tspan>  <tspan fill="#c9cdfb" font-family="'Consolas',monospace">/cancel_reminder</tspan>  <tspan fill="#c9cdfb" font-family="'Consolas',monospace">/restore_reminder</tspan>  <tspan fill="#c9cdfb" font-family="'Consolas',monospace">/set_away</tspan></text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="748" viewBox="0 0 820 748" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <rect width="820" height="748" fill="#313338"/>
+
+  <!-- header -->
+  <circle cx="52" cy="50" r="20" fill="#5865f2"/>
+  <text x="52" y="57" font-size="20" text-anchor="middle">&#9200;</text>
+  <text x="82" y="44" font-size="15.5" font-weight="700" fill="#f2f3f5">Reminder Bot</text>
+  <rect x="200" y="32" width="38" height="17" rx="4" fill="#5865f2"/>
+  <text x="219" y="45" font-size="10.5" font-weight="700" text-anchor="middle" fill="#ffffff">APP</text>
+  <text x="250" y="44" font-size="12" fill="#949ba4">1 Feb at 12:01</text>
+
+  <!-- monthly embed (purple) -->
+  <rect x="82" y="58" width="700" height="404" rx="8" fill="#2b2d31"/>
+  <rect x="82" y="58" width="5" height="404" rx="2.5" fill="#9b59b6"/>
+
+  <text x="106" y="90" font-size="13" font-weight="700" letter-spacing="0.6" fill="#f2f3f5">&#128522; MONTHLY REPORT</text>
+  <text x="106" y="124" font-size="22" font-weight="800" fill="#ffffff">JANUARY 2026</text>
+  <text x="106" y="148" font-size="13.5" fill="#b5bac1">Monthly statistics and the moment you've been waiting for...</text>
+
+  <!-- user 1 -->
+  <text x="106" y="188" font-size="15" font-weight="700" fill="#f2f3f5">&#128100; Nicole</text>
+  <text x="106" y="212" font-size="14" fill="#dbdee1"><tspan>@Nicole completed </tspan><tspan font-weight="700" fill="#ffffff">47/61</tspan><tspan> reminders this month!</tspan></text>
+  <text x="106" y="234" font-size="14" fill="#dbdee1">That's <tspan font-weight="700" fill="#ffffff">77%</tspan>! &#128200;</text>
+  <text x="106" y="258" font-size="14" font-style="italic" fill="#b5bac1">You ATE that. Left no crumbs. The tasks are gone. &#127869;&#65039;&#10024;</text>
+
+  <line x1="106" y1="284" x2="758" y2="284" stroke="#3a3c42" stroke-width="1"/>
+
+  <!-- user 2 -->
+  <text x="106" y="318" font-size="15" font-weight="700" fill="#f2f3f5">&#128100; Friend</text>
+  <text x="106" y="342" font-size="14" fill="#dbdee1"><tspan>@Friend completed </tspan><tspan font-weight="700" fill="#ffffff">33/58</tspan><tspan> reminders this month!</tspan></text>
+  <text x="106" y="364" font-size="14" fill="#dbdee1">That's <tspan font-weight="700" fill="#ffffff">57%</tspan>! &#128200;</text>
+  <text x="106" y="388" font-size="14" font-style="italic" fill="#b5bac1">Not bad. Not great. But not bad. &#128077;</text>
+
+  <line x1="106" y1="414" x2="758" y2="414" stroke="#3a3c42" stroke-width="1"/>
+  <text x="106" y="440" font-size="12" fill="#949ba4">Sent automatically on the 1st of each month at 12:01am</text>
+
+  <!-- winner embed (gold) -->
+  <rect x="82" y="500" width="700" height="212" rx="8" fill="#2b2d31"/>
+  <rect x="82" y="500" width="5" height="212" rx="2.5" fill="#f1c40f"/>
+
+  <text x="411" y="540" font-size="19" font-weight="800" text-anchor="middle" fill="#ffffff">&#127942; AND THE WINNER IS... &#127942;</text>
+  <text x="411" y="570" font-size="14" text-anchor="middle" fill="#dbdee1">The <tspan font-weight="700" fill="#ffffff">BEST</tspan> non-procrastinator this month was...</text>
+  <text x="411" y="606" font-size="20" text-anchor="middle" fill="#ffffff">&#127881;&#127882;&#10024; &#128081; @Nicole &#128081; &#10024;&#127882;&#127881;</text>
+  <text x="411" y="636" font-size="14" text-anchor="middle" fill="#dbdee1">With an amazing <tspan font-weight="700" fill="#ffffff">77%</tspan> completion rate!</text>
+  <text x="411" y="662" font-size="14" font-style="italic" text-anchor="middle" fill="#b5bac1">Main character energy confirmed. Credits are rolling. &#127916;</text>
+  <text x="411" y="692" font-size="14" font-weight="700" text-anchor="middle" fill="#f2f3f5">&#128079;&#128079;&#128079; CONGRATULATIONS! &#128079;&#128079;&#128079;</text>
+</svg>
