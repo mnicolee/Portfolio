@@ -1,0 +1,105 @@
+---
+title: "Vertical climbing assay rig"
+---
+
+[← Back to hardware](../../hardware.qmd){.back-link}
+
+This rig was built to measure *Drosophila* climbing under optogenetic control, for the mushroom-body
+output neuron (MBON) work in my thesis. A climbing assay reads out motor function through negative
+geotaxis: knock a fly to the floor of a vertical chamber and it climbs, and how it climbs, its speed,
+height, falls and pauses, reports on the motor circuitry driving the behavior. The classic version of
+this assay is done by hand, tapping a vial of flies and counting how many pass a line in a set time.
+That is fine for catching gross motor deficits, but it could not do what I needed: agitate every fly
+the same way, every trial, and hand off cleanly to timed light stimulation and frame-by-frame tracking.
+So I built a chamber and, around it, an automated rig that made the startle reproducible and locked it
+to the optogenetics. The pneumatic and electronics build was done in collaboration with the Duke-NUS
+3D Printing & Prototyping (3DPP) Lab; **credit to Dennis Ong**, who built the fabrication and
+microcontroller side.
+
+### The 17-lane climbing cassette
+
+<!-- deposit photo here: the cassette diagram / photo (thesis Fig 1.2B) -->
+![](cassette.png){.paper-figure fig-alt="The climbing cassette: 17 individual vertical lanes CNC-milled into a transparent acrylic sheet mounted on a white diffuser, each lane holding a single fly"}
+
+[**Figure 1 — The climbing cassette.** The vertical arena: seventeen individual lanes, each housing a
+single fly, milled into a transparent acrylic sheet backed by a white diffuser.]{.fig-legend}
+
+Climbing behaviour was assessed in a custom acrylic cassette (170 × 94 × 9 mm) holding 17 individual
+chambers (7 W × 86 H × 3 D mm), CNC-milled into a 3 mm transparent acrylic sheet mounted onto a white
+acrylic diffuser. One fly per lane keeps individuals in frame and physically separated, so seventeen
+animals can be recorded at once without ever crossing paths, and the tall, narrow geometry defines a
+repeatable climb. Flies were briefly anaesthetised on ice for 30 s, loaded one to a chamber, and given
+3 minutes to recover before any testing began.
+
+### Illumination and imaging
+
+<!-- deposit photo here: the setup schematic / green-LED stimulation (thesis Fig 1.2A, C) -->
+![](illumination-setup.png){.paper-figure fig-alt="Illumination stack: an 850 nm infrared backlight through a diffuser for recording, plus green and blue optogenetic LEDs, with a near-infrared camera behind an 850 nm longpass filter"}
+
+[**Figure 2 — Illumination and imaging.** Constant infrared backlight lets the camera record without
+activating the opsins; separate green and blue LEDs deliver the optogenetic stimulation.]{.fig-legend}
+
+The lighting has to do two jobs at once: light the arena well enough to track a fly, without that same
+light tripping the light-sensitive opsins under test. Constant 850 nm infrared LEDs handle the
+recording, invisible to the opsins, and an 850 nm longpass filter (Green.L 58-850) on the camera drops
+any visible-light artefact. A white diffuser sits between the IR source and the arena to kill direct
+reflections into the lens. Optogenetic stimulation is delivered separately by green (530 nm, Luxeon
+Rebel SP-05-G4) or blue (460 nm, Luxeon Rebel SP-05-B4) LEDs on heatsinks (Luxeon Star N50-25B), driven
+by a 700 mA BuckPuck (3023-D-E-700). Intensities were calibrated before each session with a Thorlabs
+S130C photodiode and PM100D console, and set to 23.0 µW/mm² (green), 18.3 µW/mm² (blue) and
+13.9 µW/mm² (red). Recording used a Chameleon3 near-infrared camera (FLIR CM3-U3-13S2C) with a
+4.4–11 mm varifocal lens (Edmund Optics) at 5 fps, with seven LEDs 26 cm from the cassette providing
+frontal illumination. The whole assembly sat inside a temperature-controlled incubator (Sanyo MIR-154).
+
+### Automated pneumatic agitation
+
+<!-- deposit photo here: the automated rig with pneumatic agitation system (thesis Fig 1.2D) -->
+![](pneumatic-rig.png){.paper-figure fig-alt="The automated agitation rig: the climbing cassette on an acrylic backboard driven by a pneumatic piston on optical posts, with an Arduino control unit"}
+
+[**Figure 3 — Automated agitation.** A pneumatic piston resets every fly to the chamber floor with
+consistent force and timing, replacing manual tapping and synchronising the startle with tracking and
+light delivery.]{.fig-legend}
+
+Every recording set starts by displacing all seventeen flies to the bottom of their chambers. I did
+this by hand at first, tapping the cassette down, but manual tapping introduced inconsistent delays
+between the flies resetting and the start of tracking and light, which is exactly the temporal
+precision an optogenetic experiment cannot afford to lose. So I replaced it with a pneumatic system
+that agitates the same way every time and hands off cleanly to the recording.
+
+The cassette mounts to an acrylic backboard (175 × 150 mm) with a 6.2 mm central hole for an M6 screw,
+which secures a single-acting pneumatic piston (RS Components 176-1604) through a custom 3D-printed
+piston-to-backboard adapter. The piston is carried on Thorlabs optical posts and further custom
+3D-printed brackets to keep it rigidly aligned and damp vibration. Compressed air reaches the piston
+through 3.5 mm tubing, regulated to 1 Pa at the source and gated by a normally-closed solenoid valve
+(Monotaro 050 Series) with a manual emergency release.
+
+Actuation is run by an Arduino UNO R3 (programmed by Dennis Ong, 3DPP Lab) driving the solenoid through
+a relay (RS 783-0246, TE Connectivity). A start button extends the piston; after a set duration it
+retracts, and the cycle repeats for the configured number of strokes. A small display and rotary encoder
+let you set three parameters, push time (default 150 ms), pull time (default 150 ms), and stroke count
+(default 5), with a green start and a red reset button. Tracking is paused throughout agitation and only
+resumes on visual confirmation that every fly is back on the chamber floor, since a stroke can
+occasionally fail to dislodge one.
+
+### The assay protocol
+
+Each fly runs through a fixed light sequence. Flies are agitated and allowed to climb for 3 s, then
+recorded for 20 s in darkness (the dark phase). They are re-agitated, climb for 3 s in darkness, and are
+then recorded for 20 s under LED activation, followed by 20 s of darkness (the recovery phase). The 3 s
+lead-in guarantees the flies are already climbing when the recording window opens, so the readout is
+climbing behaviour, not the startle itself.
+
+### Tracking and analysis
+
+Video and positions are processed in real time by CRITTA, a LabVIEW tracker that segments flies from
+the background by subtraction, giving x–y coordinates per fly per frame. I then wrote a custom Python
+package, [DrosoClimb](https://github.com/mnicolee/DrosoClimb), to turn those raw tracks into behaviour:
+it converts coordinates to millimetres, splits each trial into its dark, light and recovery phases, and
+classifies every frame as walking, pausing or falling using thresholds I calibrated against hand-labelled
+ground-truth video. From there it computes the climbing metrics, speed, average height, bout speed and
+number, fall count, straightness and maximum velocity, with effect sizes reported through the DABEST
+estimation framework.
+
+See the science this rig was built for → [the MBON climbing study](../../research.qmd).
+
+[]{.section-rule}

@@ -18,11 +18,12 @@ Custom rigs, chambers, and CAD I design and build for behavioral experiments.
 
 ::::
 
-:::: {.pcard .is-soon}
+:::: {.pcard}
+<!-- [TODO: card image] no photo exists yet — replace src with the real climbing-chamber card image, or keep this placeholder until one is available -->
 <div class="pcard-ph">Coming soon</div>
 
 ::: {.pcard-body}
-### Climbing chamber
+### [Climbing chamber](hardware/climbing/index.qmd){.stretched-link}
 [Vertical assay · negative geotaxis]{.paper-meta}
 :::
 
