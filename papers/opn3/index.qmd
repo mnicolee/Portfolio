@@ -56,14 +56,6 @@ performance itself**, not just a housekeeping detail. Practically, it is a cheap
 are reared that buys both healthier animals and a stronger effect — worth building into the
 protocol rather than treating as an afterthought.
 
-<!-- TODO(ATR figure): drop the ATR-specific figure here once supplied.
-     1. Add the image file to this folder (e.g. atr-figure.png).
-     2. Uncomment the block below and update the filename, fig-alt, and credit.
-![](atr-figure.png){.paper-figure style="max-width:760px" fig-alt="TODO: describe the ATR figure"}
-
-[TODO caption / figure credit for the ATR figure.]{.figure-credit style="max-width:760px"}
--->
-
 To learn more: read the preprint on
 [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.05.26.727874v1) —
 [doi:10.64898/2026.05.26.727874](https://doi.org/10.64898/2026.05.26.727874).

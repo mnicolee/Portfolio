@@ -10,11 +10,11 @@ title: "Research"
 <div class="pcard-ph">Coming soon</div>
 
 ::: {.pcard-body}
-### Untangling internal state from locomotion using behavioral ethomics
+### Neural circuits of behavior in *Drosophila*
 [PhD thesis · first-author · unpublished data]{.paper-meta}
 
-An optogenetic screen of the mushroom body output neuron (MBON) split-GAL4 library across
-two custom assays, asking how internal state and movement get entangled in *Drosophila* circuits.
+A large-scale optogenetic and behavioral ethomics study of how brain circuits shape movement
+in *Drosophila*, forming the core of my PhD thesis.
 :::
 
 ::::

@@ -9,7 +9,7 @@ Custom rigs, chambers, and CAD I design and build for behavioral experiments.
 ::::: {.card-grid}
 
 :::: {.pcard}
-<img class="pcard-media" src="papers/kcr/worm-chamber-stereo-04.png" alt="C. elegans tracking rig">
+<img class="pcard-media" src="hardware/celegans/worm-chamber-stereo-04.png" alt="C. elegans tracking rig">
 
 ::: {.pcard-body}
 ### [*C. elegans* behavioral tracking](hardware/celegans/index.qmd){.stretched-link}

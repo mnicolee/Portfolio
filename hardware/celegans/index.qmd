@@ -16,7 +16,7 @@ who brought the fabrication and 3D-printing expertise that made the ideas real.
 
 :::: {.columns .vmiddle}
 ::: {.column width="44%"}
-![](../../papers/kcr/base-chamber-01.png){.paper-figure fig-alt="Base chamber design: CNC milling, magnet-held modular components, assembly, and the assembled chamber under infrared light in the dark"}
+![](base-chamber-01.jpg){.paper-figure fig-alt="Base chamber design: CNC milling, magnet-held modular components, assembly, and the assembled chamber under infrared light in the dark"}
 :::
 ::: {.column width="4%"}
 :::
@@ -54,7 +54,7 @@ tracking), and let me stage several animals at once while imaging them one at a 
 ::: {.column width="4%"}
 :::
 ::: {.column width="44%"}
-![](../../papers/kcr/cut-out-02.png){.paper-figure fig-alt="Iterations of the worm arena: a failed 96-well prototype, tests of different grid sizes and layouts, the chosen size for C. elegans, and the final schematic"}
+![](cut-out-02.jpg){.paper-figure fig-alt="Iterations of the worm arena: a failed 96-well prototype, tests of different grid sizes and layouts, the chosen size for C. elegans, and the final schematic"}
 :::
 ::::
 
@@ -77,7 +77,7 @@ The final arena schematic.]{.fig-legend}
 
 :::: {.columns .vmiddle}
 ::: {.column width="44%"}
-![](../../papers/kcr/stereoscope-cutout-03.png){.paper-figure fig-alt="Custom C-mount camera adapter modeled in Onshape (left) and 3D-printed and fitted to the stereomicroscope (right)"}
+![](stereoscope-cutout-03.jpg){.paper-figure fig-alt="Custom C-mount camera adapter modeled in Onshape (left) and 3D-printed and fitted to the stereomicroscope (right)"}
 :::
 ::: {.column width="4%"}
 :::
@@ -114,7 +114,7 @@ recovery.
 ::: {.column width="4%"}
 :::
 ::: {.column width="44%"}
-![](../../papers/kcr/worm-chamber-stereo-04.png){.paper-figure fig-alt="The fully assembled C. elegans tracking rig: camera, adapter, stereomicroscope, worm arena, and IR plus optogenetic illumination"}
+![](worm-chamber-stereo-04.png){.paper-figure fig-alt="The fully assembled C. elegans tracking rig: camera, adapter, stereomicroscope, worm arena, and IR plus optogenetic illumination"}
 :::
 ::::
 
@@ -142,11 +142,11 @@ estimation framework.
 
 <div class="video-row">
   <figure class="video-item">
-    <video class="paper-video" src="../../papers/kcr/wt-without-dlc.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <video class="paper-video" src="wt-without-dlc.mp4" autoplay muted loop playsinline preload="auto"></video>
     <figcaption>Raw stereoscope video</figcaption>
   </figure>
   <figure class="video-item">
-    <video class="paper-video" src="../../papers/kcr/wt-with-dlc.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <video class="paper-video" src="wt-with-dlc.mp4" autoplay muted loop playsinline preload="auto"></video>
     <figcaption>DeepLabCut pose tracking</figcaption>
   </figure>
 </div>
