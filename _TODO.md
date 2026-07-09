@@ -16,6 +16,19 @@ say "bring up the todolist" any time.
 
 - [ ] **Focus Pocus — fix the graphs** (badly done, especially the DABEST plots)
 
+- [ ] **Contact — sort out the contact setup** (`contact.qmd`)
+  - [ ] Create a Formspree form and replace `REPLACE_WITH_FORMSPREE_ID` with the real id
+  - [ ] Decide/confirm which email it routes to (navbar mailto is `lnicole8282@gmail.com`)
+  - [ ] Test that a submission actually lands in the inbox
+
+- [ ] **Revisit the bolding** across research / hardware / tools pages
+  - Re-read each page and reconsider what's bolded — confirm each bold is the right "one key point"
+    and nothing is over- or under-bolded.
+
+- [ ] **Figure/image zoom (lightbox)** — clicking a figure/image should blow it up / bring it into
+  focus (zoom-to-fill overlay), then click again or Esc to close. Applies to `.paper-figure`,
+  `.graphical-abstract`, and figures inside the paper/hardware pages.
+
 ## Done
 
 - [x] **Research card #1 title — de-specified to avoid being scooped** (`research.qmd`)

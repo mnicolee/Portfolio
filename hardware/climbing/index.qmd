@@ -17,7 +17,7 @@ tracking to, and a single pass-or-fail line throws away the shape of the climb.
 That gap is what this rig was built to close. To measure *Drosophila* climbing under optogenetic control
 in my thesis, I needed to agitate every fly the same way, every trial, and hand off cleanly to timed
 light stimulation and frame-by-frame tracking. So I built a chamber and, around it, an automated rig
-that made the startle reproducible and locked it to the optogenetics. The pneumatic and electronics
+that **made the startle reproducible and locked it to the optogenetics**. The pneumatic and electronics
 build was done in collaboration with the Duke-NUS 3D Printing & Prototyping (3DPP) Lab; credit to Dennis
 Ong, who built the fabrication and microcontroller side.
 
@@ -27,10 +27,10 @@ Ong, who built the fabrication and microcontroller side.
 ::: {.column width="54%"}
 ![](fallingchambers-01.png){.paper-figure fig-alt="Climbing assay apparatus in four panels: (A) side schematic with IR backlight, the 3 mm x 86 mm chambers, opto LED and camera 26 cm away; (B) top-view diagram of the 170 x 94 mm cassette with 17 seven-millimetre lanes each holding a fly; (C) the green-lit rig inside the incubator; (D) the automated rig with red 3D-printed brackets, pneumatic piston and solenoid valve"}
 
-[**Figure 1. Climbing assay apparatus.** **(A)** Schematic of the setup: an IR backlight for the
-light-off phase, the fly-chamber cassette, the optogenetic LEDs, and the camera. **(B)** Diagram of the
-climbing cassette with 17 individual lanes, each housing a single fly. **(C)** The rig during optogenetic
-stimulation under green LED illumination. **(D)** The automated rig with the pneumatic agitation
+[**Figure 1.** Climbing assay apparatus. (A) Schematic of the setup: an IR backlight for the
+light-off phase, the fly-chamber cassette, the optogenetic LEDs, and the camera. (B) Diagram of the
+climbing cassette with 17 individual lanes, each housing a single fly. (C) The rig during optogenetic
+stimulation under green LED illumination. (D) The automated rig with the pneumatic agitation
 system.]{.fig-legend}
 :::
 ::: {.column width="4%"}
@@ -121,7 +121,7 @@ The cassette mounts to an acrylic backboard via a single-acting pneumatic piston
 
 <video class="paper-video" src="Chambervideo.mp4" autoplay muted loop playsinline preload="auto" controls style="max-width:760px"></video>
 
-[**Video 1 — A recording from the cassette.** Individual flies climbing their lanes, the footage the
+[**Video 1.** A recording from the cassette. Individual flies climbing their lanes, the footage the
 tracker works from frame by frame.]{.fig-legend style="max-width:760px"}
 
 ### Tracking and analysis
@@ -130,7 +130,7 @@ tracker works from frame by frame.]{.fig-legend style="max-width:760px"}
 ::: {.column width="44%"}
 ![](Opentracker.png){.paper-figure fig-alt="A cassette recording open in the Tracker software: the 17-lane chamber in greyscale near-infrared, one fly's position marked with a red trace, and a side panel of position-versus-time plots and a frame-by-frame table of behavioural states"}
 
-[**Figure 2 — Ground-truth annotation** in Tracker.]{.fig-legend}
+[**Figure 2.** Ground-truth annotation in Tracker.]{.fig-legend}
 :::
 ::: {.column width="4%"}
 :::
@@ -150,7 +150,7 @@ ethomic profile of the fly's motor behaviour.
 ::: {.column width="44%"}
 ![](confusion-matrix-01.png){.paper-figure fig-alt="Behavioural event classification: (A) the three states falling, pause and walking with their thresholds; (B) a normalized confusion matrix showing 0.92 walking, 0.93 pause and 0.83 fall correctly classified"}
 
-[**Figure 3 — Behavioural event classification.** **(A)** the states and thresholds; **(B)** the test-set confusion matrix.]{.fig-legend}
+[**Figure 3.** Behavioural event classification. (A) the states and thresholds; (B) the test-set confusion matrix.]{.fig-legend}
 :::
 ::: {.column width="4%"}
 :::

@@ -9,7 +9,7 @@ title: "DABEST 2.0: estimation statistics"
 Most papers still lean on the p-value: a single number that says *whether* something happened, not
 by how much or how sure you can be. **DABEST** (Data Analysis with Bootstrap-coupled ESTimation) is
 the estimation-statistics alternative — it reports the effect size itself, wraps it in a bootstrapped
-confidence interval, and plots every datapoint. **DABEST 2.0** extends that to the messy, multi-group
+confidence interval, and plots every datapoint. DABEST 2.0 extends that to the messy, multi-group
 designs biology actually uses: shared-control comparisons, repeated measures, two-way factorial
 designs, and meta-analysis.
 
@@ -20,7 +20,7 @@ figure at all, or the plainest bar chart — no error bars, no effect size, no s
 precise the difference is.
 
 Under the standard null-hypothesis framework, binary data — the kind that fills clinical trials and
-genomic studies — is usually analysed with **[Fisher's exact test](https://doi.org/10.5395/rde.2017.42.2.152)**. It is powerful at small sample
+genomic studies — is usually analysed with [Fisher's exact test](https://doi.org/10.5395/rde.2017.42.2.152). It is powerful at small sample
 sizes, but it carries the familiar problems of omnibus tests: multiple comparisons need post-hoc
 correction (an open door to p-hacking), its p-values are [acutely sensitive to sample size](https://doi.org/10.1002/sim.2832), and, as it
 is typically used, it discloses neither the observational data nor the effect size. Each comparison
@@ -28,10 +28,10 @@ collapses into a yes/no verdict on a p-value.
 
 Surveying the papers returned by searching *"Fisher's exact test"* and *"proportion"* makes the gap
 concrete (Table 1): where a figure appears at all it is usually a plain bar chart without error bars,
-and across **every** category surveyed, the effect size was reported exactly zero times.
+and across every category surveyed, the effect size was reported **exactly zero times**.
 
 <div class="wide-table">
-<p class="table-caption"><strong>Table 1 &mdash; How binary data is reported in the literature.</strong> Papers returned by searching <em>"Fisher's exact test"</em> and <em>"proportion"</em>, scored for the test used, whether the data was visualised (Graphics / No Graphics), whether any measure of error was shown (Error: Y/N), the count and percentage in each category, and whether an effect size was reported. The effect-size column is zero throughout.</p>
+<p class="table-caption"><strong>Table 1.</strong> How binary data is reported in the literature. Papers returned by searching <em>"Fisher's exact test"</em> and <em>"proportion"</em>, scored for the test used, whether the data was visualised (Graphics / No Graphics), whether any measure of error was shown (Error: Y/N), the count and percentage in each category, and whether an effect size was reported. The effect-size column is zero throughout.</p>
 <table>
 <colgroup>
 <col style="width:16%" />
@@ -130,14 +130,14 @@ and across **every** category surveyed, the effect size was reported exactly zer
 </table>
 </div>
 
-The figure shows why it matters. Panel **a** is the conventional bar chart — something clearly
-happened, but it stops there. Panel **b** reframes the same data as proportions with a bootstrapped
-95% confidence interval, so you can read that the drug cut the seizure rate by **68%** and how certain
-that is. Panel **c** carries the idea into repeated-measures designs.
+The figure shows why it matters. Panel a is the conventional bar chart — something clearly
+happened, but it stops there. Panel b reframes the same data as proportions with a bootstrapped
+95% confidence interval, so you can read that the drug cut the seizure rate by 68% and how certain
+that is. Panel c carries the idea into repeated-measures designs.
 
 ![](figure3-white.png){.paper-figure style="max-width:760px" fig-alt="DABEST 2.0 Figure 3. Panel a: a conventional stacked bar chart of seizures in placebo versus drug-treated mutants. Panel b: the same data as a proportion estimation plot, showing a proportion difference of minus 0.68 with a bootstrapped 95% confidence interval. Panel c: repeated-measures proportion plots tracking each group across four days."}
 
-[The bar chart in **a** says something happened; the proportion estimation plot in **b** says by
+[The bar chart in a says something happened; the proportion estimation plot in b says by
 how much (a 68% reduction) and with what certainty. Figure 3 from Lu Z., Anns J., Mai Y., Zhang R.,
 Lian K., Lee N.M., Hashir S., Wang Zhouyu L., Li Y., Gonzalez A.R.C., Ho J., Choi H., Xu S. &amp;
 Claridge-Chang A. (2026). *Getting over ANOVA: estimation graphics for multi-group comparisons.*

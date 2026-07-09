@@ -6,7 +6,7 @@ title: "Reminder Bot"
 
 [Discord bot · Python · runs locally]{.paper-meta}
 
-Procrastination and ADHD are things my friends and I have always struggled with, and the research says we are not uniquely broken, just part of a very large club: Steel's meta-analysis estimates that [80 to 95 percent of college students procrastinate](https://psycnet.apa.org/record/2006-23058-004), and a [global review](https://jogh.org/the-prevalence-of-adult-attention-deficit-hyperactivity-disorder-a-global-systematic-review-and-meta-analysis/) puts symptomatic ADHD at roughly 6.8 percent of adults. What I wanted was accountability I could not dodge, so I moved the nagging into the one place I already have open all day: Discord. **Reminder Bot** is a Discord bot you host yourself that pings you and your friends on your own schedule, keeps a scoreboard of who followed through, and keeps every scrap of its data on your own machine.
+Procrastination and ADHD are things my friends and I have always struggled with, and the research says we are not uniquely broken, just part of a very large club: Steel's meta-analysis estimates that [80 to 95 percent of college students procrastinate](https://psycnet.apa.org/record/2006-23058-004), and a [global review](https://jogh.org/the-prevalence-of-adult-attention-deficit-hyperactivity-disorder-a-global-systematic-review-and-meta-analysis/) puts symptomatic ADHD at roughly 6.8 percent of adults. What I wanted was accountability I could not dodge, so I moved the nagging into the one place I already have open all day: Discord. **Reminder Bot** is a Discord bot you host yourself that pings you and your friends on your own schedule, **keeps a scoreboard of who followed through**, and keeps every scrap of its data on your own machine.
 
 ![](hero.svg){.paper-figure style="max-width:760px" fig-alt="A Discord message from Reminder Bot: it pings @Nicole with a gold reminder embed titled 'Take your vitamins', a Details field, a footer reading 'Set by Nicole, ID 42, recurring daily', and checkmark and cross reactions below"}
 
@@ -15,7 +15,7 @@ done or ❌ if you are skipping it.]{.fig-legend style="max-width:760px"}
 
 ## A reminder that actually pings you
 
-Give a reminder a time, a title, and the people to tag, and when the moment comes the bot posts it in your channel and pings them. Every reminder can **recur** on whatever rhythm you want (daily, weekly, or specific weekdays), **fire several times a day** so ticking any one skips the rest (handy for medication or water), and **respect an away schedule** so a holiday holds your pings and does not read as a week of failure. Two reactions sit on every reminder: tap ✅ and it counts as done, tap ❌ or ignore it and it counts as a miss. That single tap is the whole scoring system.
+Give a reminder a time, a title, and the people to tag, and when the moment comes the bot posts it in your channel and pings them. Every reminder can recur on whatever rhythm you want (daily, weekly, or specific weekdays), fire several times a day so ticking any one skips the rest (handy for medication or water), and respect an away schedule so a holiday holds your pings and does not read as a week of failure. Two reactions sit on every reminder: tap ✅ and it counts as done, tap ❌ or ignore it and it counts as a miss. That single tap is the whole scoring system.
 
 ## The part I actually love: the reports
 

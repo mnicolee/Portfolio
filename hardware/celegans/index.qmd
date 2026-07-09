@@ -7,9 +7,9 @@ title: "*C. elegans* behavioral tracking rig"
 This rig was built for the *C. elegans* arm of the [KCR silencing study](../../papers/kcr/index.qmd),
 where I needed to record and quantify worm locomotion during optogenetic stimulation. No
 *C. elegans* behavioral lab existed locally, and dedicated worm-tracking systems would have
-been cost-prohibitive, so I built the whole setup from a stereoscope and a camera already on
-the bench, designing and 3D-printing the parts that did not exist. This was done in
-collaboration with the Duke-NUS 3D Printing & Prototyping (3DPP) Lab; **credit to Dennis Ong**,
+been cost-prohibitive, so I **built the whole setup from a stereoscope and a camera**, designing
+and 3D-printing the parts that did not exist. This was done in
+collaboration with the Duke-NUS 3D Printing & Prototyping (3DPP) Lab; credit to Dennis Ong,
 who brought the fabrication and 3D-printing expertise that made the ideas real.
 
 ### The base chamber
@@ -18,10 +18,10 @@ who brought the fabrication and 3D-printing expertise that made the ideas real.
 ::: {.column width="44%"}
 ![](base-chamber-01.jpg){.paper-figure fig-alt="Base chamber design: CNC milling, magnet-held modular components, assembly, and the assembled chamber under infrared light in the dark"}
 
-[**Figure 1 — Base chamber.** **(A)** The chamber components were CNC-milled from acrylic.
-**(B)** Each component is cut as a separate piece and held together with embedded magnets, so a
-single broken part can be swapped out without remaking the whole chamber. **(C)** The parts
-assembled together. **(D)** The finished chamber under infrared illumination, imaged in the
+[**Figure 1.** Base chamber. (A) The chamber components were CNC-milled from acrylic.
+(B) Each component is cut as a separate piece and held together with embedded magnets, so a
+single broken part can be swapped out without remaking the whole chamber. (C) The parts
+assembled together. (D) The finished chamber under infrared illumination, imaged in the
 dark.]{.fig-legend}
 :::
 ::: {.column width="4%"}
@@ -48,11 +48,11 @@ tracking), and let me stage several animals at once while imaging them one at a 
 ::: {.column width="44%"}
 ![](cut-out-02.jpg){.paper-figure fig-alt="Iterations of the worm arena: a failed 96-well prototype, tests of different grid sizes and layouts, the chosen size for C. elegans, and the final schematic"}
 
-[**Figure 2 — Worm arenas.** The recording arenas where individual worms sit. Several worms can
+[**Figure 2.** Worm arenas. The recording arenas where individual worms sit. Several worms can
 be staged in separate grids at once for imaging, though optogenetic experiments were usually run
-one worm at a time. **(A)** An early prototype fitting the chamber cut-out to a 96-well plate;
-this failed because the wells were too deep to reliably deposit a worm. **(B)** Different grid
-sizes and layouts were tested. **(C)** The size chosen as best suited to *C. elegans*. **(D)**
+one worm at a time. (A) An early prototype fitting the chamber cut-out to a 96-well plate;
+this failed because the wells were too deep to reliably deposit a worm. (B) Different grid
+sizes and layouts were tested. (C) The size chosen as best suited to *C. elegans*. (D)
 The final arena schematic.]{.fig-legend}
 :::
 ::::
@@ -63,9 +63,9 @@ The final arena schematic.]{.fig-legend}
 ::: {.column width="44%"}
 ![](stereoscope-cutout-03.jpg){.paper-figure fig-alt="Custom C-mount camera adapter modeled in Onshape (left) and 3D-printed and fitted to the stereomicroscope (right)"}
 
-[**Figure 3 — Camera adapter.** The custom C-mount adapter that fixes the camera to the
-stereomicroscope, designed with the 3DPP Lab (credit: Dennis Ong) and 3D-printed. **(Left)** the
-part modeled in Onshape; **(right)** the printed adapter fitted to the stereoscope.]{.fig-legend}
+[**Figure 3.** Camera adapter. The custom C-mount adapter that fixes the camera to the
+stereomicroscope, designed with the 3DPP Lab (credit: Dennis Ong) and 3D-printed. (Left) the
+part modeled in Onshape; (right) the printed adapter fitted to the stereoscope.]{.fig-legend}
 :::
 ::: {.column width="4%"}
 :::
@@ -92,7 +92,7 @@ recovery.
 ::: {.column width="44%"}
 ![](worm-chamber-stereo-04.png){.paper-figure fig-alt="The fully assembled C. elegans tracking rig: camera, adapter, stereomicroscope, worm arena, and IR plus optogenetic illumination"}
 
-[**Figure 4 — The assembled rig.** Camera, C-mount adapter, stereomicroscope, worm arena, and
+[**Figure 4.** The assembled rig. Camera, C-mount adapter, stereomicroscope, worm arena, and
 the infrared and optogenetic illumination, brought together.]{.fig-legend}
 :::
 ::::
@@ -119,7 +119,7 @@ estimation framework.
   </figure>
 </div>
 
-[**Video 1 — before and after tracking.** The same worm shown raw (left) and with the DeepLabCut
+[**Video 1.** Before and after tracking. The same worm shown raw (left) and with the DeepLabCut
 pose overlay (right). Recordings were made at 30 fps using the Spinnaker SDK application.]{.fig-legend style="max-width:760px"}
 
 See the science this rig was built for → [the KCR silencing study](../../papers/kcr/index.qmd).

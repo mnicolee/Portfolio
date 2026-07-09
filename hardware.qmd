@@ -2,9 +2,12 @@
 title: "Hardware"
 ---
 
-[Behavioral rigs]{.eyebrow}
+::: {.page-lead}
+The instruments behind the experiments: custom rigs, chambers, and illumination I design and
+build to deliver light and capture behavior.
+:::
 
-Custom rigs, chambers, and CAD I design and build for behavioral experiments.
+[Behavioral rigs]{.eyebrow}
 
 ::::: {.card-grid}
 

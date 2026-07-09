@@ -12,13 +12,13 @@ Optogenetics lets us switch neurons off with light, but the standard inhibitory 
 light-gated chloride channels (anion channelrhodopsins, ACRs), have a catch: in cells or
 sub-neuronal compartments with high internal chloride, a chloride current can *excite* rather
 than silence. Kalium channelrhodopsins (KCRs) are light-gated channels that conduct
-**potassium** instead, hyperpolarising a neuron independently of its chloride gradient, but
+potassium instead, hyperpolarising a neuron independently of its chloride gradient, but
 they had not been shown to reliably silence neurons in small, genetically tractable animals.
 
 This paper put KCRs to the test as neuron silencers across three model organisms,
 *Drosophila*, *C. elegans*, and zebrafish, benchmarking them directly against the widely
 used chloride channel ACR1. A KCR1 variant engineered for better plasma-membrane trafficking
-matched ACR1's potency while causing less toxicity and performing better in putative
+**matched ACR1's potency while causing less toxicity** and performing better in putative
 high-chloride cells, establishing KCRs as a next-generation inhibitory tool for circuit
 analysis in behaving animals.
 
@@ -27,8 +27,8 @@ analysis in behaving animals.
 My part of the study was the *C. elegans* behavioral work: testing whether KCRs could silence
 the worm's neurons and reading that out as a measurable change in locomotion. Because no
 *C. elegans* behavioral lab existed locally and a dedicated worm-tracking system would have
-been cost-prohibitive, I had to build both the assay and the tracker from the ground up,
-starting from a stereoscope and a camera already on the bench.
+been cost-prohibitive, I had to **build both the assay and the tracker from the ground up**,
+starting from a stereoscope and a camera.
 
 ## What was already out there
 
@@ -46,7 +46,7 @@ microscopes, motorized stages, or high-speed cameras^1,18--24^. Deep-learning tr
 more robust to image-quality variation, including YOLO-based^9,25^ and Swin Transformer^26^
 architectures. I tested classical tools (Tierpsy Tracker^16,17^ and wrMTrck^27^), but they
 failed to detect worms in our low-contrast video, and worm-specific deep-learning systems were
-hard to implement at our resolution. I therefore chose **DeepLabCut (DLC)**^28^, a
+hard to implement at our resolution. I therefore chose DeepLabCut (DLC)^28^, a
 general-purpose pose-estimation framework I could train on our own data. Full comparisons are
 in Tables D.4 and D.5 below.
 
@@ -56,7 +56,7 @@ in Tables D.4 and D.5 below.
 <summary>Full comparison — Tables D.4 &amp; D.5 (classical &amp; machine-learning worm trackers)</summary>
 
 <div class="wide-table">
-<p class="table-caption"><strong>Table D.4 &mdash; Classical computer-vision methods for <em>C. elegans</em> tracking.</strong> Imaging requirements, detection and segmentation, skeleton extraction, tracking algorithm, and behavioral feature outputs. GUI, graphical user interface.</p>
+<p class="table-caption"><strong>Table D.4.</strong> Classical computer-vision methods for <em>C. elegans</em> tracking. Imaging requirements, detection and segmentation, skeleton extraction, tracking algorithm, and behavioral feature outputs. GUI, graphical user interface.</p>
 <table style="width:100%;">
 <colgroup>
 <col style="width: 6%" />
@@ -238,7 +238,7 @@ in Tables D.4 and D.5 below.
 </div>
 
 <div class="wide-table">
-<p class="table-caption"><strong>Table D.5 &mdash; Machine-learning methods for <em>C. elegans</em> tracking.</strong> Deep-learning approaches for worms and other organisms: architectures for detection, segmentation, and pose estimation; worm-specific tools and adaptable general-purpose frameworks. CNN, convolutional neural network; YOLO, You Only Look Once; SORT, Simple Online and Realtime Tracking; ReID, re-identification.</p>
+<p class="table-caption"><strong>Table D.5.</strong> Machine-learning methods for <em>C. elegans</em> tracking. Deep-learning approaches for worms and other organisms: architectures for detection, segmentation, and pose estimation; worm-specific tools and adaptable general-purpose frameworks. CNN, convolutional neural network; YOLO, You Only Look Once; SORT, Simple Online and Realtime Tracking; ReID, re-identification.</p>
 <table>
 <colgroup>
 <col style="width: 7%" />

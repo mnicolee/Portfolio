@@ -27,13 +27,13 @@ and, to our knowledge, is the **first GPCR opsin shown to inhibit behavior in ad
 *Drosophila***. A pulse as short as 5 seconds silenced behavior for *minutes*, and one such
 pulse was enough to erase aversive olfactory learning across a one-minute training epoch.
 Benchmarked head-to-head against GtACR1 in walking and memory assays, OPN3's silencing potency
-was comparable across most neuron classes tested — but with **substantially lower developmental
-toxicity and better viability**.
+was comparable across most neuron classes tested — but with substantially lower developmental
+toxicity and better viability.
 
 Because the silencing outlasts the light, you can flash once and then record in the dark. That
 decoupling matters most in experiments where the actuating light is itself a confound: it adds
 cumulative light exposure over long sessions, clashes with concurrent calcium imaging, and
-brings heating and phototoxicity. A clear example is **vision** — in work on the visual system,
+brings heating and phototoxicity. A clear example is vision — in work on the visual system,
 the light you would need to keep a conventional silencer switched on also stimulates the very
 photoreceptors and circuits you are studying. With OPN3 you deliver one brief pulse, then
 observe freely in darkness, so the tool that silences the neuron no longer interferes with what
@@ -42,13 +42,13 @@ you are trying to see.
 ## The second finding: developmental retinal (ATR) is a lever on performance
 
 Every opsin is only half a tool on its own. The protein is an apoprotein: it needs a small
-light-absorbing molecule, the chromophore **retinal**, bound inside it before it can respond to
+light-absorbing molecule, the chromophore retinal, bound inside it before it can respond to
 light at all. *Drosophila* don't make enough of it on their own, so optogenetics in flies almost
-always means feeding them **all-trans-retinal (ATR)** — and by convention that feeding starts in
+always means feeding them all-trans-retinal (ATR) — and by convention that feeding starts in
 *adulthood*, once the neurons you want to control are already wired up.
 
 We asked whether *when* the retinal is available matters. Rearing flies on ATR-supplemented food
-throughout **development**, rather than only in adulthood, improved *both* survival to adulthood
+throughout development, rather than only in adulthood, improved *both* survival to adulthood
 *and* how strongly the light silenced neurons — and it did so for the chloride channel GtACR1 as
 well as for OPN3. That the same simple change helped two mechanistically unrelated tools points at
 something upstream of either one: developmental retinal availability is a **lever on optogenetic

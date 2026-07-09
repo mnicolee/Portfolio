@@ -17,17 +17,17 @@ Author(s). Reproduced under [CC BY-NC-ND 4.0](https://creativecommons.org/licens
 :::
 
 An early collaboration from my developmental biology years, on which I was a co-author. Many cells
-divide into two **unequal-sized daughters**, an asymmetry whose underlying mechanics were unclear.
+divide into two unequal-sized daughters, an asymmetry whose underlying mechanics were unclear.
 
-Using **atomic force microscopy** with live-cell imaging of dividing *Drosophila* neural stem cells, we
-separated the forces at work. Apical expansion is driven by **hydrostatic pressure** peaking just after
-anaphase onset; a later rise in **contractile tension** at the cleavage furrow, with **myosin
-relocalization**, drives basal expansion. When either input is disrupted, a repositioning cleavage furrow
-still **establishes the size asymmetry**.
+Using atomic force microscopy with live-cell imaging of dividing *Drosophila* neural stem cells, we
+separated the forces at work. Apical expansion is driven by hydrostatic pressure peaking just after
+anaphase onset; a later rise in contractile tension at the cleavage furrow, with myosin
+relocalization, drives basal expansion. When either input is disrupted, a repositioning cleavage furrow
+still establishes the size asymmetry.
 
 The result tied a long-standing developmental question, how a dividing cell sets the sizes of its
 two daughters, to concrete, measurable mechanics: **pressure and cortical tension act on different
-timescales**, and the furrow itself can **adapt to preserve the asymmetry** when one force is
+timescales**, and the furrow itself can adapt to preserve the asymmetry when one force is
 perturbed. For me it was an early, formative lesson in pairing quantitative biophysics (AFM force
 measurements) with live imaging to dissect a mechanism neither approach could resolve alone.
 

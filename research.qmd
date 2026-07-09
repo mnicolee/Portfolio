@@ -2,6 +2,11 @@
 title: "Research"
 ---
 
+::: {.page-lead}
+How circuits and internal states shape what an animal does, and the light-driven tools I build
+to switch those circuits on and off in the fly brain.
+:::
+
 [Selected research]{.eyebrow}
 
 ::::: {.card-grid}

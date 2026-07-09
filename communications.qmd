@@ -1,0 +1,84 @@
+---
+title: "Communications"
+---
+
+::: {.page-lead}
+Awards, talks, media coverage, and the training and mentoring behind the research.
+:::
+
+[Awards]{.eyebrow}
+
+- **Best Oral Presentation Award**, DUNES Symposium, Singapore, 2025
+- **Best Poster Award**, SfN Singapore Chapter Annual Meeting, Singapore, 2024
+- **2nd Place Poster Award**, Northwest Developmental Biology Conference, Seattle, 2018
+
+I've also presented my optogenetics work at international meetings including 2024 NeuroFly
+(Birmingham, UK), the 2024 Asia-Pacific Drosophila Neurobiology Conference (Tokyo, Japan), and
+the 2025 Francis Crick Symposium (Suzhou, China).
+
+[]{.section-rule}
+
+[Courses & training]{.eyebrow}
+
+:::: {.stack}
+
+::: {.scard}
+[Chen Institute–Duke–NUS AI Boot Camp](https://www.cheninstitute.org/events-new/duke-bootcamp){.scard-title}
+[Duke-NUS · June 2026]{.scard-meta}
+
+A selective four-day intensive run by Duke-NUS with Duke University's Department of Computer
+Science. It covered the fundamentals of modern AI: how large language models and foundation
+models work, designing and evaluating AI workflows, the strengths and limits of current
+models, and the safety and responsible-use questions that come with them. I attended to build
+a solid working foundation in these tools and to bring them to bear on high-throughput
+behavioral data.
+:::
+
+::::
+
+[]{.section-rule}
+
+[Media]{.eyebrow}
+
+:::: {.stack}
+
+::: {.scard}
+[Duke-NUS researchers develop light-controlled "switch" for brain cells to better study the brain](https://www.straitstimes.com/singapore/duke-nus-researchers-develop-light-controlled-switch-for-brain-cells-to-better-study-the-brain){.scard-title}
+[The Straits Times · 2024]{.scard-meta}
+
+Media coverage of our *Nature Communications* study introducing kalium channelrhodopsins
+(KCRs), a light-controlled "off switch" that silences neurons with greater selectivity than
+existing tools. I led the *C. elegans* work that validated the approach across species.
+
+[Read the article →](https://www.straitstimes.com/singapore/duke-nus-researchers-develop-light-controlled-switch-for-brain-cells-to-better-study-the-brain){.read-more}
+:::
+
+::: {.scard}
+[DUNES Symposium 2025](https://www.duke-nus.edu.sg/newshub/our-stories/dunes-symposium-2025){.scard-title}
+[Duke-NUS Newshub · 2025]{.scard-meta}
+
+Duke-NUS's feature on the 17th DUNES Symposium and its early-career researchers. My oral
+presentation on optogenetic control of valence and locomotion in *Drosophila* was awarded Best
+Oral Presentation.
+
+[Read the feature →](https://www.duke-nus.edu.sg/newshub/our-stories/dunes-symposium-2025){.read-more}
+:::
+
+::::
+
+[]{.section-rule}
+
+[Mentoring]{.eyebrow}
+
+:::: {.stack}
+
+::: {.scard}
+[Undergraduate research mentoring]{.scard-title}
+[Yale-NUS College → Duke-NUS]{.scard-meta}
+
+I mentored a Yale-NUS College undergraduate on the OPN3 optogenetic-silencing project, guiding
+them through experimental design, data collection, and analysis. Their contributions fed into
+the study, and they later joined the lab as a full-time research assistant.
+:::
+
+::::

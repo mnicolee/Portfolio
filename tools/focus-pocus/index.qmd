@@ -7,7 +7,7 @@ title: "Focus Pocus"
 [Desktop app · Electron · Windows · in development]{.paper-meta}
 
 Writing a PhD thesis is a long exercise in accountability with no one watching. Mine ran to
-**280 pages**, and getting there meant sitting down to write on days when every other tab looked
+280 pages, and getting there meant sitting down to write on days when every other tab looked
 more appealing, the procrastination, the slow drift, the hour that vanishes before you notice.
 I needed something that *would* watch, not to shame me, but to catch the moment I wandered and
 pull me back before the hour was gone.
@@ -16,7 +16,7 @@ I looked at the focus apps already out there and didn't want them. Too many are 
 harvesting what you do, your habits, your schedule, your attention, and selling it on or holding
 it on a server you don't control. I wasn't willing to trade my privacy for a timer. So I built my
 own: **Focus Pocus**, a small desktop app that sits in the corner while you work, notices when you
-have drifted, and nudges you back, and keeps every scrap of your data on your own machine.
+have drifted, and nudges you back, and **keeps every scrap of your data on your own machine**.
 
 There are plenty of focus tools built around the Pomodoro idea of fixed work-and-break blocks.
 Focus Pocus keeps a timer, but the point of this one is *your own accountability*: instead of just
@@ -57,7 +57,7 @@ the end, entirely yours to decide.
 
 ## Your data never leaves your machine
 
-This is the part I care about most. Focus Pocus is **not** watching your screen, and it never
+This is the part I care about most. Focus Pocus is not watching your screen, and it never
 records *what* you were looking at:
 
 - **Idleness** comes from the operating system's idle timer, has the mouse or keyboard moved
@@ -65,7 +65,7 @@ records *what* you were looking at:
 - **Distractions** are caught by reading the *title* of your active window (does it say
   "YouTube"?), never the contents of a page and never a screenshot, and that reading is checked in
   the moment and never saved either.
-- **The only thing kept is the tally, and it never leaves your machine.** There is no account and
+- **The tally** is the only thing kept, and it never leaves your machine. There is no account and
   no server, so the app has no way to send your data anywhere. Each session's *numbers* (how long
   you focused, how many times you were nudged, your own rating) are written to a plain file on your
   own computer; the window titles and pages themselves are never stored. It is an offline record
@@ -83,8 +83,8 @@ actually work, including the honest gap between how efficient you *felt* and how
 
 ![](stats-dashboard.png){.paper-figure style="max-width:900px" fig-alt="A four-panel Focus Pocus statistics dashboard: focus time per day, measured vs. self-assessed efficiency over time, sessions by weekday, and a histogram of self-ratings"}
 
-[Two months of my own real sessions, 35 of them between January and March 2026. Throughout, **navy is what
-the app measured** and **gold is how I rated myself**. My measured focus efficiency runs high (98%
+[Two months of my own real sessions, 35 of them between January and March 2026. Throughout, navy is what
+the app measured and gold is how I rated myself. My measured focus efficiency runs high (98%
 on average) while my own rating sits lower (82%), so it turns out I under-rate myself.]{.fig-legend}
 
 ## Still building

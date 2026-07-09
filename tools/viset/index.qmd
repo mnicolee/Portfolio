@@ -17,7 +17,7 @@ end up looking the same. That throws away most of the information a set comparis
 carry.
 
 VISET fixes both problems. It sizes every region in proportion to how many members it holds,
-prints each member name inside its region, and auto-sizes the labels so they stay legible even
+**prints each member name inside its region**, and auto-sizes the labels so they stay legible even
 when a region is crowded. It does this for both Venn/Euler diagrams and UpSet plots, and every
 plot has an interactive Plotly version that reveals crowded regions on hover.
 

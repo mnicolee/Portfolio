@@ -23,6 +23,8 @@ website:
         text: hardware
       - href: tools.qmd
         text: tools
+      - href: communications.qmd
+        text: communications
       - href: writing.qmd
         text: writing
       - href: contact.qmd

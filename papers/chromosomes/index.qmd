@@ -20,42 +20,42 @@ Author(s). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.
 :::
 ::: {.column width="34%"}
 Every cell division must distribute its replicated chromosomes equally to two daughter cells,
-and most metazoan cells do so with a **single bipolar spindle**. But a cell can end up carrying
-**two distinct genomes** at fertilization, or through **cell fusion**, when two cells merge into
+and most metazoan cells do so with a single bipolar spindle. But a cell can end up carrying
+two distinct genomes at fertilization, or through cell fusion, when two cells merge into
 a hybrid, and it must then keep chromosomes of different origins physically apart and segregate
-them faithfully; failure leads to **chromosome missegregation and aneuploidy**. Over a century ago,
-Aichel proposed that unregulated somatic cell fusion could **initiate tumors**, since the resulting
+them faithfully; failure leads to chromosome missegregation and aneuploidy. Over a century ago,
+Aichel proposed that unregulated somatic cell fusion could initiate tumors, since the resulting
 tetraploidy and extra centrosomes predispose cells to aneuploidy. How a hybrid cell keeps two
-genomes apart **inside a living animal** had not been characterized.
+genomes apart inside a living animal had not been characterized.
 :::
 ::::
 
-To watch it happen, we built a **hybrid-cell model in the *Drosophila* larval brain**: a brief
-pulse from a **532 nm laser** fuses a neural stem cell (a neuroblast) with one of its smaller,
-differentiating daughters, turning the fused cell into a **live stage for following two genomes at
-once**.
+To watch it happen, we built a hybrid-cell model in the *Drosophila* larval brain: a brief
+pulse from a 532 nm laser fuses a neural stem cell (a neuroblast) with one of its smaller,
+differentiating daughters, turning the fused cell into a live stage for following two genomes at
+once.
 
-The **timing of fusion strongly shaped the outcome**. Fusions induced in **interphase or early
-prophase** let the hybrid independently align both the endogenous and ectopic chromosomes at the
-metaphase plate, each on a spindle built from its own centrosomes; fusions in **metaphase or
-anaphase** usually left the incoming chromatin unable to align. The two chromosome sets could even
-enter **anaphase asynchronously**, hinting at a distance-dependent "wait-anaphase" checkpoint signal.
+The **timing of fusion strongly shaped the outcome**. Fusions induced in interphase or early
+prophase let the hybrid independently align both the endogenous and ectopic chromosomes at the
+metaphase plate, each on a spindle built from its own centrosomes; fusions in metaphase or
+anaphase usually left the incoming chromatin unable to align. The two chromosome sets could even
+enter anaphase asynchronously, hinting at a distance-dependent "wait-anaphase" checkpoint signal.
 
-What keeps the two genomes from intermingling? **Two cooperating mechanisms.** First, **asymmetric,
-microtubule-dependent chromatin retention**: the neuroblast maintains a single active apical
-**microtubule-organizing center (MTOC)** that holds its own centromeres near the cortex, away from
+What keeps the two genomes from intermingling? **Two cooperating mechanisms.** First, asymmetric,
+microtubule-dependent chromatin retention: the neuroblast maintains a single active apical
+microtubule-organizing center (MTOC) that holds its own centromeres near the cortex, away from
 the incoming chromatin — disrupting this interphase bias let the two centromere pools converge far
-earlier than in controls. Second, **separate nuclear envelopes**: each chromatin pool stays enclosed
-within its own envelope, a **physical barrier** that separates the genomes until roughly metaphase.
-Segregation was error-prone — **lagging chromosomes, anaphase bridges and micronuclei** — consistent
-with **Aichel's century-old cancer-by-fusion hypothesis**. We found no evidence of active chromosome
+earlier than in controls. Second, separate nuclear envelopes: each chromatin pool stays enclosed
+within its own envelope, a physical barrier that separates the genomes until roughly metaphase.
+Segregation was error-prone — lagging chromosomes, anaphase bridges and micronuclei — consistent
+with Aichel's century-old cancer-by-fusion hypothesis. We found no evidence of active chromosome
 "recognition"; asymmetric interphase centrosome activity together with nuclear envelopes are
-**sufficient to explain genome separation**, a mechanism that may also operate at the **first zygotic
-division**.
+sufficient to explain genome separation, a mechanism that may also operate at the first zygotic
+division.
 
-As the paper's **second author**, I laid much of the groundwork: through extensive troubleshooting I
-helped **establish the laser-fusion system** and uncovered much of the **timing-dependent behavior**
-at its heart, and I built the foundation for the **processing and analysis of the imaging data**
+As the paper's second author, I laid much of the groundwork: through extensive troubleshooting I
+helped establish the laser-fusion system and uncovered much of the timing-dependent behavior
+at its heart, and I built the foundation for the processing and analysis of the imaging data
 behind these results.
 
 To learn more: [10.1038/s42003-022-03874-z](https://doi.org/10.1038/s42003-022-03874-z)
