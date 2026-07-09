@@ -33,7 +33,17 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 #quarto-content .content { width: min(92vw, 1100px); max-width: none; margin-inline: auto; }
 .columns.vmiddle { display: flex; align-items: center; }
 .columns.vmiddle > .column { display: block; }
-@media (max-width: 700px) { .columns.vmiddle { display: block; } }
+// On phones there's no room for side-by-side rows, so stack each one into a single
+// column. Force the image on top (order:-1) whichever side it sat on at desktop, with
+// that row's text below it; reset the inline 44%/52% column widths to full width; and
+// drop the empty 4% spacer + placeholder columns so they leave no gap. Plain prose
+// (anything not inside .columns) is untouched.
+@media (max-width: 700px) {
+  .columns, .columns.vmiddle { display: flex; flex-direction: column; gap: 0; }
+  .columns > .column { width: 100% !important; }
+  .columns > .column:empty { display: none; }
+  .columns > .column:has(img) { order: -1; }
+}
 
 // Navbar brand = cursive signature (NAME ONLY)
 // padding/margin-right + overflow:visible keep the cursive 'Lee' flourish from being

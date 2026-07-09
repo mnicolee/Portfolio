@@ -149,6 +149,8 @@ ethomic profile of the fly's motor behaviour.
 :::: {.columns .vmiddle}
 ::: {.column width="44%"}
 ![](confusion-matrix-01.png){.paper-figure fig-alt="Behavioural event classification: (A) the three states falling, pause and walking with their thresholds; (B) a normalized confusion matrix showing 0.92 walking, 0.93 pause and 0.83 fall correctly classified"}
+
+[**Figure 3 — Behavioural event classification.** **(A)** the states and thresholds; **(B)** the test-set confusion matrix.]{.fig-legend}
 :::
 ::: {.column width="4%"}
 :::
@@ -157,16 +159,6 @@ Every frame is scored against thresholds fixed on hand-labelled training video (
 top and bottom 10% trimmed): a fall is a downward jump beyond −3.17 mm per frame, a pause is a speed
 below 2.588 mm/s, and anything faster without a fall is a walk. On an independent test set (13 flies,
 1,477 frames) the classifier reads 92% of walking, 93% of pause and 83% of fall frames correctly.
-:::
-::::
-
-:::: {.columns}
-::: {.column width="44%"}
-[**Figure 3 — Behavioural event classification.** **(A)** the states and thresholds; **(B)** the test-set confusion matrix.]{.fig-legend}
-:::
-::: {.column width="4%"}
-:::
-::: {.column width="52%"}
 :::
 ::::
 

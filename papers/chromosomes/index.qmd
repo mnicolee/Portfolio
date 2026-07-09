@@ -9,6 +9,12 @@ title: "Separating chromosomes in fused cells"
 :::: {.columns .vmiddle}
 ::: {.column width="62%"}
 ![](figure1.jpg){.paper-figure style="width:100%; max-width:100%; margin:0"}
+
+[Figure 1 reproduced from Sunchu B., Lee N. M., Taylor J. A., Segura R. C., Roubinet C. &amp;
+Cabernard C. (2022). *Asymmetric chromatin retention and nuclear envelopes separate
+chromosomes in fused cells in vivo.* **Communications Biology** 5, 953.
+[doi:10.1038/s42003-022-03874-z](https://doi.org/10.1038/s42003-022-03874-z). © 2022 The
+Author(s). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).]{.figure-credit style="max-width:100%"}
 :::
 ::: {.column width="4%"}
 :::
@@ -21,20 +27,6 @@ them faithfully; failure leads to **chromosome missegregation and aneuploidy**. 
 Aichel proposed that unregulated somatic cell fusion could **initiate tumors**, since the resulting
 tetraploidy and extra centrosomes predispose cells to aneuploidy. How a hybrid cell keeps two
 genomes apart **inside a living animal** had not been characterized.
-:::
-::::
-
-:::: {.columns}
-::: {.column width="62%"}
-[Figure 1 reproduced from Sunchu B., Lee N. M., Taylor J. A., Segura R. C., Roubinet C. &amp;
-Cabernard C. (2022). *Asymmetric chromatin retention and nuclear envelopes separate
-chromosomes in fused cells in vivo.* **Communications Biology** 5, 953.
-[doi:10.1038/s42003-022-03874-z](https://doi.org/10.1038/s42003-022-03874-z). © 2022 The
-Author(s). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).]{.figure-credit style="max-width:100%"}
-:::
-::: {.column width="4%"}
-:::
-::: {.column width="34%"}
 :::
 ::::
 

@@ -17,19 +17,7 @@ who brought the fabrication and 3D-printing expertise that made the ideas real.
 :::: {.columns .vmiddle}
 ::: {.column width="44%"}
 ![](base-chamber-01.jpg){.paper-figure fig-alt="Base chamber design: CNC milling, magnet-held modular components, assembly, and the assembled chamber under infrared light in the dark"}
-:::
-::: {.column width="4%"}
-:::
-::: {.column width="52%"}
-The base chamber holds the worm arena, the agar, and the optics in a fixed, repeatable
-geometry. Cutting each piece separately and joining them magnetically made the build modular:
-worn or damaged parts could be replaced individually rather than re-machining the whole
-assembly.
-:::
-::::
 
-:::: {.columns}
-::: {.column width="44%"}
 [**Figure 1 — Base chamber.** **(A)** The chamber components were CNC-milled from acrylic.
 **(B)** Each component is cut as a separate piece and held together with embedded magnets, so a
 single broken part can be swapped out without remaking the whole chamber. **(C)** The parts
@@ -39,6 +27,10 @@ dark.]{.fig-legend}
 ::: {.column width="4%"}
 :::
 ::: {.column width="52%"}
+The base chamber holds the worm arena, the agar, and the optics in a fixed, repeatable
+geometry. Cutting each piece separately and joining them magnetically made the build modular:
+worn or damaged parts could be replaced individually rather than re-machining the whole
+assembly.
 :::
 ::::
 
@@ -55,15 +47,7 @@ tracking), and let me stage several animals at once while imaging them one at a 
 :::
 ::: {.column width="44%"}
 ![](cut-out-02.jpg){.paper-figure fig-alt="Iterations of the worm arena: a failed 96-well prototype, tests of different grid sizes and layouts, the chosen size for C. elegans, and the final schematic"}
-:::
-::::
 
-:::: {.columns}
-::: {.column width="52%"}
-:::
-::: {.column width="4%"}
-:::
-::: {.column width="44%"}
 [**Figure 2 — Worm arenas.** The recording arenas where individual worms sit. Several worms can
 be staged in separate grids at once for imaging, though optogenetic experiments were usually run
 one worm at a time. **(A)** An early prototype fitting the chamber cut-out to a 96-well plate;
@@ -78,6 +62,10 @@ The final arena schematic.]{.fig-legend}
 :::: {.columns .vmiddle}
 ::: {.column width="44%"}
 ![](stereoscope-cutout-03.jpg){.paper-figure fig-alt="Custom C-mount camera adapter modeled in Onshape (left) and 3D-printed and fitted to the stereomicroscope (right)"}
+
+[**Figure 3 — Camera adapter.** The custom C-mount adapter that fixes the camera to the
+stereomicroscope, designed with the 3DPP Lab (credit: Dennis Ong) and 3D-printed. **(Left)** the
+part modeled in Onshape; **(right)** the printed adapter fitted to the stereoscope.]{.fig-legend}
 :::
 ::: {.column width="4%"}
 :::
@@ -86,18 +74,6 @@ Images were acquired at 29 FPS with a FLIR Grasshopper3 near-infrared camera on 
 stereomicroscope at 1.5× magnification. We needed to fix the camera to the microscope securely,
 so I designed a custom C-mount adapter and had it 3D-printed. The rigid mount eliminated camera
 displacement during recording.
-:::
-::::
-
-:::: {.columns}
-::: {.column width="44%"}
-[**Figure 3 — Camera adapter.** The custom C-mount adapter that fixes the camera to the
-stereomicroscope, designed with the 3DPP Lab (credit: Dennis Ong) and 3D-printed. **(Left)** the
-part modeled in Onshape; **(right)** the printed adapter fitted to the stereoscope.]{.fig-legend}
-:::
-::: {.column width="4%"}
-:::
-::: {.column width="52%"}
 :::
 ::::
 
@@ -115,15 +91,7 @@ recovery.
 :::
 ::: {.column width="44%"}
 ![](worm-chamber-stereo-04.png){.paper-figure fig-alt="The fully assembled C. elegans tracking rig: camera, adapter, stereomicroscope, worm arena, and IR plus optogenetic illumination"}
-:::
-::::
 
-:::: {.columns}
-::: {.column width="52%"}
-:::
-::: {.column width="4%"}
-:::
-::: {.column width="44%"}
 [**Figure 4 — The assembled rig.** Camera, C-mount adapter, stereomicroscope, worm arena, and
 the infrared and optogenetic illumination, brought together.]{.fig-legend}
 :::
