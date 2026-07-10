@@ -27,8 +27,8 @@ website:
         text: communications
       - href: writing.qmd
         text: writing
-      - href: contact.qmd
-        text: contact
+      # - href: contact.qmd      # temporarily hidden
+      #   text: contact
     right:
       - icon: github
         href: "https://github.com/mnicolee"
