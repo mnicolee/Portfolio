@@ -46,13 +46,14 @@ website:
         href: "mailto:lnicole8282@gmail.com"
         aria-label: Email
   page-footer:
-    center: "© 2026 Nicole M. Lee · built with Quarto"
+    center: "© 2026 Nicole M. Lee · built with Quarto · design [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 
 format:
   html:
     # Add dark mode later: theme: { light: theme-light.scss, dark: theme-dark.scss }
     theme: theme-light.scss
     toc: false
+    anchor-sections: false   # no hover "link" icon on headings
     smooth-scroll: true
     grid:
       body-width: 1100px   # readability ceiling; actual width is fluid (see theme-light.scss)

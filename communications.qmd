@@ -6,7 +6,7 @@ title: "Communications"
 Awards, talks, media coverage, and the training and mentoring behind the research.
 :::
 
-[Awards]{.eyebrow}
+[Awards]{.eyebrow .lg}
 
 - **Best Oral Presentation Award**, DUNES Symposium, Singapore, 2025
 - **Best Poster Award**, SfN Singapore Chapter Annual Meeting, Singapore, 2024
@@ -18,7 +18,7 @@ the 2025 Francis Crick Symposium (Suzhou, China).
 
 []{.section-rule}
 
-[Courses & training]{.eyebrow}
+[Courses & training]{.eyebrow .lg}
 
 :::: {.stack}
 
@@ -38,7 +38,7 @@ behavioral data.
 
 []{.section-rule}
 
-[Media]{.eyebrow}
+[Media]{.eyebrow .lg}
 
 :::: {.stack}
 
@@ -68,17 +68,10 @@ Oral Presentation.
 
 []{.section-rule}
 
-[Mentoring]{.eyebrow}
+[Mentoring]{.eyebrow .lg}
 
-:::: {.stack}
-
-::: {.scard}
-[Undergraduate research mentoring]{.scard-title}
-[Yale-NUS College → Duke-NUS]{.scard-meta}
-
-I mentored a Yale-NUS College undergraduate on the OPN3 optogenetic-silencing project, guiding
-them through experimental design, data collection, and analysis. Their contributions fed into
-the study, and they later joined the lab as a full-time research assistant.
-:::
-
-::::
+I've mentored three undergraduate student researchers. In 2024 at Duke-NUS, I guided a Yale-NUS
+College undergraduate on the OPN3 optogenetic-silencing project, through experimental design, data
+collection, and analysis; their contributions fed into the study, and they later joined the lab as
+a full-time research assistant. From 2016 to 2018, I mentored two undergraduate researchers in the
+Cabernard lab as they carried out their own student-research projects.

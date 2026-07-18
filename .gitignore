@@ -5,3 +5,6 @@
 
 # Local reference material (papers, PDFs) kept next to tool pages but not published
 tools/reminder-bot/*.pdf
+
+# Quarto scss compile-error dump (build artifact)
+_quarto_internal_scss_error.scss

@@ -6,54 +6,59 @@ pagetitle: "Nicole M. Lee"
      full-width title block, which tears the name out of this flex row. Raw HTML keeps the
      name, tagline, and headshot together in one row. 📷 headshot → nicole.png -->
 ```{=html}
+<!--
+  The design and template of this site (its visual and interaction design: theme, colours,
+  typography, and the card / hover / layout system) is the original work of Nicole M. Lee and
+  may be reused with credit under CC BY 4.0.
+  All written text and images are her content, all rights reserved, and are NOT for reuse.
+  Source and full terms: https://github.com/mnicolee/Portfolio  (see LICENSE and AGENTS.md)
+-->
 <div class="hero">
   <div class="hero-text">
     <div class="hero-name" role="heading" aria-level="1">Nicole M. Lee, Ph.D.</div>
-    <p class="tagline">Behavioral neuroscience | Optogenetics | Hardware prototyping<br>Estimation statistics | Data analysis &amp; visualization</p>
+    <p class="tagline">Behavioral neuroscience · Optogenetics · Hardware prototyping<br>Estimation statistics · Data analysis &amp; visualization</p>
   </div>
   <img src="nicole.png" class="headshot" width="300" alt="Nicole M. Lee">
 </div>
 ```
 
-I'm a **neuroscientist** and Research Fellow in the [**ACC Lab**](https://www.claridgechang.net/about.html) (Adam Claridge-Chang) at
-Duke-NUS Medical School. My PhD centered on **advancing optogenetic methods for studying
-neural circuits in behavior**: building the molecular tools, the instruments, and the
-quantitative methods (statistics, data analysis, and ethomics) needed to ask how small
-circuits in the *Drosophila* brain shape what an animal does.
+I'm a **neuroscientist** in the [**ACC Lab**](https://www.claridgechang.net/about.html) (Adam Claridge-Chang) at Duke-NUS
+Medical School, where I completed my PhD and now continue as a Research Fellow, building
+**optogenetic methods to study how small circuits in the *Drosophila* brain shape behavior**.
 
 Before the flies, I completed my B.S. in Biochemistry at the University of Washington, Seattle, and
-went on to work on various projects ranging from the biochemistry of collagen degradation and
-receptor signaling in the stress response to developmental biology and cancer drug-resistance.
-Beyond the science, I paint, game, and build apps.
+worked on several projects: the
+[biochemistry of collagen degradation](https://orthop.washington.edu/research/ourlabs/collagen-biology-and-genetic-disorders-lab.html),
+[mTOR and kappa-opioid receptor signaling](https://depts.washington.edu/uwconte/chavkinlab/),
+[asymmetric cell division](https://cabernardlab.org/overview), and [cancer drug-resistance](https://csi.nus.edu.sg/).
+Beyond the science, I paint 🎨, game 🎮, and build apps 📱.
 
-[]{.section-rule}
+[]{.section-rule .dots}
 
-[What I do]{.eyebrow .whatido}
-
-::: {.triptych}
-::: {.panel}
-[🧠]{.panel-icon}
-
-### [The neuroscience](research.qmd){.stretched-link}
-How circuits in the *Drosophila* brain shape what an animal does, and the light-driven
-tools I build and validate to switch those neurons on and off (kalium channelrhodopsins,
-opto-GPCRs).
-:::
-
-::: {.panel}
-[🛠️]{.panel-icon}
-
-### [The nuts & bolts](hardware.qmd){.stretched-link}
-Designing the rigs that deliver the light and capture behavior: arenas, illumination,
-and high-throughput tracking pipelines.
-:::
-
-::: {.panel}
-![](dabest-icon.svg){.panel-icon-img fig-alt="DABEST estimation-statistics icon"}
-
-### [The numbers](papers/dabest/index.qmd){.stretched-link}
-Estimation statistics over p-values: reporting effect sizes with bootstrap confidence
-intervals rather than significance stars, plus the analysis pipelines that turn
-fly-tracking data into behavioral metrics.
-:::
-:::
+```{=html}
+<div class="whatido-fields">
+  <a class="wi-field" href="research.qmd" aria-label="The neuroscience">
+    <span class="wi-med"><svg class="wi-ico wi-ico--brain" viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M24 10 C20 7 14 8 13 13 C8 13 6 19 10 22 C7 25 9 31 14 30 C15 34 22 34 24 30 C26 34 33 34 34 30 C39 31 41 25 38 22 C42 19 40 13 35 13 C34 8 28 7 24 10 Z"/>
+      <path d="M24 10 L24 30"/><path d="M17 16 C20 18 20 22 17 24"/><path d="M31 16 C28 18 28 22 31 24"/>
+    </svg></span>
+    <h3>The neuroscience</h3>
+    <p>How circuits in the <em>Drosophila</em> brain shape what an animal does, and the light-driven tools I build and validate to switch those neurons on and off (kalium channelrhodopsins, opto-GPCRs).</p>
+  </a>
+  <a class="wi-field" href="hardware.qmd" aria-label="The nuts and bolts">
+    <span class="wi-med"><svg class="wi-ico wi-ico--wrench" viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M45.4 38 l-18.2 -18.2 c1.8 -4.6 .8 -10 -3 -13.8 -4 -4 -10 -4.8 -14.8 -2.6 L18 12 12 18 3.2 9.4 C.8 14.2 1.8 20.2 5.8 24.2 c3.8 3.8 9.2 4.8 13.8 3 l18.2 18.2 c.8 .8 2 .8 2.8 0 l4.6 -4.6 c1 -.8 1 -2.2 .2 -2.8 z"/>
+    </svg></span>
+    <h3>The nuts &amp; bolts</h3>
+    <p>Designing the rigs that deliver the light and capture behavior: arenas, illumination, and high-throughput tracking pipelines.</p>
+  </a>
+  <a class="wi-field" href="papers/dabest/index.qmd" aria-label="The numbers">
+    <span class="wi-med"><svg class="wi-ico wi-ico--plot" viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M6 35 H42"/><path d="M9 35 C18 35 18 11 24 11 C30 11 30 35 39 35"/>
+      <path d="M24 15 V37"/><circle class="dot" cx="24" cy="25" r="3"/>
+    </svg></span>
+    <h3>The numbers</h3>
+    <p>Estimation statistics over p-values: reporting effect sizes with bootstrap confidence intervals rather than significance stars, plus the analysis pipelines that turn fly-tracking data into behavioral metrics.</p>
+  </a>
+</div>
+```
