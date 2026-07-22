@@ -16,6 +16,10 @@ say "bring up the todolist" any time.
 
 - [ ] **Focus Pocus — fix the graphs** (badly done, especially the DABEST plots)
 
+- [ ] **Blog post — DABEST then and now.** Write a post on who has been using the 2019 version of
+  DABEST, and what the 2026 (DABEST 2.0) version brings to those users. Angle: profile the existing
+  user base / use cases of the original, then lay out what's new in 2.0 and who it helps.
+
 - [ ] **Contact — sort out the contact setup** (`contact.qmd`)
   - [ ] Create a Formspree form and replace `REPLACE_WITH_FORMSPREE_ID` with the real id
   - [ ] Decide/confirm which email it routes to (navbar mailto is `lnicole8282@gmail.com`)
