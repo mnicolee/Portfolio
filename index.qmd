@@ -24,7 +24,7 @@ pagetitle: "Nicole M. Lee"
 <!-- ABOUT (on top) — no label per Nicole -->
 <div class="hsec">
   <p class="lead-p">I'm a <strong>neuroscientist</strong> in the <a href="https://www.claridgechang.net/about.html">ACC Lab</a> (Adam Claridge-Chang) at Duke-NUS Medical School, where I completed my PhD and now continue as a Research Fellow, <strong>building optogenetic methods to study how small circuits in the <em>Drosophila</em> brain shape behavior.</strong></p>
-  <p class="lead-p">Before the flies, I completed my B.S. in Biochemistry at the University of Washington, Seattle, and worked on several projects: the <a href="https://orthop.washington.edu/research/ourlabs/collagen-biology-and-genetic-disorders-lab.html">biochemistry of collagen degradation</a>, <a href="https://depts.washington.edu/uwconte/chavkinlab/">mTOR and kappa-opioid receptor signaling</a>, <a href="https://cabernardlab.org/overview">asymmetric cell division</a>, and <a href="https://csi.nus.edu.sg/">cancer drug-resistance</a>. Beyond the science, I paint 🎨, game 🎮, and build apps 📱.</p>
+  <p class="lead-p">Before the flies, I completed my B.S. in Biochemistry at the University of Washington, Seattle, and worked on several projects: the <a href="https://orthop.washington.edu/research/ourlabs/collagen-biology-and-genetic-disorders-lab.html">biochemistry of collagen degradation</a>, <a href="https://depts.washington.edu/uwconte/chavkinlab/">mTOR and kappa-opioid receptor signaling</a>, <a href="https://cabernardlab.org/overview">asymmetric cell division</a>, and <a href="https://csi.nus.edu.sg/">cancer drug-resistance</a>. Outside the lab, I paint 🎨, play games 🎮, and build apps 📱.</p>
 </div>
 
 <!-- THE THREE: icon inline with title, blurb below -->
@@ -32,22 +32,19 @@ pagetitle: "Nicole M. Lee"
   <div class="three">
     <div class="col">
       <div class="k-row">
-        <span class="ic ic--brain"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 10 C20 7 14 8 13 13 C8 13 6 19 10 22 C7 25 9 31 14 30 C15 34 22 34 24 30 C26 34 33 34 34 30 C39 31 41 25 38 22 C42 19 40 13 35 13 C34 8 28 7 24 10 Z"/><path d="M24 10 L24 30"/><path d="M17 16 C20 18 20 22 17 24"/><path d="M31 16 C28 18 28 22 31 24"/></svg></span>
-        <span class="kt">The neuroscience</span>
+        <span class="kt"><span class="ic ic--brain"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 10 C20 7 14 8 13 13 C8 13 6 19 10 22 C7 25 9 31 14 30 C15 34 22 34 24 30 C26 34 33 34 34 30 C39 31 41 25 38 22 C42 19 40 13 35 13 C34 8 28 7 24 10 Z"/><path d="M24 10 L24 30"/><path d="M17 16 C20 18 20 22 17 24"/><path d="M31 16 C28 18 28 22 31 24"/></svg></span>The neuroscience</span>
       </div>
       <div class="kd"><strong>Optogenetics for behavioral neuroscience</strong>, developing and applying light-driven tools to manipulate neural activity, including potassium channelrhodopsins and opto-GPCRs.</div>
     </div>
     <div class="col">
       <div class="k-row">
-        <span class="ic ic--wrench"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M45.4 38 l-18.2 -18.2 c1.8 -4.6 .8 -10 -3 -13.8 -4 -4 -10 -4.8 -14.8 -2.6 L18 12 12 18 3.2 9.4 C.8 14.2 1.8 20.2 5.8 24.2 c3.8 3.8 9.2 4.8 13.8 3 l18.2 18.2 c.8 .8 2 .8 2.8 0 l4.6 -4.6 c1 -.8 1 -2.2 .2 -2.8 z"/></svg></span>
-        <span class="kt">The nuts &amp; bolts</span>
+        <span class="kt"><span class="ic ic--wrench"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M45.4 38 l-18.2 -18.2 c1.8 -4.6 .8 -10 -3 -13.8 -4 -4 -10 -4.8 -14.8 -2.6 L18 12 12 18 3.2 9.4 C.8 14.2 1.8 20.2 5.8 24.2 c3.8 3.8 9.2 4.8 13.8 3 l18.2 18.2 c.8 .8 2 .8 2.8 0 l4.6 -4.6 c1 -.8 1 -2.2 .2 -2.8 z"/></svg></span>The nuts &amp; bolts</span>
       </div>
       <div class="kd"><strong>Experimental hardware design</strong>, designing and prototyping custom rigs and hardware components for optogenetic stimulation and behavioral experiments.</div>
     </div>
     <div class="col">
       <div class="k-row">
-        <span class="ic ic--plot"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 35 H42"/><path d="M9 35 C18 35 18 11 24 11 C30 11 30 35 39 35"/><path d="M24 15 V37"/><circle class="dot" cx="24" cy="25" r="3"/></svg></span>
-        <span class="kt">The numbers</span>
+        <span class="kt"><span class="ic ic--plot"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 35 H42"/><path d="M9 35 C18 35 18 11 24 11 C30 11 30 35 39 35"/><path d="M24 15 V37"/><circle class="dot" cx="24" cy="25" r="3"/></svg></span>The numbers</span>
       </div>
       <div class="kd">
         <p><strong>Estimation statistics</strong>, contributing to <a href="papers/dabest/index.html">DABEST</a> for effect sizes and confidence intervals over p-values.</p>
@@ -73,7 +70,7 @@ pagetitle: "Nicole M. Lee"
         <img class="show-pic" src="tools/viset/venn-drug-targets.png" alt="ViSet set-overlap figure">
         <div class="txt">
           <div class="m"><time>Jul 2026</time><span class="tag">Tool</span></div>
-          <h3>ViSet - interactive itemized set visualization</h3>
+          <h3>VISET - interactive itemized set visualization</h3>
           <p>An nbdev Python package on GitHub for itemizing and comparing sets, not just viewing them interactively.</p>
           <a class="read" href="tools/viset/index.html">read more →</a>
         </div>
@@ -91,7 +88,7 @@ pagetitle: "Nicole M. Lee"
         <img class="show-pic" src="hardware/celegans/worm-chamber-stereo-04.png" alt="C. elegans worm chamber under the stereoscope">
         <div class="txt">
           <div class="m"><time>May 2026</time><span class="tag">Hardware</span></div>
-          <h3>C. elegans - a behavior tracking rig</h3>
+          <h3><em>C. elegans</em> - a behavior tracking rig</h3>
           <p>A DIY behavior rig: custom arena, controlled illumination, camera, and a tracking pipeline for freely moving worms.</p>
           <a class="read" href="hardware/celegans/index.html">read more →</a>
         </div>

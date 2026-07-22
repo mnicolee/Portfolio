@@ -2,9 +2,10 @@
 title: "Tools"
 ---
 
-Tools I built with the help of LLMs. Each one started the same way: I hit a gap
-in how I work or live, and decided to close it myself. They are grouped by the need they answer,
-my research and data work on one side, everyday life on the other.
+I have a habit of building things when I can't find exactly what I need. Some of these started in
+the lab, others came from everyday frustrations, but they all solve problems I ran into myself.
+LLMs helped write much of the code, while I designed each tool around how I actually wanted it to
+work. They're grouped into research tools and everyday tools below.
 
 [Research & data]{.eyebrow}
 
@@ -17,8 +18,8 @@ my research and data work on one side, everyday life on the other.
 ### [VISET](tools/viset/index.qmd){.stretched-link}
 [Python library · open source]{.paper-meta}
 
-Area-proportional Venn/Euler and UpSet diagrams that print the actual member names inside each
-region, not just the counts. Built in Python for comparing gene sets at a glance.
+A Python package for area-proportional Venn, Euler, and UpSet diagrams that prints the actual
+member names inside each region, making set comparisons far easier to interpret.
 :::
 
 ::::
@@ -29,16 +30,15 @@ region, not just the counts. Built in Python for comparing gene sets at a glance
 
 ::::: {.card-grid}
 
-:::: {.pcard}
-<img class="pcard-media" style="object-fit:cover;object-position:center" src="tools/focus-pocus/app-interface.png" alt="The Focus Pocus timer window with a running timer and controls">
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
 
 ::: {.pcard-body}
-### [Focus Pocus](tools/focus-pocus/index.qmd){.stretched-link}
+### Focus Pocus
 [Desktop app · Windows · in development]{.paper-meta}
 
-A focus timer that notices when you drift off, whether it's an idle mouse or a site on your own
-blocklist, and beeps you back louder and louder until you return. Private by design, and built to
-get my PhD thesis written.
+A privacy-first focus timer that notices when you've drifted off, whether it's an idle mouse or a
+site on your blocklist, and nudges you back before distractions take over.
 :::
 
 ::::
@@ -50,9 +50,8 @@ get my PhD thesis written.
 ### [Reminder Bot](tools/reminder-bot/index.qmd){.stretched-link}
 [Discord bot · runs locally]{.paper-meta}
 
-A Discord bot that pings you and your friends when it's time to do a thing, keeps score of who
-actually followed through, and roasts or cheers you in a weekly and monthly report. Runs on your
-own machine, keeps everything offline.
+A self-hosted Discord bot that turns reminders into a shared accountability system, complete with
+scoreboards, weekly reports, and a healthy amount of roasting.
 :::
 
 ::::

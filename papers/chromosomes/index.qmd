@@ -19,39 +19,42 @@ Author(s). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.
 ::: {.column width="4%"}
 :::
 ::: {.column width="34%"}
-Every cell division must distribute its replicated chromosomes equally to two daughter cells,
-and most metazoan cells do so with a single bipolar spindle. But a cell can end up carrying
-two distinct genomes at fertilization, or through cell fusion, when two cells merge into
-a hybrid, and it must then keep chromosomes of different origins physically apart and segregate
-them faithfully; failure leads to chromosome missegregation and aneuploidy. Over a century ago,
-Aichel proposed that unregulated somatic cell fusion could initiate tumors, since the resulting
-tetraploidy and extra centrosomes predispose cells to aneuploidy. How a hybrid cell keeps two
-genomes apart inside a living animal had not been characterized.
+Every time a cell divides, it has to distribute a complete copy of its chromosomes to each
+daughter cell. This is normally straightforward because a cell only has one genome. However, after
+events such as cell fusion, two genetically distinct chromosome sets suddenly have to be managed
+within the same cell, and getting it wrong leads to chromosome missegregation and aneuploidy. Over
+a century ago, Aichel proposed that unregulated cell fusion could even seed tumors, which raises a
+simple question: how does the cell keep the two genomes apart?
 :::
 ::::
 
-To watch it happen, we built a hybrid-cell model in the *Drosophila* larval brain: a brief
-pulse from a 532 nm laser fuses a neural stem cell (a neuroblast) with one of its smaller,
-differentiating daughters, turning the fused cell into a live stage for following two genomes at
-once.
+To study this, we developed a hybrid-cell model in the *Drosophila* larval brain by briefly fusing
+a neural stem cell (neuroblast) with one of its differentiating daughters (a ganglion mother cell,
+GMC) using a focused 532 nm laser pulse. This created cells containing two distinct genomes,
+allowing us to watch how they behaved during mitosis.
 
-The **timing of fusion strongly shaped the outcome**. Fusions induced in interphase or early
-prophase let the hybrid independently align both the endogenous and ectopic chromosomes at the
-metaphase plate, each on a spindle built from its own centrosomes; fusions in metaphase or
-anaphase usually left the incoming chromatin unable to align. The two chromosome sets could even
-enter anaphase asynchronously, hinting at a distance-dependent "wait-anaphase" checkpoint signal.
+The outcome depended on when the fusion happened. When cells were fused during interphase or early
+prophase, the neuroblast and GMC chromosomes stayed largely separated rather than mixing: each
+genome formed its own bipolar spindle before eventually aligning on a common metaphase plate, so the
+two chromosome sets could segregate independently within the same hybrid cell. Fusions induced
+later, in metaphase or anaphase, usually left the incoming GMC chromatin unable to align.
 
-What keeps the two genomes from intermingling? **Two cooperating mechanisms.** First, asymmetric,
-microtubule-dependent chromatin retention: the neuroblast maintains a single active apical
-microtubule-organizing center (MTOC) that holds its own centromeres near the cortex, away from
-the incoming chromatin — disrupting this interphase bias let the two centromere pools converge far
-earlier than in controls. Second, separate nuclear envelopes: each chromatin pool stays enclosed
-within its own envelope, a physical barrier that separates the genomes until roughly metaphase.
-Segregation was error-prone — lagging chromosomes, anaphase bridges and micronuclei — consistent
-with Aichel's century-old cancer-by-fusion hypothesis. We found no evidence of active chromosome
-"recognition"; asymmetric interphase centrosome activity together with nuclear envelopes are
-sufficient to explain genome separation, a mechanism that may also operate at the first zygotic
-division.
+We found that this separation begins well before mitosis. During interphase, the neuroblast's active
+apical microtubule-organising centre (MTOC) keeps its own centromeres positioned near the apical
+cortex, physically biasing them away from the incoming GMC chromosomes. Disrupting this asymmetry by
+depleting Centrobin caused the two centromere populations to come together much earlier than in
+control cells.
+
+A second layer of separation comes from the nuclear envelope. Since neuroblasts undergo semi-closed
+mitosis, each genome initially remains enclosed within its own nuclear envelope, creating a physical
+barrier that keeps the chromosome sets apart until roughly metaphase.
+
+Together, these findings show that hybrid cells use both asymmetric chromatin positioning during
+interphase and separate nuclear envelopes to keep distinct genomes apart before mitosis, with no
+evidence of active chromosome "recognition". Segregation was still error-prone, producing lagging
+chromosomes, anaphase bridges and micronuclei, consistent with Aichel's century-old idea that cell
+fusion can drive aneuploidy and tumor formation. The same mechanisms may also help preserve genomic
+organization at the first zygotic division.
 
 As the paper's second author, I laid much of the groundwork: through extensive troubleshooting I
 helped establish the laser-fusion system and uncovered much of the timing-dependent behavior

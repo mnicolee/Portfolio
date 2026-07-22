@@ -8,27 +8,25 @@ title: "Kalium channelrhodopsins"
 
 ## What KCRs are
 
-Optogenetics lets us switch neurons off with light, but the standard inhibitory tools,
-light-gated chloride channels (anion channelrhodopsins, ACRs), have a catch: in cells or
-sub-neuronal compartments with high internal chloride, a chloride current can *excite* rather
-than silence. Kalium channelrhodopsins (KCRs) are light-gated channels that conduct
-potassium instead, hyperpolarising a neuron independently of its chloride gradient, but
-they had not been shown to reliably silence neurons in small, genetically tractable animals.
+Optogenetics lets us silence neurons with light, but the standard inhibitory tools, light-gated
+chloride channels (anion channelrhodopsins, ACRs), have an important limitation. In cells or
+subcellular compartments with high intracellular chloride, they can actually excite neurons instead
+of silencing them. Kalium channelrhodopsins (KCRs) avoid this by conducting potassium rather than
+chloride, hyperpolarizing neurons regardless of their chloride gradient.
 
-This paper put KCRs to the test as neuron silencers across three model organisms,
-*Drosophila*, *C. elegans*, and zebrafish, benchmarking them directly against the widely
-used chloride channel ACR1. A KCR1 variant engineered for better plasma-membrane trafficking
-**matched ACR1's potency while causing less toxicity** and performing better in putative
-high-chloride cells, establishing KCRs as a next-generation inhibitory tool for circuit
-analysis in behaving animals.
+This study evaluated KCRs as optogenetic silencers across *Drosophila*, *C. elegans*, and zebrafish,
+benchmarking them directly against the widely used chloride channel ACR1. An engineered KCR1 variant
+with improved membrane trafficking matched ACR1's silencing performance while showing lower toxicity
+and better performance in putative high-chloride cells, establishing KCRs as a promising
+next-generation inhibitory tool.
 
 ## The *C. elegans* arm
 
-My part of the study was the *C. elegans* behavioral work: testing whether KCRs could silence
-the worm's neurons and reading that out as a measurable change in locomotion. Because no
-*C. elegans* behavioral lab existed locally and a dedicated worm-tracking system would have
-been cost-prohibitive, I had to **build both the assay and the tracker from the ground up**,
-starting from a stereoscope and a camera.
+My contribution focused on the *C. elegans* behavioral experiments, where I tested whether KCRs
+could silence neurons by measuring changes in locomotion. Since there was no *C. elegans* behavioral
+lab locally and dedicated worm-tracking systems were prohibitively expensive, I built both the
+behavioral assay and tracking system from the ground up, starting with little more than a stereoscope
+and camera.
 
 ## What was already out there
 
@@ -409,10 +407,10 @@ in Tables D.4 and D.5 below.
 
 ## So we built our own
 
-None of the existing options fit a low-contrast, low-cost stereoscope setup, so I built a
-dedicated *C. elegans* optogenetics-and-tracking rig from the ground up: custom CNC-milled
-chambers held together with magnets, a 3D-printed camera adapter, infrared and optogenetic
-illumination, and a DeepLabCut tracker trained on our own footage.
+As none of the available systems worked for a low-contrast stereoscope setup, I designed and built a
+dedicated *C. elegans* optogenetics and tracking rig. It combined custom CNC-milled chambers,
+magnetic modular components, a 3D-printed camera adapter, infrared and optogenetic illumination, and
+a DeepLabCut tracker trained on our own recordings.
 
 [Click here to see how we made it → the *C. elegans* tracking rig](../../hardware/celegans/index.qmd){.read-more}
 
@@ -428,17 +426,17 @@ Claridge-Chang A. (2024). *Kalium channelrhodopsins effectively inhibit neurons.
 Communications** 15, 3480. [doi:10.1038/s41467-024-47203-w](https://doi.org/10.1038/s41467-024-47203-w).
 © 2024 The Author(s). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).]{.fig-legend style="max-width:760px"}
 
-To read out silencing, worms expressing each opsin pan-neuronally were reared on a range of
-all-*trans*-retinal (ATR) concentrations and filmed on the rig. Every opsin-expressing line
-slowed markedly during green illumination, and the enhanced-trafficking (ET) tag improved
-membrane targeting in the worm just as it had in flies and cultured cells. The efficacy ranking
-was KCR2-ET > ACR1 > KCR1-ET, varying with ATR concentration, and all animals recovered quickly
-once the light went off, with no meaningful difference in recovery time between genotypes. For
-the worm, then, the potassium-conducting KCR2-ET matched the chloride channel ACR1.
+To measure neuronal silencing, worms expressing each opsin pan-neuronally were reared on different
+concentrations of all-trans-retinal (ATR) and recorded on the custom rig. Every opsin line slowed
+markedly during green-light stimulation, while the enhanced-trafficking (ET) tag improved membrane
+targeting in worms just as it had in flies and cultured cells. Overall, KCR2-ET performed best,
+followed by ACR1 and KCR1-ET, although the ranking depended on ATR concentration. All animals
+recovered rapidly once the light was turned off, with no meaningful differences in recovery time
+between genotypes.
 
-Across the whole study, the trafficking-enhanced KCR1 matched ACR1's potency in flies, worms,
-and zebrafish while showing lower developmental toxicity and better performance in putative
-high-chloride cells, making the case for KCRs as next-generation silencers.
+Across all three model organisms, the trafficking-enhanced KCR1 matched ACR1's silencing performance
+while causing less developmental toxicity and performing better in putative high-chloride cells,
+supporting KCRs as a next-generation optogenetic silencer.
 
 The work was covered in *The Straits Times* (2024).
 

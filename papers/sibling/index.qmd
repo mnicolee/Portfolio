@@ -16,20 +16,34 @@ Internal Pressure Generate Sibling Cell Size Asymmetry.* **iScience** 13, 9–19
 Author(s). Reproduced under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).]{.figure-credit}
 :::
 
-An early collaboration from my developmental biology years, on which I was a co-author. Many cells
-divide into two unequal-sized daughters, an asymmetry whose underlying mechanics were unclear.
+Many stem cells divide asymmetrically, producing two daughters that are different not only in fate
+but also in size. In *Drosophila* neural stem cells, the larger daughter remains a stem cell while
+the smaller daughter begins differentiating. How cells reliably generate this size difference during
+every division has remained an open question.
 
-Using atomic force microscopy with live-cell imaging of dividing *Drosophila* neural stem cells, we
-separated the forces at work. Apical expansion is driven by hydrostatic pressure peaking just after
-anaphase onset; a later rise in contractile tension at the cleavage furrow, with myosin
-relocalization, drives basal expansion. When either input is disrupted, a repositioning cleavage furrow
-still establishes the size asymmetry.
+Using atomic force microscopy alongside live imaging of dividing *Drosophila* neural stem cells, we
+measured the physical forces at work. Two of them drive the unequal division: intracellular
+hydrostatic pressure and cortical actomyosin contractility, each acting at a different moment and a
+different part of the cell.
 
-The result tied a long-standing developmental question, how a dividing cell sets the sizes of its
-two daughters, to concrete, measurable mechanics: **pressure and cortical tension act on different
-timescales**, and the furrow itself can adapt to preserve the asymmetry when one force is
-perturbed. For me it was an early, formative lesson in pairing quantitative biophysics (AFM force
-measurements) with live imaging to dissect a mechanism neither approach could resolve alone.
+The timing is what makes it work. Just after anaphase onset, hydrostatic pressure peaks and drives
+expansion of the apical cortex, the future neuroblast. A little later, contractile tension rises at
+the cleavage furrow and myosin relocalizes, driving basal expansion. Because the two forces act on
+different timescales and different sides of the cell, the division ends with a larger self-renewing
+neuroblast and a smaller differentiating GMC.
+
+The system is also surprisingly robust. When we perturbed one of these inputs, the cell did not
+simply lose its asymmetry: the cleavage furrow repositioned to compensate, shifting so that the two
+daughters still ended up different sizes. That redundancy is what makes the size difference so
+reliable from one division to the next.
+
+Our findings show that asymmetric cell division emerges from the combined action of intracellular
+pressure and cortical mechanics, providing a physical explanation for how neural stem cells reliably
+generate daughters of different sizes.
+
+This was an early collaboration from my developmental biology years, and as a co-author it was a
+formative lesson for me in pairing quantitative biophysics with live imaging to dissect a mechanism
+neither approach could resolve on its own.
 
 ::: {style="clear:both"}
 :::

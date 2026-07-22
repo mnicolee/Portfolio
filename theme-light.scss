@@ -23,6 +23,7 @@ $primary:      #0E6E86;
   --gold:        #C29B2E;  // gold: trim + highlights
   --card:        #EFEDE4;  // original cream (#EFEBE0), muted / less vibrant; ~5% below page bg
   --aqua:        #A7D3D2;  // light aqua: card hover glow + outline
+  --glow:        #5FA6A6;  // mid teal: card hover glow + outline
 }
 
 body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
@@ -83,7 +84,7 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
   transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
 // Hover: lift + soft glowing edges (navy glow, faint gold rim), divider hidden so it reads as a card
 .paper-item:hover { transform: translateY(-4px); background: var(--paper);
-  box-shadow: 0 0 0 1px var(--aqua), 0 10px 24px rgba(167, 211, 210, .32);
+  box-shadow: 0 0 0 1px var(--glow), 0 0 26px 2px color-mix(in srgb, var(--glow) 42%, transparent);
   border-bottom-color: transparent; }
 
 // Respect users who prefer reduced motion: keep the visual cues, drop the movement
@@ -99,8 +100,8 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 .pcard { position: relative; display: flex; flex-direction: column; overflow: hidden;
   border: 1.5px solid #DEDBCF; border-radius: 12px; background: var(--card);
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
-.pcard:hover { transform: translateY(-6px); background: var(--paper); border-color: var(--aqua);
-  box-shadow: 0 0 0 1.5px var(--aqua), 0 18px 40px rgba(167, 211, 210, .42); }
+.pcard:hover { transform: translateY(-6px); background: var(--paper); border-color: var(--glow);
+  box-shadow: 0 0 0 1.5px var(--glow), 0 0 40px 4px color-mix(in srgb, var(--glow) 50%, transparent); }
 // the image sits in a wrapping <p>; kill its margin so it's flush to the top edge
 .pcard > p { margin: 0; line-height: 0; }
 // media band: center-crop the figure (shows the middle, not the whole thing)
@@ -248,7 +249,7 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
   letter-spacing: .01em; color: #464C51; display: block; margin-top: 1.1rem; margin-bottom: 0; }
 @media (max-width: 600px) {
   .hero { flex-wrap: wrap; flex-direction: column; align-items: flex-start; }
-  .headshot { width: 100%; max-width: 300px; }
+  .headshot { width: 100%; max-width: 300px; margin-inline: auto; }
 }
 
 // --- Triptych: neuroscience / nuts & bolts / numbers, 3-col responsive grid of outlined boxes ---
@@ -261,8 +262,8 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 .triptych .panel h3 a { font: inherit; color: inherit; text-decoration: none; }
 .triptych .panel:hover h3 a { color: #0A5461; }
 // Hover: lift the box toward the reader, cast a soft navy shadow, warm the border to gold
-.triptych .panel:hover { transform: translateY(-6px); background: var(--paper); border-color: var(--aqua);
-  box-shadow: 0 0 0 1.5px var(--aqua), 0 18px 40px rgba(167, 211, 210, .42); }
+.triptych .panel:hover { transform: translateY(-6px); background: var(--paper); border-color: var(--glow);
+  box-shadow: 0 0 0 1.5px var(--glow), 0 0 40px 4px color-mix(in srgb, var(--glow) 50%, transparent); }
 // Card icon at the top of each panel: emoji (span) or image (svg/png)
 .triptych .panel-icon { display: block; text-align: center; font-size: 2.4rem;
   line-height: 1; margin-bottom: .5rem; }
@@ -297,8 +298,8 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 .wi-field h3 { margin: 0 0 .45rem; font-family: "Source Serif 4", Georgia, serif; font-weight: 700;
   font-size: calc(1.15rem + 3pt); color: #161A1D; }
 .wi-field p { margin: 0; font-size: 0.9rem; line-height: 1.5; color: #4A5157; max-width: 32ch; }
-.wi-field:hover { transform: translateY(-7px); background: #FFFFFF; border-color: #C29B2E;
-  box-shadow: 0 0 0 1px rgba(194, 155, 46, .55), 0 20px 42px -14px rgba(194, 155, 46, .34); }
+.wi-field:hover { transform: translateY(-7px); background: #FFFFFF; border-color: var(--glow);
+  box-shadow: 0 0 0 1px var(--glow), 0 0 44px 4px color-mix(in srgb, var(--glow) 50%, transparent); }
 .wi-field:hover .wi-med { background: #0E6E86; color: #EAF3F6; border: 3px solid #0E6E86; transform: scale(1.06); }
 @media (max-width: 700px) { .whatido-fields { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) {
@@ -369,8 +370,9 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 .three .col { padding: 0 1.4rem; border-left: 1px solid var(--line); }
 .three .col:first-child { padding-left: 0; border-left: 0; }
 // min-height keeps every header row the same height (icons differ) so all prose starts level
-.k-row { display: flex; align-items: center; gap: .6rem; min-height: 54px; }
-.three .ic { flex: 0 0 auto; color: var(--blue); display: flex; align-items: center; justify-content: center; }
+.k-row { display: flex; align-items: center; justify-content: center; min-height: 54px; }
+.three .ic { position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: .5rem;
+  color: var(--blue); display: flex; align-items: center; justify-content: center; }
 .three .ic svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 // Keep every icon's line the same on-screen weight despite different render sizes
 .three .ic svg path, .three .ic svg circle { vector-effect: non-scaling-stroke; }
@@ -378,8 +380,8 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 .three .ic--brain svg  { width: 48px; height: 48px; }
 .three .ic--wrench svg { width: 40px; height: 40px; }
 .three .ic--plot svg   { width: 44px; height: 44px; }
-.three .kt { font-family: "Source Serif 4", Georgia, serif; font-size: 1.45rem; font-weight: 700;
-  color: var(--ink); letter-spacing: -.01em; line-height: 1.1; }
+.three .kt { position: relative; font-family: "Source Serif 4", Georgia, serif; font-size: 1.45rem;
+  font-weight: 700; color: var(--ink); letter-spacing: -.01em; line-height: 1.1; }
 .three .kd { font-size: .85rem; color: var(--ink-soft); line-height: 1.5; margin-top: .6rem; }
 .three .kd p { margin: 0 0 .55rem; }
 .three .kd p:last-child { margin-bottom: 0; }
@@ -534,3 +536,20 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 .nav-btn:hover { background: var(--paper-2); border-color: var(--blue); }
 .nav-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .nav-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+// --- Figure lightbox: click a figure to zoom into a full-screen overlay; click or Esc closes ---
+.zoomable { cursor: zoom-in; }
+.lightbox-lock { overflow: hidden; }
+.lightbox-overlay { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center;
+  justify-content: center; padding: 2.5vmin; background: rgba(12, 20, 22, .88);
+  opacity: 0; visibility: hidden; cursor: zoom-out;
+  transition: opacity .2s ease, visibility .2s ease; }
+.lightbox-overlay.is-open { opacity: 1; visibility: visible; }
+.lightbox-overlay img { max-width: 95vw; max-height: 95vh; object-fit: contain; border-radius: 6px;
+  box-shadow: 0 0 60px 8px rgba(0, 0, 0, .5); transform: scale(.97);
+  transition: transform .2s ease; }
+.lightbox-overlay.is-open img { transform: scale(1); }
+@media (prefers-reduced-motion: reduce) {
+  .lightbox-overlay, .lightbox-overlay img { transition: opacity .15s ease, visibility .15s ease; }
+  .lightbox-overlay img { transform: none; }
+}

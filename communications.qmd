@@ -3,7 +3,7 @@ title: "Communications"
 ---
 
 ::: {.page-lead}
-Awards, talks, media coverage, and the training and mentoring behind the research.
+Talks, awards, media coverage, and the mentoring and training that have shaped my work.
 :::
 
 [Awards]{.eyebrow .lg}
@@ -12,9 +12,9 @@ Awards, talks, media coverage, and the training and mentoring behind the researc
 - **Best Poster Award**, SfN Singapore Chapter Annual Meeting, Singapore, 2024
 - **2nd Place Poster Award**, Northwest Developmental Biology Conference, Seattle, 2018
 
-I've also presented my optogenetics work at international meetings including 2024 NeuroFly
-(Birmingham, UK), the 2024 Asia-Pacific Drosophila Neurobiology Conference (Tokyo, Japan), and
-the 2025 Francis Crick Symposium (Suzhou, China).
+I've presented my research at international meetings including NeuroFly 2024 (Birmingham, UK), the
+2024 Asia-Pacific Drosophila Neurobiology Conference (Tokyo, Japan), and the 2025 Francis Crick
+Symposium (Suzhou, China).
 
 []{.section-rule}
 
@@ -26,12 +26,11 @@ the 2025 Francis Crick Symposium (Suzhou, China).
 [Chen Institute–Duke–NUS AI Boot Camp](https://www.cheninstitute.org/events-new/duke-bootcamp){.scard-title}
 [Duke-NUS · June 2026]{.scard-meta}
 
-A selective four-day intensive run by Duke-NUS with Duke University's Department of Computer
-Science. It covered the fundamentals of modern AI: how large language models and foundation
-models work, designing and evaluating AI workflows, the strengths and limits of current
-models, and the safety and responsible-use questions that come with them. I attended to build
-a solid working foundation in these tools and to bring them to bear on high-throughput
-behavioral data.
+I attended a selective four-day AI Bootcamp run by Duke-NUS and Duke University's Department of
+Computer Science to build a stronger foundation in modern AI, from how large language and foundation
+models work to designing and evaluating AI workflows, along with their limitations and responsible
+use. My goal was to build a solid understanding of these tools before applying them to
+high-throughput behavioral data.
 :::
 
 ::::
@@ -46,9 +45,9 @@ behavioral data.
 [Duke-NUS researchers develop light-controlled "switch" for brain cells to better study the brain](https://www.straitstimes.com/singapore/duke-nus-researchers-develop-light-controlled-switch-for-brain-cells-to-better-study-the-brain){.scard-title}
 [The Straits Times · 2024]{.scard-meta}
 
-Media coverage of our *Nature Communications* study introducing kalium channelrhodopsins
-(KCRs), a light-controlled "off switch" that silences neurons with greater selectivity than
-existing tools. I led the *C. elegans* work that validated the approach across species.
+Media coverage of our *Nature Communications* paper introducing kalium channelrhodopsins (KCRs), a
+light-controlled neuronal "off switch" with greater selectivity than existing optogenetic silencers,
+for which I led the *C. elegans* behavioral work validating the approach across species.
 
 [Read the article →](https://www.straitstimes.com/singapore/duke-nus-researchers-develop-light-controlled-switch-for-brain-cells-to-better-study-the-brain){.read-more}
 :::
@@ -57,9 +56,8 @@ existing tools. I led the *C. elegans* work that validated the approach across s
 [DUNES Symposium 2025](https://www.duke-nus.edu.sg/newshub/our-stories/dunes-symposium-2025){.scard-title}
 [Duke-NUS Newshub · 2025]{.scard-meta}
 
-Duke-NUS's feature on the 17th DUNES Symposium and its early-career researchers. My oral
-presentation on optogenetic control of valence and locomotion in *Drosophila* was awarded Best
-Oral Presentation.
+Duke-NUS featured my work following the 17th DUNES Symposium, where my presentation on optogenetic
+control of valence and locomotion in *Drosophila* received the Best Oral Presentation award.
 
 [Read the feature →](https://www.duke-nus.edu.sg/newshub/our-stories/dunes-symposium-2025){.read-more}
 :::
@@ -70,8 +68,8 @@ Oral Presentation.
 
 [Mentoring]{.eyebrow .lg}
 
-I've mentored three undergraduate student researchers. In 2024 at Duke-NUS, I guided a Yale-NUS
-College undergraduate on the OPN3 optogenetic-silencing project, through experimental design, data
-collection, and analysis; their contributions fed into the study, and they later joined the lab as
-a full-time research assistant. From 2016 to 2018, I mentored two undergraduate researchers in the
-Cabernard lab as they carried out their own student-research projects.
+I've mentored three undergraduate researchers. In 2024 at Duke-NUS, I supervised a Yale-NUS College
+undergraduate on the OPN3 optogenetic silencing project, helping with experimental design, data
+collection, and analysis. Their work contributed to the study, and they later joined the lab as a
+full-time research assistant. Earlier, from 2016 to 2018, I mentored two undergraduate researchers
+in the Cabernard lab on their own research projects.

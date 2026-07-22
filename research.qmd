@@ -31,21 +31,21 @@ in *Drosophila*, forming the core of my PhD thesis.
 ### [The silence after the light](papers/opn3/index.qmd){.stretched-link}
 [co-first author · preprint · bioRxiv, 2026]{.paper-meta}
 
-A single brief flash of green light on the bistable opto-GPCR OPN3 silences *Drosophila*
-neurons for minutes — a low-toxicity silencing tool for circuit and behavior work.
+A bistable opto-GPCR that lets us silence *Drosophila* neurons for minutes with a single brief
+flash of green light, providing a low-toxicity optogenetic tool for studying neural circuits and behavior.
 :::
 
 ::::
 
-:::: {.pcard}
-<img class="pcard-media" style="object-position:top" src="papers/dabest/figure3-white.png" alt="DABEST 2.0 proportion estimation plot: a bar chart of seizures beside the proportion difference with a bootstrapped 95% confidence interval">
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
 
 ::: {.pcard-body}
-### [DABEST 2.0: estimation statistics](papers/dabest/index.qmd){.stretched-link}
+### DABEST 2.0: estimation statistics
 [co-author · in revision, Nature Methods, 2026]{.paper-meta}
 
-Estimation graphics for effect sizes over p-values. I built the proportion plot for binary
-data, and the literature survey behind it.
+Estimation graphics for effect sizes instead of p-values. I helped develop DABEST's proportion
+plot for binary data and carried out the literature survey that motivated it.
 :::
 
 ::::
@@ -57,8 +57,9 @@ data, and the literature survey behind it.
 ### [Kalium channelrhodopsins](papers/kcr/index.qmd){.stretched-link}
 [co-author · Nature Communications, 2024]{.paper-meta}
 
-Kalium channelrhodopsins (KCRs) tested as potassium-selective optogenetic silencers across
-*Drosophila*, *C. elegans*, and zebrafish. I led all the *C. elegans* work.
+As part of a cross-species evaluation of kalium channelrhodopsins (KCRs) as potassium-selective
+optogenetic silencers, I led the *C. elegans* behavioral studies, building the assay, tracking
+system, and testing pipeline.
 :::
 
 ::::
@@ -70,8 +71,8 @@ Kalium channelrhodopsins (KCRs) tested as potassium-selective optogenetic silenc
 ### [Separating chromosomes in fused cells](papers/chromosomes/index.qmd){.stretched-link}
 [co-author · Communications Biology, 2022]{.paper-meta}
 
-How fused *Drosophila* cells keep two genomes apart, through asymmetric chromatin retention
-and nuclear-envelope boundaries.
+How fused *Drosophila* cells keep two genomes separate through asymmetric chromatin retention
+and nuclear envelope boundaries.
 :::
 
 ::::
@@ -83,8 +84,8 @@ and nuclear-envelope boundaries.
 ### [Sibling cell size asymmetry](papers/sibling/index.qmd){.stretched-link}
 [co-author · iScience, 2019]{.paper-meta}
 
-The biophysical forces, hydrostatic pressure and cortical actomyosin, that let a dividing
-neural stem cell produce two unequal-sized daughters.
+Investigating how hydrostatic pressure and cortical actomyosin work together to produce two
+unequal-sized daughter cells during neural stem cell division.
 :::
 
 ::::

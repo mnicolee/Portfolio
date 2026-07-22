@@ -6,13 +6,13 @@ say "bring up the todolist" any time.
 
 ## Open
 
-- [ ] **opn3 paper — ATR figure** (`papers/opn3/index.qmd`, in the "developmental retinal (ATR)" section)
-  - [ ] Add the image file to `papers/opn3/` (e.g. `atr-figure.png`)
-  - [ ] Insert the figure after that section's paragraph; set filename + real `fig-alt`:
-    `![](atr-figure.png){.paper-figure style="max-width:760px" fig-alt="..."}`
-  - [ ] Add the caption / figure credit line:
-    `[caption / credit]{.figure-credit style="max-width:760px"}`
-  - Blocked on: the figure image being supplied.
+- [ ] **DABEST page — apply the ChatGPT prose rewrite** (`papers/dabest/index.qmd`). Reverted to the
+  old wording for now; the rewrite is staged in `_chatgpt-rewrite-bundle.md` (blocks `dabest.p1`–`p6`).
+  Two things to resolve before applying:
+  - The rewrite dropped a citation link: "acutely sensitive to sample size" → doi:10.1002/sim.2832.
+    Decide where to reattach it (or drop it on purpose).
+  - Old p5 walked through the figure "Panel a / b / c"; the rewrite is generic. Decide whether to keep
+    explicit panel / Figure references.
 
 - [ ] **Focus Pocus — fix the graphs** (badly done, especially the DABEST plots)
 
@@ -21,15 +21,11 @@ say "bring up the todolist" any time.
   - [ ] Decide/confirm which email it routes to (navbar mailto is `lnicole8282@gmail.com`)
   - [ ] Test that a submission actually lands in the inbox
 
-- [ ] **Revisit the bolding** across research / hardware / tools pages
-  - Re-read each page and reconsider what's bolded — confirm each bold is the right "one key point"
-    and nothing is over- or under-bolded.
-
-- [ ] **Figure/image zoom (lightbox)** — clicking a figure/image should blow it up / bring it into
-  focus (zoom-to-fill overlay), then click again or Esc to close. Applies to `.paper-figure`,
-  `.graphical-abstract`, and figures inside the paper/hardware pages.
-
 ## Done
+
+- [x] **opn3 paper — ATR figure** — placed `atr-figure.jpg` between the two paragraphs of the
+  "developmental retinal (ATR)" section, with `fig-alt` and a Nano Banana Pro credit line.
+  Resized + converted from a 32 MB PNG down to a 308 KB / 1520px JPEG.
 
 - [x] **Research card #1 title — de-specified to avoid being scooped** (`research.qmd`)
   - Now "Neural circuits of behavior in *Drosophila*" with a vaguer blurb (kept "ethomics"),

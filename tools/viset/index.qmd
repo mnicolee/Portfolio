@@ -8,18 +8,18 @@ resources:
 
 [Python library · open source]{.paper-meta}
 
-**VISET** stands for **Vis**ual **I**temized **SET** diagrams. It draws area-proportional Venn,
-Euler, and UpSet plots that print the actual member names inside each region, in Python.
+Most set diagrams tell you how many items overlap, but not which ones. I kept running into this when
+comparing gene sets, where knowing the actual overlapping genes often mattered more than the counts
+themselves. That frustration eventually became **VISET** (**Vis**ual **I**temized **SET** diagrams).
 
-Set diagrams almost always label a region with a single count, how many items overlap, but not
-*which* ones. The shapes are rarely drawn to scale either, so a small overlap and a large one can
-end up looking the same. That throws away most of the information a set comparison is meant to
-carry.
+Traditional Venn and Euler diagrams quickly become difficult to interpret as the number of sets
+increases, while UpSet plots trade visual overlap for scalability. Neither solves the problem of
+showing the actual members within each intersection, which often means switching back and forth
+between the figure and a separate table.
 
-VISET fixes both problems. It sizes every region in proportion to how many members it holds,
-**prints each member name inside its region**, and auto-sizes the labels so they stay legible even
-when a region is crowded. It does this for both Venn/Euler diagrams and UpSet plots, and every
-plot has an interactive Plotly version that reveals crowded regions on hover.
+VISET keeps the familiar Venn, Euler, and UpSet layouts but prints the member names directly inside
+each region whenever space allows. Instead of asking "How many genes overlap?" you can immediately
+see which genes they are.
 
 ![](venn-drug-targets.png){.paper-figure style="max-width:760px" fig-alt="A VISET area-proportional Venn diagram of the drug-target genes for Fluoxetine, Ibuprofen and Acetaminophen, with every gene name printed inside its region"}
 
@@ -33,8 +33,12 @@ region in the diagram below to read its members.
 <iframe src="venn-interactive.html" title="Interactive VISET Venn diagram of drug-target genes" loading="lazy" style="display:block; width:100%; max-width:760px; height:600px; margin:1.4rem auto; border:1px solid #DAD3C4; border-radius:8px; background:#fff"></iframe>
 ```
 
-The same comparison works as an UpSet plot when there are too many sets for a readable Venn. Each
-intersection bar lists the genes it contains, so the itemized idea carries over.
+A note on the shapes themselves: Euler diagrams size each region to the number of members it holds,
+so they represent overlaps more proportionately than a traditional Venn, whose layout stays fixed no
+matter how many items fall in each region. Either way, once you go past three sets the regions get
+too cramped and their areas stop being recognisable, so for larger comparisons it's better to switch
+to the itemized UpSet plot below, where each intersection bar simply lists the genes it contains.
+(More on this in the [VISET repo](https://github.com/mnicolee/VISET).)
 
 ![](upset-drug-targets.png){.paper-figure style="max-width:760px" fig-alt="A VISET UpSet plot of the same drug-target gene sets, with the genes in each intersection printed inside the corresponding bar"}
 
@@ -43,6 +47,14 @@ it.]{.fig-legend style="max-width:760px"}
 
 UpSet plots have an interactive version too, with the same hover-to-read behaviour as the Venn
 above.
+
+The package is written in Python and built with nbdev, making it easy to use both as a library and
+from notebooks. It supports publication-quality figures, customizable styling, and integrates
+naturally into existing data analysis workflows.
+
+VISET began as a small utility for my own analyses, but it turned into a general-purpose package that
+I now use whenever I need to compare sets. Hopefully it makes that process a little easier for other
+people too.
 
 The code and full documentation live on [GitHub](https://github.com/mnicolee/VISET).
 

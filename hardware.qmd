@@ -3,8 +3,8 @@ title: "Hardware"
 ---
 
 ::: {.page-lead}
-The instruments behind the experiments: custom rigs, chambers, and illumination I design and
-build to deliver light and capture behavior.
+The experiments often needed equipment that didn't exist, so I built it. This page covers the
+custom rigs, chambers, and illumination systems I've designed for optogenetics and behavioral experiments.
 :::
 
 [Behavioral rigs]{.eyebrow}

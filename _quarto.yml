@@ -52,6 +52,7 @@ format:
   html:
     # Add dark mode later: theme: { light: theme-light.scss, dark: theme-dark.scss }
     theme: theme-light.scss
+    include-after-body: lightbox.html
     toc: false
     anchor-sections: false   # no hover "link" icon on headings
     smooth-scroll: true

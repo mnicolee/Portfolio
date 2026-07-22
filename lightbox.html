@@ -1,0 +1,52 @@
+<script>
+(function () {
+  var SEL = "img.paper-figure, img.graphical-abstract";
+  var overlay, overlayImg;
+
+  function build() {
+    overlay = document.createElement("div");
+    overlay.className = "lightbox-overlay";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlayImg = document.createElement("img");
+    overlay.appendChild(overlayImg);
+    overlay.addEventListener("click", close);
+    document.body.appendChild(overlay);
+  }
+
+  function open(src, alt) {
+    if (!overlay) build();
+    overlayImg.src = src;
+    overlayImg.alt = alt || "";
+    document.body.classList.add("lightbox-lock");
+    requestAnimationFrame(function () { overlay.classList.add("is-open"); });
+  }
+
+  function close() {
+    if (!overlay) return;
+    overlay.classList.remove("is-open");
+    document.body.classList.remove("lightbox-lock");
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") close();
+  });
+
+  function wire() {
+    document.querySelectorAll(SEL).forEach(function (img) {
+      if (img.dataset.zoomable) return;
+      img.dataset.zoomable = "1";
+      img.classList.add("zoomable");
+      img.addEventListener("click", function () {
+        open(img.currentSrc || img.src, img.alt);
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", wire);
+  } else {
+    wire();
+  }
+})();
+</script>
