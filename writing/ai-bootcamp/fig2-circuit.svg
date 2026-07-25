@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" width="780" height="420" role="img" aria-label="A five node mushroom body circuit. Kenyon cell axons run through two compartments. In each, cholinergic Kenyon cell input drives an output neuron, and that synapse is modulated by the compartment's own dopaminergic neuron. MBON-gamma1pedc to alpha beta inhibits both MBON-gamma5beta prime 2a and its own compartment's dopaminergic neuron, while MBON-gamma5beta prime 2a activates the dopaminergic neuron of its compartment.">
+  <style>
+    /* transparent background on purpose. Warm colours = neuroscience. Teal = AI vocabulary. */
+    .l  { font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; fill: #2B2226; font-weight: 600; }
+    .m  { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; fill: #6F6068; letter-spacing: 0.06em; }
+    .e  { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 11.5px; fill: #7A2F4C; letter-spacing: 0.04em; }
+    .ai { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; fill: #2F6360; letter-spacing: 0.1em; font-weight: 600; }
+  </style>
+  <defs>
+    <marker id="exc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#9C3F63" stroke="#9C3F63" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <path d="M 215 92 V 160" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#exc)"/>
+  <path d="M 565 92 V 160" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#exc)"/>
+
+  <path d="M 110 286 C 40 240 60 140 202 129" stroke="#C68B33" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
+  <circle cx="203" cy="129" r="4" fill="#C68B33"/>
+  <path d="M 670 286 C 740 240 720 140 578 129" stroke="#C68B33" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
+  <circle cx="577" cy="129" r="4" fill="#C68B33"/>
+
+  <circle cx="215" cy="128" r="7" fill="#FFFFFF" stroke="#9C3F63" stroke-width="2"/>
+  <circle cx="565" cy="128" r="7" fill="#FFFFFF" stroke="#9C3F63" stroke-width="2"/>
+
+  <path d="M 344 199 H 430" stroke="#6E7F52" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <line x1="434" y1="187" x2="434" y2="211" stroke="#6E7F52" stroke-width="2.4" stroke-linecap="round"/>
+
+  <path d="M 190 232 L 140 284" stroke="#6E7F52" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <line x1="133" y1="277" x2="147" y2="291" stroke="#6E7F52" stroke-width="2.4" stroke-linecap="round"/>
+
+  <path d="M 590 232 L 636 282" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#exc)"/>
+
+  <rect x="40" y="40" width="700" height="48" rx="24" fill="#F6EAEE" stroke="#9C3F63" stroke-width="2"/>
+  <path d="M 60 54 H 240 M 60 64 H 240 M 60 74 H 240 M 540 54 H 720 M 540 64 H 720 M 540 74 H 720"
+        stroke="#9C3F63" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+  <text x="390" y="60" text-anchor="middle" class="l">KC</text>
+  <text x="390" y="78" text-anchor="middle" class="m">1,927 in the hemibrain · cholinergic</text>
+
+  <rect x="90" y="170" width="250" height="58" rx="29" fill="#F6EAEE" stroke="#9C3F63" stroke-width="2"/>
+  <text x="215" y="196" text-anchor="middle" class="l">MBON-γ1pedc&gt;α/β</text>
+  <text x="215" y="215" text-anchor="middle" class="m">GABAergic</text>
+
+  <rect x="440" y="170" width="250" height="58" rx="29" fill="#F6EAEE" stroke="#9C3F63" stroke-width="2"/>
+  <text x="565" y="196" text-anchor="middle" class="l">MBON-γ5β'2a</text>
+  <text x="565" y="215" text-anchor="middle" class="m">glutamatergic</text>
+
+  <rect x="20" y="290" width="200" height="52" rx="26" fill="#FAF1E1" stroke="#C68B33" stroke-width="2"/>
+  <text x="120" y="314" text-anchor="middle" class="l">PPL1-γ1pedc</text>
+  <text x="120" y="332" text-anchor="middle" class="m">dopaminergic</text>
+
+  <rect x="560" y="290" width="200" height="52" rx="26" fill="#FAF1E1" stroke="#C68B33" stroke-width="2"/>
+  <text x="660" y="314" text-anchor="middle" class="l">PAM-γ5</text>
+  <text x="660" y="332" text-anchor="middle" class="m">dopaminergic</text>
+
+  <text x="227" y="124" class="e">cholinergic</text>
+  <text x="577" y="124" class="e">cholinergic</text>
+
+  <rect x="355" y="188" width="64" height="22" rx="11" fill="#FFFFFF"/>
+  <text x="387" y="203" text-anchor="middle" class="e">inhibits</text>
+
+  <rect x="86" y="250" width="68" height="22" rx="11" fill="#FFFFFF"/>
+  <text x="120" y="265" text-anchor="middle" class="e">inhibits</text>
+
+  <text x="648" y="266" class="e">activates</text>
+
+  <text x="390" y="368" text-anchor="middle" class="ai">EACH DAN EDGE TARGETS A SYNAPSE, NOT A CELL</text>
+
+  <path d="M 40 398 H 66" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#exc)"/>
+  <text x="78" y="402" class="m">excitatory</text>
+  <path d="M 190 398 H 214" stroke="#6E7F52" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <line x1="216" y1="391" x2="216" y2="405" stroke="#6E7F52" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="228" y="402" class="m">inhibitory</text>
+  <path d="M 340 398 H 362" stroke="#C68B33" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
+  <circle cx="366" cy="398" r="4" fill="#C68B33"/>
+  <text x="378" y="402" class="m">modulatory</text>
+  <circle cx="508" cy="398" r="7" fill="#FFFFFF" stroke="#9C3F63" stroke-width="2"/>
+  <text x="522" y="402" class="m">the synapse whose weight changes</text>
+</svg>

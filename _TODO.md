@@ -6,13 +6,36 @@ say "bring up the todolist" any time.
 
 ## Open
 
-- [ ] **DABEST page — apply the ChatGPT prose rewrite** (`papers/dabest/index.qmd`). Reverted to the
-  old wording for now; the rewrite is staged in `_chatgpt-rewrite-bundle.md` (blocks `dabest.p1`–`p6`).
-  Two things to resolve before applying:
-  - The rewrite dropped a citation link: "acutely sensitive to sample size" → doi:10.1002/sim.2832.
-    Decide where to reattach it (or drop it on purpose).
-  - Old p5 walked through the figure "Panel a / b / c"; the rewrite is generic. Decide whether to keep
-    explicit panel / Figure references.
+- [ ] **"Inside the Black Box" is LIVE** (`writing/ai-bootcamp/index.qmd`), the first Writing post.
+  Three figures alongside it as transparent SVG. Every factual claim was checked against primary
+  sources. Three things still open, none blocking:
+  - The date. The opening still says "last month" rather than the actual boot camp dates.
+  - Two references: the Waddell year and journal (Trends in Neurosciences 2010 vs Curr Opin
+    Neurobiol 2013), and which of the two Aso 2014 eLife papers is cited where (e04577 is the
+    anatomy one, e04580 is output neurons encode valence).
+  - `fig3-naming.svg` is orphaned in the folder; it belonged to a section that was cut. Delete it
+    or reuse it.
+  - Known trap, already handled but do not undo it: cite Felsenberg 2018, **not** Perisse 2016,
+    for MBON-γ1pedc>α/β inhibiting MBON-γ5β'2a. Perisse measured a pooled population and reports
+    no overlap at that cell.
+  - Figure conventions: warm colours are neuroscience, teal is reserved for AI vocabulary. The
+    SVGs carry literal hex, not CSS variables, so they survive being moved.
+
+- [ ] **DABEST page — prose rewrite** (`papers/dabest/index.qmd`). Currently on the old wording.
+  NOTE: `_chatgpt-rewrite-bundle.md` was deleted on 2026-07-26; it never actually contained the
+  DABEST blocks (its own header excluded that page), so the rewrite it referred to does not exist
+  in this repo. Redo it from scratch if you still want it. Two things to resolve either way:
+  - A previous rewrite dropped a citation link: "acutely sensitive to sample size" →
+    doi:10.1002/sim.2832. Decide where to reattach it, or drop it on purpose.
+  - The old p5 walked through the figure "Panel a / b / c". Decide whether to keep explicit
+    panel and figure references or go generic.
+
+## House style for prose
+
+Kept from the deleted rewrite bundle, because it is the only place these were written down:
+sound like a real, warm person, not AI. Keep all facts, names, numbers, links, and the existing
+**bold** / *italic* emphasis. No em dashes. No "notable". Not peppy, not salesy. Similar length
+or slightly shorter.
 
 - [ ] **Focus Pocus — fix the graphs** (badly done, especially the DABEST plots)
 

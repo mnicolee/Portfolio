@@ -2,10 +2,37 @@
 title: "Writing"
 ---
 
-[Coming soon]{.eyebrow}
+Longer pieces that did not fit anywhere else. Mostly about where my own field and other people's
+tools turn out to overlap, usually because I went looking for one thing and found something I
+already knew.
 
-::: {.stub}
-# Under construction 🚧
+[Essays]{.eyebrow}
 
-This section is being built. Check back soon.
+::::: {.card-grid}
+
+:::: {.pcard}
+<img class="pcard-media" src="writing/ai-bootcamp/fig1-schema.svg" alt="Synaptic neuroscience drawn as a knowledge graph: presynaptic neuron, postsynaptic neuron, neurotransmitter, receptor and brain region, joined by named arrows such as synapses onto, releases and binds to">
+
+::: {.pcard-body}
+### [Inside the Black Box](writing/ai-bootcamp/index.qmd){.stretched-link}
+[essay · 2026]{.paper-meta}
+
+An exploration of the concepts that underpin modern AI, and why they felt unexpectedly familiar
+from my perspective as a neuroscientist.
 :::
+
+::::
+
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
+
+::: {.pcard-body}
+### DABEST, then and now
+[essay · planned]{.paper-meta}
+
+Who has been using the 2019 version of DABEST, and what the 2026 release brings to them.
+:::
+
+::::
+
+:::::

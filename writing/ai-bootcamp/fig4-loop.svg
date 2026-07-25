@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 345" width="780" height="345" role="img" aria-label="A four step loop: what you expected and what actually happened are compared, the gap between them drives an adjustment, and the adjustment updates the expectation for next time.">
+  <style>
+    /* transparent background on purpose. Teal = AI vocabulary. */
+    .l  { font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; fill: #2B2226; font-weight: 600; }
+    .e  { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 11.5px; fill: #7A2F4C; letter-spacing: 0.04em; }
+    .ai { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; fill: #2F6360; letter-spacing: 0.1em; font-weight: 600; }
+  </style>
+  <defs>
+    <marker id="loopA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#9C3F63" stroke="#9C3F63" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <path d="M 230 86 L 326 136" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#loopA)"/>
+  <path d="M 550 86 L 454 136" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#loopA)"/>
+  <path d="M 390 200 V 244" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#loopA)"/>
+  <path d="M 278 272 C 120 262 70 170 140 88" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#loopA)"/>
+
+  <rect x="30" y="30" width="250" height="52" rx="26" fill="#F6EAEE" stroke="#9C3F63" stroke-width="1.5"/>
+  <text x="155" y="62" text-anchor="middle" class="l">what you expected</text>
+
+  <rect x="500" y="30" width="250" height="52" rx="26" fill="#F6EAEE" stroke="#9C3F63" stroke-width="1.5"/>
+  <text x="625" y="62" text-anchor="middle" class="l">what actually happened</text>
+
+  <rect x="280" y="140" width="220" height="58" rx="29" fill="#FAF1E1" stroke="#C68B33" stroke-width="2"/>
+  <text x="390" y="176" text-anchor="middle" class="l">the gap between them</text>
+
+  <rect x="280" y="250" width="220" height="52" rx="26" fill="#F6EAEE" stroke="#9C3F63" stroke-width="1.5"/>
+  <text x="390" y="282" text-anchor="middle" class="l">adjust the expectation</text>
+
+  <text x="390" y="120" text-anchor="middle" class="e">compared</text>
+  <text x="404" y="228" class="e">drives</text>
+
+  <rect x="86" y="166" width="68" height="22" rx="11" fill="#FFFFFF"/>
+  <text x="120" y="181" text-anchor="middle" class="e">updates</text>
+
+  <path d="M 512 169 H 504" stroke="#2F6360" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+  <text x="518" y="173" class="ai">PREDICTION ERROR</text>
+
+  <text x="390" y="330" text-anchor="middle" class="ai">THE LOOP REINFORCEMENT LEARNING FORMALISES</text>
+</svg>
