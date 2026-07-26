@@ -2,11 +2,11 @@
 title: "Writing"
 ---
 
-Longer pieces that did not fit anywhere else. Mostly about where my own field and other people's
-tools turn out to overlap, usually because I went looking for one thing and found something I
-already knew.
+::: {.page-lead}
+Thoughts, opinions, and the occasional rabbit hole.
+:::
 
-[Essays]{.eyebrow}
+[Blog]{.eyebrow}
 
 ::::: {.card-grid}
 
@@ -15,7 +15,7 @@ already knew.
 
 ::: {.pcard-body}
 ### [Inside the Black Box](writing/ai-bootcamp/index.qmd){.stretched-link}
-[essay · 2026]{.paper-meta}
+[2026]{.paper-meta}
 
 An exploration of the concepts that underpin modern AI, and why they felt unexpectedly familiar
 from my perspective as a neuroscientist.
@@ -28,7 +28,7 @@ from my perspective as a neuroscientist.
 
 ::: {.pcard-body}
 ### DABEST, then and now
-[essay · planned]{.paper-meta}
+[planned]{.paper-meta}
 
 Who has been using the 2019 version of DABEST, and what the 2026 release brings to them.
 :::

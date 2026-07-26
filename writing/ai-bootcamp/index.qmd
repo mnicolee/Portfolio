@@ -8,8 +8,8 @@ title: "Inside the Black Box"
 ***A beginner's attempt to make sense of AI, and the surprising places it led.***
 :::
 
-Last month I spent four days at the AI Boot Camp hosted by Duke-NUS Medical School and the Tianqiao
-and Chrissy Chen Institute, alongside other researchers.
+In June 2026 I spent four days at the AI Boot Camp hosted by Duke-NUS Medical School and the
+Tianqiao and Chrissy Chen Institute, alongside other researchers.
 
 Before the course, I knew how to use AI tools, but that was about the extent of it. My questions were the ones you ask when you've never looked under the hood. Why does a model give me a different answer each time I ask the same thing? What actually happens between typing a prompt and getting a reply?
 
@@ -33,11 +33,11 @@ Knowledge graphs were one of many topics we covered, but they were the one that 
 
 I realised that neuroscience already describes much of the brain in exactly those terms. A neuron forms synapses onto another neuron. It releases a neurotransmitter. That neurotransmitter binds to a receptor on the postsynaptic cell. Neurons have cell bodies in one region and project to others. We rarely think of this as a knowledge graph, but it has exactly the same structure: well-defined entities connected by well-defined relationships.
 
-![](fig1-schema.svg){style="display:block; max-width:760px; width:100%; margin:1.6rem auto .6rem" fig-alt="The generic vocabulary of synaptic neuroscience drawn as a graph: presynaptic neuron synapses onto postsynaptic neuron, releases a neurotransmitter which binds a receptor sitting on the postsynaptic cell, and neurons have somata in and project to brain regions. Annotations in teal mark each box as an entity type and each arrow as a relationship."}
+![](fig1-schema.svg){style="display:block; max-width:760px; width:100%; margin:1.6rem auto .6rem" fig-alt="The generic vocabulary of synaptic neuroscience drawn as a graph: presynaptic neuron synapses onto postsynaptic neuron, releases a neurotransmitter which binds a receptor sitting on the postsynaptic cell, and each neuron has its soma in a brain region. Teal annotations mark one box as an entity type and one arrow as a relationship, as examples."}
 
-[**Figure 1.** Synaptic neuroscience as a knowledge graph. Boxes are entity types, arrows are named relationships, and teal labels show the corresponding AI concepts.]{.figure-credit style="max-width:760px"}
+[**Figure 1.** Synaptic neuroscience as a knowledge graph. Boxes are entity types, arrows are named relationships, and teal labels show the corresponding AI concepts. Brain region appears on both sides because each neuron has its soma in one.]{.figure-credit style="max-width:760px"}
 
-In AI, that generic structure is called a **schema**: it defines the kinds of entities that exist and the relationships they're allowed to have. In neuroscience, we'd usually call the equivalent layer an **ontology**. Populate that structure with real neurons, neurotransmitters and brain regions, and you have the data.
+In AI, that generic structure is called a **schema**: it defines the kinds of entities that exist and the relationships they're allowed to have. Biology builds the same thing and tends to call them **ontologies**, like the Gene Ontology or the anatomy ontologies used in fly work, though the term is used well beyond biology. Populate that structure with real neurons, neurotransmitters and brain regions, and you have the data.
 
 One example comes from my own work. I study the fruit fly *Drosophila*, and Figure 2 shows a small part of the mushroom body, where flies learn to associate odours with reward and punishment. Kenyon cells carry the odour information, output neurons (MBONs) read it out, and each compartment has its own dopaminergic neuron.
 
@@ -63,31 +63,31 @@ One discussion that stuck with me was around **trust**. The challenge isn't gett
 
 What surprised me was how little a generated response tells you about its own **reliability**. A convincing answer and a correct answer can look exactly the same. You don't get uncertainty for free.
 
-That immediately reminded me of science. We spend so much time worrying about controls, replication, sample sizes and **provenance** because we've learnt that a polished result can still be wrong. Good presentation has never been evidence.
+That immediately reminded me of science. We spend so much time worrying about controls, replication, sample sizes and **provenance** because we've learnt that a polished result can still be wrong. A result doesn't become true by looking convincing.
 
 The difference is that scientific work leaves a trail. You can read the methods, inspect the data, and ask where a conclusion came from. With AI, that trail often has to be built deliberately, whether through retrieval, citations or other forms of **grounding**.
 
-## A pattern that kept coming back
+## What makes learning stick
 
 Whether the example was clinical decision-making or financial markets, the underlying loop looked remarkably similar. You start with an expectation, compare it with what actually happened, and use the difference to update what you'll expect next time. That difference, the **prediction error**, is what drives learning. If the outcome was exactly what you expected, there's little left to update.
 
-![](fig4-loop.svg){style="display:block; max-width:760px; width:100%; margin:1.6rem auto .6rem" fig-alt="A four step loop: what you expected and what actually happened are compared, the gap between them drives an adjustment, and the adjustment updates the expectation for next time. The gap is labelled prediction error."}
+![](fig3-loop.svg){style="display:block; max-width:760px; width:100%; margin:1.6rem auto .6rem" fig-alt="A four step loop: what you expected and what actually happened are compared, the gap between them drives an adjustment, and the adjustment updates the expectation for next time. The gap is labelled prediction error."}
 
 [**Figure 3.** A minimal prediction-error loop. An expected outcome is compared with the observed outcome, and the difference between them is used to update future expectations.]{.figure-credit style="max-width:760px"}
 
-By itself, that's an elegant idea. What caught my attention was where I'd seen it before.
+Once I started thinking about it that way, it seemed obvious. We don't usually change our behaviour because something happened. We change it because something happened that we didn't expect.
 
-The mushroom body circuit in Figure 2 isn't just passing information forwards. The output neurons project back to the dopaminergic neurons that provide the teaching signal, meaning the signal itself depends on the current state of the circuit. What is learned next depends, at least in part, on what has already been learned.
-
-I'm not suggesting the fly brain is implementing reinforcement learning in the engineering sense. The biology is far richer than any textbook algorithm. What struck me was the resemblance. The same computational pattern, prediction, observation and adjustment, kept appearing in places that initially seemed to have very little to do with one another.
+You leave home expecting the bus at ten past. It doesn't arrive until twenty past, so the next morning you head out a little earlier. If it arrives exactly when you expected, there's almost nothing to update. Learning comes from the mismatch between expectation and reality, not from the event itself. The learning wasn't caused by the event. It was caused by the gap between your expectation and reality.
 
 ## Final thoughts
 
-Looking back, I don't think the biggest thing I gained was a collection of new AI techniques. It was a way of thinking about the field. Before the boot camp, AI mostly felt like a black box: I knew what seemed to work, but not why. Four days later, I don't have all the answers, but I do have a mental model. I understand enough of what's happening under the hood to ask better questions, recognise the limitations, and have a much better sense of what I still don't know.
+Four days isn't enough to understand AI, and I certainly didn't leave feeling like I did. What changed was that the field stopped feeling like a black box. I can now picture how the pieces fit together, and that's made it much easier to understand what I'm reading, what I'm asking, and what I still need to learn.
 
 I don't think neuroscience is "becoming AI", or that AI somehow invented these ideas. If anything, the two fields have often been asking similar questions from different directions. The boot camp didn't change what I do in the lab. **It changed the language I have for thinking about it.**
 
-This post has only followed the thread that resonated most with me. My thanks to the speakers, the organising committee, and the student volunteers for four dense, thoughtful and genuinely educational days.
+This was a fundamentals course, so there was never any chance of covering everything. I came away with far more questions than I started with, but this time they felt like questions I could actually begin answering.
+
+My thanks to the speakers, the organising committee, and the student volunteers for four dense, thoughtful and genuinely educational days.
 
 ## References
 
@@ -102,20 +102,11 @@ Neuroinformatics* 16:896292.
 
 Costa, M. et al. (2013). The *Drosophila* anatomy ontology. *Journal of Biomedical Semantics* 4:32.
 
-Eichler, K. et al. (2017). The complete connectome of a learning and memory centre in an insect
-brain. *Nature* 548:175-182.
-
 Felsenberg, J. et al. (2018). Integration of parallel opposing memories underlies memory
 extinction. *Cell* 175:709-722.
 
 Hige, T. et al. (2015). Heterosynaptic plasticity underlies aversive olfactory learning in
 *Drosophila*. *Neuron* 88:985-998.
-
-Ichinose, T. et al. (2015). Reward signal in a recurrent circuit drives appetitive long-term memory
-formation. *eLife* 4:e10719.
-
-Keleman, K. et al. (2012). Dopamine neurons modulate pheromone responses in *Drosophila* courtship
-learning. *Nature* 489:145-149.
 
 Li, F. et al. (2020). The connectome of the adult *Drosophila* mushroom body provides insights into
 function. *eLife* 9:e62576.
@@ -126,14 +117,5 @@ olfactory behaviour. *Neuron* 86:417-427.
 Pavlowsky, A. et al. (2018). A GABAergic feedback shapes dopaminergic input on the *Drosophila*
 mushroom body to promote appetitive long-term memory. *Current Biology* 28:1783-1793.
 
-Plaçais, P.-Y. et al. (2012). Slow oscillations in two pairs of dopaminergic neurons gate long-term
-memory formation in *Drosophila*. *Nature Neuroscience* 15:592-599.
-
 Scheffer, L.K. et al. (2020). A connectome and analysis of the adult *Drosophila* central brain.
 *eLife* 9:e57443.
-
-Waddell, S. (2013). Reinforcement signalling in *Drosophila*; dopamine does it all after all.
-*Current Opinion in Neurobiology* 23:324-329.
-
-Yamagata, N. et al. (2015). Distinct dopamine neurons mediate reward signals for short- and
-long-term memories. *PNAS* 112:578-583.

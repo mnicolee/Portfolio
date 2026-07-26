@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" width="780" height="420" role="img" aria-label="A five node mushroom body circuit. Kenyon cell axons run through two compartments. In each, cholinergic Kenyon cell input drives an output neuron, and that synapse is modulated by the compartment's own dopaminergic neuron. MBON-gamma1pedc to alpha beta inhibits both MBON-gamma5beta prime 2a and its own compartment's dopaminergic neuron, while MBON-gamma5beta prime 2a activates the dopaminergic neuron of its compartment.">
   <style>
-    /* transparent background on purpose. Warm colours = neuroscience. Teal = AI vocabulary. */
-    .l  { font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; fill: #2B2226; font-weight: 600; }
-    .m  { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; fill: #6F6068; letter-spacing: 0.06em; }
-    .e  { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 11.5px; fill: #7A2F4C; letter-spacing: 0.04em; }
-    .ai { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; fill: #2F6360; letter-spacing: 0.1em; font-weight: 600; }
+    /* Transparent background on purpose. One size and one font per role:
+       node labels sans, everything else mono. Warm = neuroscience, teal = AI vocabulary. */
+    .l  { font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; fill: #2B2226; font-weight: 600; }
+    .m  { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; fill: #6F6068; letter-spacing: 0.06em; }
+    .e  { font-family: Consolas, "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; fill: #7A2F4C; letter-spacing: 0.04em; }
   </style>
   <defs>
     <marker id="exc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -54,17 +54,16 @@
   <text x="660" y="332" text-anchor="middle" class="m">dopaminergic</text>
 
   <text x="227" y="124" class="e">cholinergic</text>
-  <text x="577" y="124" class="e">cholinergic</text>
+  <text x="553" y="124" text-anchor="end" class="e">cholinergic</text>
 
-  <rect x="355" y="188" width="64" height="22" rx="11" fill="#FFFFFF"/>
-  <text x="387" y="203" text-anchor="middle" class="e">inhibits</text>
+  <text x="387" y="192" text-anchor="middle" class="e">inhibits</text>
 
-  <rect x="86" y="250" width="68" height="22" rx="11" fill="#FFFFFF"/>
-  <text x="120" y="265" text-anchor="middle" class="e">inhibits</text>
+  <rect x="123" y="247" width="84" height="22" rx="11" fill="#FFFFFF"/>
+  <text x="165" y="262" text-anchor="middle" class="e">inhibits</text>
 
-  <text x="648" y="266" class="e">activates</text>
+  <text x="606" y="270" text-anchor="end" class="e">activates</text>
 
-  <text x="390" y="368" text-anchor="middle" class="ai">EACH DAN EDGE TARGETS A SYNAPSE, NOT A CELL</text>
+  <text x="390" y="368" text-anchor="middle" class="m">each dopaminergic edge targets a synapse, not a cell</text>
 
   <path d="M 40 398 H 66" stroke="#9C3F63" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#exc)"/>
   <text x="78" y="402" class="m">excitatory</text>
@@ -74,6 +73,6 @@
   <path d="M 340 398 H 362" stroke="#C68B33" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
   <circle cx="366" cy="398" r="4" fill="#C68B33"/>
   <text x="378" y="402" class="m">modulatory</text>
-  <circle cx="508" cy="398" r="7" fill="#FFFFFF" stroke="#9C3F63" stroke-width="2"/>
-  <text x="522" y="402" class="m">the synapse whose weight changes</text>
+  <circle cx="478" cy="398" r="7" fill="#FFFFFF" stroke="#9C3F63" stroke-width="2"/>
+  <text x="492" y="402" class="m">the synapse whose weight changes</text>
 </svg>

@@ -121,9 +121,10 @@ body { font-size: 1.05rem; line-height: 1.65; max-width: none; }
 .pcard:hover h3 a { color: #0A5461; }
 .pcard-body p { margin: .3rem 0 0; font-size: 0.9rem; line-height: 1.5; }
 .pcard-body .paper-meta { margin-bottom: .2rem; }
-// "Coming soon" cards: not clickable, so no lift/pointer
-.pcard.is-soon { cursor: default; }
-.pcard.is-soon:hover { transform: none; background: var(--card); border-color: #E3E7EA; box-shadow: none; }
+// "Coming soon" cards: not clickable, so no lift/pointer. The body takes the same grey as the
+// placeholder tile above it, so the whole card reads as inactive instead of half grey, half sand.
+.pcard.is-soon { cursor: default; background: #E9EDEF; }
+.pcard.is-soon:hover { transform: none; background: #E9EDEF; border-color: #E3E7EA; box-shadow: none; }
 .paper-item h3 { margin: 0 0 .35rem; font-size: 1.4rem; line-height: 1.2; }
 .paper-item h3 a { color: #161A1D; text-decoration: none; }
 .paper-item h3 a:hover { color: #0A5461; }
