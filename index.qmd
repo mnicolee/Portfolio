@@ -57,7 +57,10 @@ pagetitle: "Nicole M. Lee"
 <!-- RECENT NEWS: auto-looping slideshow (newest first); each slide = name, picture, blurb
      RULE: exactly THREE slides, always. When news comes in, add it as the new first slide and
      delete the oldest one from the rotation. Do not let this grow to four. Keep the static
-     counter below reading "1 / 3" to match. -->
+     counter below reading "1 / 3" to match.
+     RULE: the gold <span class="tag tag-new">Just out</span> badge belongs to the newest slide
+     only. Move it onto the incoming slide and strip it from the one it used to be on, so exactly
+     one slide carries it at a time. -->
 <div class="hsec hsec-last">
   <div class="show" data-interval="5000" aria-roledescription="carousel" aria-label="Recent news">
     <div class="show-top">
@@ -72,7 +75,7 @@ pagetitle: "Nicole M. Lee"
       <div class="slide is-active">
         <img class="show-pic" src="papers/dabest/figure3-white.png" alt="Proportion estimation plots from the DABEST 2.0 paper">
         <div class="txt">
-          <div class="m"><time>Jul 2026</time><span class="tag">Paper</span></div>
+          <div class="m"><time>Jul 2026</time><span class="tag">Paper</span><span class="tag tag-new">Just out</span></div>
           <h3>DABEST 2.0 - out now in <em>Nature Methods</em></h3>
           <p>Estimation graphics for multi-group comparisons. I built the proportion plot for binary data and ran the literature survey behind it.</p>
           <a class="read" href="papers/dabest/index.html">read more →</a>
