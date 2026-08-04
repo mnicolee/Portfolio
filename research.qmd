@@ -37,12 +37,12 @@ flash of green light, providing a low-toxicity optogenetic tool for studying neu
 
 ::::
 
-:::: {.pcard .is-soon}
-<div class="pcard-ph">Coming soon</div>
+:::: {.pcard}
+<img class="pcard-media" src="papers/dabest/figure3-white.png" alt="Proportion estimation plots from the DABEST 2.0 paper">
 
 ::: {.pcard-body}
-### DABEST 2.0: estimation statistics
-[co-author · in revision, Nature Methods, 2026]{.paper-meta}
+### [DABEST 2.0: estimation statistics](papers/dabest/index.qmd){.stretched-link}
+[co-author · Nature Methods, 2026]{.paper-meta}
 
 Estimation graphics for effect sizes instead of p-values. I helped develop DABEST's proportion
 plot for binary data and carried out the literature survey that motivated it.

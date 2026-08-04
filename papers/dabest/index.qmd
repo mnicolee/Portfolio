@@ -4,7 +4,7 @@ title: "DABEST 2.0: estimation statistics"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[co-author · in revision, Nature Methods, 2026]{.paper-meta}
+[co-author · Nature Methods, 2026]{.paper-meta}
 
 Most papers still lean on the p-value: a single number that says *whether* something happened, not
 by how much or how sure you can be. **DABEST** (Data Analysis with Bootstrap-coupled ESTimation) is
@@ -139,14 +139,15 @@ that is. Panel c carries the idea into repeated-measures designs.
 
 [The bar chart in a says something happened; the proportion estimation plot in b says by
 how much (a 68% reduction) and with what certainty. Figure 3 from Lu Z., Anns J., Mai Y., Zhang R.,
-Lian K., Lee N.M., Hashir S., Wang Zhouyu L., Li Y., Gonzalez A.R.C., Ho J., Choi H., Xu S. &amp;
+Lian K., Lee N.M., Hashir S., Wang L.Z., Li Y., Castillo Gonzalez A.R., Ho J., Choi H., Xu S. &amp;
 Claridge-Chang A. (2026). *Getting over ANOVA: estimation graphics for multi-group comparisons.*
-**bioRxiv**. [doi:10.64898/2026.01.26.701654](https://doi.org/10.64898/2026.01.26.701654).]{.fig-legend style="max-width:760px"}
+**Nature Methods**. [doi:10.1038/s41592-026-03187-7](https://doi.org/10.1038/s41592-026-03187-7).]{.fig-legend style="max-width:760px"}
 
 So next time you reach for a bar chart on a binary outcome, consider a proportion plot instead — not
 just whether something happened, but by how much and with what confidence.
 
 To learn more: read the
+[paper in *Nature Methods*](https://www.nature.com/articles/s41592-026-03187-7), the
 [preprint on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.01.26.701654v2), or explore
 the [DABEST package](https://acclab.github.io/DABEST-python/).
 
