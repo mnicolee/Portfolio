@@ -61,12 +61,21 @@ pagetitle: "Nicole M. Lee"
       <div class="eyebrow">Recent news</div>
       <div class="show-nav">
         <button class="nav-btn prev" type="button" aria-label="Previous news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-        <span class="counter" aria-live="polite">1 / 3</span>
+        <span class="counter" aria-live="polite">1 / 4</span>
         <button class="nav-btn next" type="button" aria-label="Next news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
       </div>
     </div>
     <div class="slides">
       <div class="slide is-active">
+        <img class="show-pic" src="papers/dabest/figure3-white.png" alt="Proportion estimation plots from the DABEST 2.0 paper">
+        <div class="txt">
+          <div class="m"><time>Jul 2026</time><span class="tag">Paper</span></div>
+          <h3>DABEST 2.0 - out now in <em>Nature Methods</em></h3>
+          <p>Estimation graphics for multi-group comparisons. I built the proportion plot for binary data and ran the literature survey behind it.</p>
+          <a class="read" href="papers/dabest/index.html">read more →</a>
+        </div>
+      </div>
+      <div class="slide">
         <img class="show-pic" src="tools/viset/venn-drug-targets.png" alt="ViSet set-overlap figure">
         <div class="txt">
           <div class="m"><time>Jul 2026</time><span class="tag">Tool</span></div>
