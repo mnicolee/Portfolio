@@ -8,9 +8,12 @@ resources:
 
 [Python library · open source]{.paper-meta}
 
-Most set diagrams tell you how many items overlap, but not which ones. I kept running into this when
-comparing gene sets, where knowing the actual overlapping genes often mattered more than the counts
-themselves. That frustration eventually became **VISET** (**Vis**ual **I**temized **SET** diagrams).
+Most set diagrams tell you how many items overlap, but not which ones. VISET came out of a need in
+the lab: when comparing gene sets, we wanted to see the actual genes shared between sets, not just
+how many there were. I initially built it to do simple itemization, but began developing it further
+by adding features such as automatic resizing of text and columns according to region area, and an
+interactive hover version for regions too dense to print. Hence **VISET** (**Vis**ual **I**temized
+**SET** diagrams).
 
 Traditional Venn and Euler diagrams quickly become difficult to interpret as the number of sets
 increases, while UpSet plots trade visual overlap for scalability. Neither solves the problem of
@@ -51,10 +54,6 @@ above.
 The package is written in Python and built with nbdev, making it easy to use both as a library and
 from notebooks. It supports publication-quality figures, customizable styling, and integrates
 naturally into existing data analysis workflows.
-
-VISET began as a small utility for my own analyses, but it turned into a general-purpose package that
-I now use whenever I need to compare sets. Hopefully it makes that process a little easier for other
-people too.
 
 The code and full documentation live on [GitHub](https://github.com/mnicolee/VISET).
 
