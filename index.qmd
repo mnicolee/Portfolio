@@ -12,19 +12,19 @@ pagetitle: "Nicole M. Lee"
   📷 headshot → nicole.png
 -->
 
-<!-- HERO: big name + skill chips (left) · round headshot (right) -->
+<!-- HERO: round headshot (left) · name, subtitle and first about paragraph (right) -->
 <div class="hero">
+  <img src="nicole.png" class="headshot" width="300" alt="Nicole M. Lee">
   <div class="hero-text">
     <div class="hero-name" role="heading" aria-level="1">Nicole M. Lee, Ph.D.</div>
     <div class="hero-sub">Computational behavioral neuroscientist &amp; hardware tinkerer</div>
+    <p class="lead-p hero-lead">I'm a <strong>neuroscientist</strong> in the <a href="https://claridgechang.com/">ACC Lab</a> (Adam Claridge-Chang) at Duke-NUS Medical School, where I completed my PhD and now continue as a Research Fellow, <strong>building optogenetic methods to study how small circuits in the <em>Drosophila</em> brain shape behavior.</strong></p>
   </div>
-  <img src="nicole.png" class="headshot" width="300" alt="Nicole M. Lee">
 </div>
 
-<!-- ABOUT (on top) — no label per Nicole -->
+<!-- ABOUT (continued, full width) — no label per Nicole -->
 <div class="hsec">
-  <p class="lead-p">I'm a <strong>neuroscientist</strong> in the <a href="https://www.claridgechang.net/about.html">ACC Lab</a> (Adam Claridge-Chang) at Duke-NUS Medical School, where I completed my PhD and now continue as a Research Fellow, <strong>building optogenetic methods to study how small circuits in the <em>Drosophila</em> brain shape behavior.</strong></p>
-  <p class="lead-p">Before the flies, I completed my B.S. in Biochemistry at the University of Washington, Seattle, and worked on several projects: the <a href="https://orthop.washington.edu/research/ourlabs/collagen-biology-and-genetic-disorders-lab.html">biochemistry of collagen degradation</a>, <a href="https://depts.washington.edu/uwconte/chavkinlab/">mTOR and kappa-opioid receptor signaling</a>, <a href="https://cabernardlab.org/overview">asymmetric cell division</a>, and <a href="https://csi.nus.edu.sg/">cancer drug-resistance</a>. Outside the lab, I paint 🎨, play games 🎮, and build apps 📱.</p>
+  <p class="lead-p">Before the flies, I completed my B.S. in Biochemistry at the University of Washington in Seattle. While there, I worked on several projects: the <a href="https://orthop.washington.edu/research/ourlabs/collagen-biology-and-genetic-disorders-lab.html">biochemistry of collagen degradation</a>, <a href="https://depts.washington.edu/uwconte/chavkinlab/">mTOR and kappa-opioid receptor signaling</a>, <a href="https://cabernardlab.org/overview">asymmetric cell division</a>, and <a href="https://csi.nus.edu.sg/">cancer drug-resistance</a>. Outside the lab, I paint 🎨, play games 🎮, and build apps 📱.</p>
 </div>
 
 <!-- THE THREE: icon inline with title, blurb below -->
@@ -73,9 +73,18 @@ pagetitle: "Nicole M. Lee"
     </div>
     <div class="slides">
       <div class="slide is-active">
+        <img class="show-pic" src="musings/machine-learning-course/fig2-cartoon.jpg" alt="Cartoon of a scientist in a huge, smoking machine racing a scientist on a simple bicycle to the finish line">
+        <div class="txt">
+          <div class="m"><time>Oct 2026</time><span class="tag">Musings</span><span class="tag tag-new">Just out</span></div>
+          <h3>When Good Scores Lie</h3>
+          <p>A machine learning course left me with more questions than answers, and this is my exploration of the debates behind them.</p>
+          <a class="read" href="musings/machine-learning-course/index.html">read more →</a>
+        </div>
+      </div>
+      <div class="slide">
         <img class="show-pic" src="papers/dabest/figure3-white.png" alt="Proportion estimation plots from the DABEST 2.0 paper">
         <div class="txt">
-          <div class="m"><time>Jul 2026</time><span class="tag">Paper</span><span class="tag tag-new">Just out</span></div>
+          <div class="m"><time>Jul 2026</time><span class="tag">Paper</span></div>
           <h3>DABEST 2.0 - out now in <em>Nature Methods</em></h3>
           <p>Estimation graphics for multi-group comparisons. I built the proportion plot for binary data and ran the literature survey behind it.</p>
           <a class="read" href="papers/dabest/index.html">read more →</a>
@@ -88,15 +97,6 @@ pagetitle: "Nicole M. Lee"
           <h3>VISET - interactive itemized set visualization</h3>
           <p>An nbdev Python package on GitHub for itemizing and comparing sets, not just viewing them interactively.</p>
           <a class="read" href="tools/viset/index.html">read more →</a>
-        </div>
-      </div>
-      <div class="slide">
-        <img class="show-pic" src="papers/opn3/graphical-abstract.png" alt="OPN3 graphical abstract">
-        <div class="txt">
-          <div class="m"><time>Jun 2026</time><span class="tag">Paper</span></div>
-          <h3>OPN3 - a light-activated opto-GPCR</h3>
-          <p>A light-activated GPCR that switches neuromodulatory signaling on and off, so we can dissect how specific circuits in the brain shape behavior.</p>
-          <a class="read" href="papers/opn3/index.html">read more →</a>
         </div>
       </div>
     </div>

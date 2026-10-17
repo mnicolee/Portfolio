@@ -4,7 +4,7 @@ title: "Kalium channelrhodopsins"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[co-author · Nature Communications, 2024]{.paper-meta}
+[co-author · Nature Communications, April 2024]{.paper-meta .paper-meta-lg}
 
 ## What KCRs are
 

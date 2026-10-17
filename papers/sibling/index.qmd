@@ -4,7 +4,7 @@ title: "Sibling cell size asymmetry"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[co-author · iScience, 2019]{.paper-meta}
+[co-author · iScience, March 2019]{.paper-meta .paper-meta-lg}
 
 ::: {style="float:left; width:558px; max-width:54%; margin:0.3rem 1.6rem 0.8rem 0;"}
 ![](graphical-abstract.jpg){.graphical-abstract style="width:100%; max-width:100%"}

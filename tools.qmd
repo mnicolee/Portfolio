@@ -30,19 +30,6 @@ member names inside each region, making set comparisons far easier to interpret.
 
 ::::: {.card-grid}
 
-:::: {.pcard .is-soon}
-<div class="pcard-ph">Coming soon</div>
-
-::: {.pcard-body}
-### Focus Pocus
-[Desktop app · Windows · in development]{.paper-meta}
-
-A privacy-first focus timer that notices when you've drifted off, whether it's an idle mouse or a
-site on your blocklist, and nudges you back before distractions take over.
-:::
-
-::::
-
 :::: {.pcard}
 <img class="pcard-media" style="object-fit:cover;object-position:top" src="tools/reminder-bot/card.svg" alt="A Discord message from Reminder Bot pinging @Nicole to take her vitamins, with checkmark and cross reactions below">
 
@@ -52,6 +39,19 @@ site on your blocklist, and nudges you back before distractions take over.
 
 A self-hosted Discord bot that turns reminders into a shared accountability system, complete with
 scoreboards, weekly reports, and a healthy amount of roasting.
+:::
+
+::::
+
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
+
+::: {.pcard-body}
+### Focus Pocus
+[Desktop app · Windows · in development]{.paper-meta}
+
+A privacy-first focus timer that notices when you've drifted off, whether it's an idle mouse or a
+site on your blocklist, and nudges you back before distractions take over.
 :::
 
 ::::

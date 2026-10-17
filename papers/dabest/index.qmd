@@ -4,7 +4,7 @@ title: "DABEST 2.0: estimation statistics"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[co-author · Nature Methods, 2026]{.paper-meta}
+[co-author · Nature Methods, July 2026]{.paper-meta .paper-meta-lg}
 
 Most papers still lean on the p-value: a single number that says *whether* something happened, not
 by how much or how sure you can be. **DABEST** (Data Analysis with Bootstrap-coupled ESTimation) is

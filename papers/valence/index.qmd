@@ -4,7 +4,7 @@ title: "Untangling internal state from locomotion using behavioral ethomics"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[PhD thesis · first-author, manuscript in preparation]{.paper-meta}
+[PhD thesis · first-author, manuscript in preparation]{.paper-meta .paper-meta-lg}
 
 My PhD thesis work. Using an optogenetic screen of the mushroom body output neuron (MBON)
 split-GAL4 library, I applied bidirectional manipulation, activating and silencing defined

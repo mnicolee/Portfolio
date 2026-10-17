@@ -4,7 +4,7 @@ title: "Separating chromosomes in fused cells"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[co-author (second author) · Communications Biology, 2022]{.paper-meta}
+[co-author (second author) · Communications Biology, September 2022]{.paper-meta .paper-meta-lg}
 
 :::: {.columns .vmiddle}
 ::: {.column width="62%"}

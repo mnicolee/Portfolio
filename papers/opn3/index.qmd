@@ -4,7 +4,7 @@ title: "The silence after the light"
 
 [← Back to research](../../research.qmd){.back-link}
 
-[co-first author · preprint · bioRxiv, 2026]{.paper-meta}
+[co-first author · preprint · bioRxiv, May 2026]{.paper-meta .paper-meta-lg}
 
 Most optogenetic silencers, such as the light-gated chloride channel GtACR1, only work while the
 light is on. As soon as the light goes off, the neuron becomes active again. That's a problem for

@@ -39,8 +39,7 @@ high-throughput behavioral data.
 
 I attended a two-day hands-on workshop run by the Duke-NUS Centre for Biomedical Data Science,
 covering the full machine learning workflow on real biomedical data, from preprocessing and
-cross-validation to regularized regression, tree-based models, neural networks, and explainable AI
-with SHAP. It gave me a practical grounding in building and evaluating predictive models, and in the
+cross-validation to regularized regression, tree-based models, and neural networks. It gave me a practical grounding in building and evaluating predictive models, and in the
 pitfalls that make them look better than they are.
 
 [Certificate of Participation awarded]{.scard-note}

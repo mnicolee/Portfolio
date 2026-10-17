@@ -11,19 +11,6 @@ to switch those circuits on and off in the fly brain.
 
 ::::: {.card-grid}
 
-:::: {.pcard .is-soon}
-<div class="pcard-ph">Coming soon</div>
-
-::: {.pcard-body}
-### Neural circuits of behavior in *Drosophila*
-[PhD thesis · first-author · unpublished data]{.paper-meta}
-
-A large-scale optogenetic and behavioral ethomics study of how brain circuits shape movement
-in *Drosophila*, forming the core of my PhD thesis.
-:::
-
-::::
-
 :::: {.pcard}
 <img class="pcard-media" src="papers/opn3/graphical-abstract.png" alt="Graphical abstract of the OPN3 silencing paper">
 
@@ -86,6 +73,19 @@ and nuclear envelope boundaries.
 
 Investigating how hydrostatic pressure and cortical actomyosin work together to produce two
 unequal-sized daughter cells during neural stem cell division.
+:::
+
+::::
+
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
+
+::: {.pcard-body}
+### Neural circuits of behavior in *Drosophila*
+[PhD thesis · first-author · unpublished data]{.paper-meta}
+
+A large-scale optogenetic and behavioral ethomics study of how brain circuits shape movement
+in *Drosophila*, forming the core of my PhD thesis.
 :::
 
 ::::
