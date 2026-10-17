@@ -355,6 +355,7 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 
 // Section wrapper with a hairline divider on top
 .hsec { margin-top: clamp(2.6rem, 6vw, 3.8rem); }   // no divider rule
+.hsec + .hsec { margin-top: clamp(1.95rem, 4.5vw, 2.85rem); }
 
 // Mono section label with the 3-dot signature: white (grey ring) · gold · peacock
 .rlabel { display: flex; align-items: center; font-family: "IBM Plex Mono", monospace;
