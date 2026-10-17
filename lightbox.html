@@ -1,6 +1,7 @@
 <script>
 (function () {
-  var SEL = "img.paper-figure, img.graphical-abstract";
+  var SEL = "main img";
+  var SKIP = "a, .pcard, .panel-icon-img, .navbar";
   var overlay, overlayImg;
 
   function build() {
@@ -34,7 +35,7 @@
 
   function wire() {
     document.querySelectorAll(SEL).forEach(function (img) {
-      if (img.dataset.zoomable) return;
+      if (img.dataset.zoomable || img.closest(SKIP)) return;
       img.dataset.zoomable = "1";
       img.classList.add("zoomable");
       img.addEventListener("click", function () {

@@ -1,14 +1,16 @@
 ---
 title: "Inside the Black Box"
+aliases:
+  - ../../writing/ai-bootcamp/index.html
 ---
 
-[← Back to writing](../../writing.qmd){.back-link}
+[← Back to my musings](../../musings.qmd){.back-link}
 
 ::: {.page-lead}
 ***A beginner's attempt to make sense of AI, and the surprising places it led.***
 :::
 
-In June 2026 I spent four days at the AI Boot Camp hosted by Duke-NUS Medical School and the
+In June 2026 I spent four days at the AI Bootcamp hosted by Duke-NUS Medical School and the
 Tianqiao and Chrissy Chen Institute, alongside other researchers.
 
 Before the course, I knew how to use AI tools, but that was about the extent of it. My questions were the ones you ask when you've never looked under the hood. Why does a model give me a different answer each time I ask the same thing? What actually happens between typing a prompt and getting a reply?
@@ -83,7 +85,7 @@ You leave home expecting the bus at ten past. It doesn't arrive until twenty pas
 
 Four days isn't enough to understand AI, and I certainly didn't leave feeling like I did. What changed was that the field stopped feeling like a black box. I can now picture how the pieces fit together, and that's made it much easier to understand what I'm reading, what I'm asking, and what I still need to learn.
 
-I don't think neuroscience is "becoming AI", or that AI somehow invented these ideas. If anything, the two fields have often been asking similar questions from different directions. The boot camp didn't change what I do in the lab. **It changed the language I have for thinking about it.**
+I don't think neuroscience is "becoming AI", or that AI somehow invented these ideas. If anything, the two fields have often been asking similar questions from different directions. The bootcamp didn't change what I do in the lab. **It changed the language I have for thinking about it.**
 
 This was a fundamentals course, so there was never any chance of covering everything. I came away with far more questions than I started with, but this time they felt like questions I could actually begin answering.
 

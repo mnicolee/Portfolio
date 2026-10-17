@@ -25,8 +25,8 @@ website:
         text: tools
       - href: communications.qmd
         text: communications
-      - href: writing.qmd
-        text: writing
+      - href: musings.qmd
+        text: my musings
       # - href: contact.qmd      # temporarily hidden
       #   text: contact
     right:
