@@ -529,6 +529,7 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 }
 @media (prefers-reduced-motion: reduce) { .slide { transition: none; } }
 .debates { margin: 2rem 0 3rem; }
+.debates .show-top { justify-content: flex-end; }
 .slide-stack { display: block; }
 .slide-stack .txt { display: block; margin-top: 1.6rem; }
 .slide-stack h3 { font-size: 1.5rem; margin-bottom: 1rem; }
@@ -553,7 +554,7 @@ a.scard-title:hover { color: #0A5461; text-decoration: underline; }
 // --- Figure lightbox: click a figure to zoom into a full-screen overlay; click or Esc closes ---
 .zoomable { cursor: zoom-in; }
 .lightbox-lock { overflow: hidden; }
-.lightbox-overlay { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center;
+.lightbox-overlay { position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center;
   justify-content: center; padding: 2.5vmin; background: rgba(12, 20, 22, .88);
   opacity: 0; visibility: hidden; cursor: zoom-out;
   transition: opacity .2s ease, visibility .2s ease; }

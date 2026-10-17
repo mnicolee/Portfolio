@@ -38,7 +38,7 @@ from my perspective as a neuroscientist.
 ::::
 
 :::: {.pcard}
-<img class="pcard-media" src="musings/dabest-adoption/figure-1.svg" alt="Bar chart of works citing DABEST per year since its 2019 release">
+<img class="pcard-media" style="object-fit:contain" src="musings/dabest-adoption/figure-2.svg" alt="Donut chart of 1,355 works citing DABEST by field, led by medicine and neuroscience">
 
 ::: {.pcard-body}
 ### [Who uses DABEST?](https://acclab.github.io/DABEST-python/blog/posts/dabesties-over-the-years/dabesties-over-the-years.html){.stretched-link target="_blank" rel="noopener"}
