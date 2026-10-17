@@ -1,0 +1,53 @@
+---
+title: "[MY]{.my-mark} Musings"
+pagetitle: "my musings"
+aliases:
+  - writing.html
+---
+
+::: {.page-lead}
+Thinking out loud, wherever my curiosity may wander.
+:::
+
+::::: {.card-grid}
+
+:::: {.pcard}
+<img class="pcard-media" style="object-position:70% 50%" src="musings/machine-learning-course/course-photo.jpg" alt="A lecture room at Duke-NUS with the course title slide on the projector screen and trainers at the front">
+
+::: {.pcard-body}
+### [When Good Scores Lie](musings/machine-learning-course/index.qmd){.stretched-link}
+[2026]{.paper-meta}
+
+A machine learning course left me with more questions than answers, and this is my exploration of
+the debates behind them.
+:::
+
+::::
+
+:::: {.pcard}
+<img class="pcard-media" src="musings/ai-bootcamp/fig1-schema.svg" alt="Synaptic neuroscience drawn as a knowledge graph: presynaptic neuron, postsynaptic neuron, neurotransmitter, receptor and brain region, joined by named arrows such as synapses onto, releases and binds to">
+
+::: {.pcard-body}
+### [Inside the Black Box](musings/ai-bootcamp/index.qmd){.stretched-link}
+[2026]{.paper-meta}
+
+An exploration of the concepts that underpin modern AI, and why they felt unexpectedly familiar
+from my perspective as a neuroscientist.
+:::
+
+::::
+
+:::: {.pcard}
+<img class="pcard-media" src="musings/dabest-adoption/figure-1.svg" alt="Bar chart of works citing DABEST per year since its 2019 release">
+
+::: {.pcard-body}
+### [Who uses DABEST?](https://acclab.github.io/DABEST-python/blog/posts/dabesties-over-the-years/dabesties-over-the-years.html){.stretched-link target="_blank" rel="noopener"}
+[2026]{.paper-meta}
+
+Who are the users of the 2019 version of DABEST? I take a deep dive into seven years of citing
+papers to find out.
+:::
+
+::::
+
+:::::

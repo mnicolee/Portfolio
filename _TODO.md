@@ -6,10 +6,10 @@ say "bring up the todolist" any time.
 
 ## Open
 
-- [ ] **"Inside the Black Box" is LIVE** (`writing/ai-bootcamp/index.qmd`), the first Writing post.
+- [ ] **"Inside the Black Box" is LIVE** (`musings/ai-bootcamp/index.qmd`), the first musings post.
   Three figures alongside it as transparent SVG. Every factual claim was checked against primary
   sources. Three things still open, none blocking:
-  - The date. The opening still says "last month" rather than the actual boot camp dates.
+  - The date. The opening still says "last month" rather than the actual bootcamp dates.
   - Two references: the Waddell year and journal (Trends in Neurosciences 2010 vs Curr Opin
     Neurobiol 2013), and which of the two Aso 2014 eLife papers is cited where (e04577 is the
     anatomy one, e04580 is output neurons encode valence).

@@ -23,7 +23,7 @@ Symposium (Suzhou, China).
 :::: {.stack}
 
 ::: {.scard}
-[Chen Institute–Duke–NUS AI Boot Camp](https://www.cheninstitute.org/events-new/duke-bootcamp){.scard-title}
+[Chen Institute—Duke-NUS AI Bootcamp](musings/ai-bootcamp/index.qmd){.scard-title}
 [Duke-NUS · June 2026]{.scard-meta}
 
 I attended a selective four-day AI Bootcamp run by Duke-NUS and Duke University's Department of
@@ -31,6 +31,19 @@ Computer Science to build a stronger foundation in modern AI, from how large lan
 models work to designing and evaluating AI workflows, along with their limitations and responsible
 use. My goal was to build a solid understanding of these tools before applying them to
 high-throughput behavioral data.
+:::
+
+::: {.scard}
+[Introduction to Machine Learning and Deep Learning with Applications to Clinical and Biological Data workshop](musings/machine-learning-course/index.qmd){.scard-title}
+[Duke-NUS Centre for Biomedical Data Science · September 2026]{.scard-meta}
+
+I attended a two-day hands-on workshop run by the Duke-NUS Centre for Biomedical Data Science,
+covering the full machine learning workflow on real biomedical data, from preprocessing and
+cross-validation to regularized regression, tree-based models, neural networks, and explainable AI
+with SHAP. It gave me a practical grounding in building and evaluating predictive models, and in the
+pitfalls that make them look better than they are.
+
+[Certificate of Participation awarded]{.scard-note}
 :::
 
 ::::
