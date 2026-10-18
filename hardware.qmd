@@ -22,7 +22,7 @@ custom rigs, chambers, and illumination systems I've designed for optogenetics a
 ::::
 
 :::: {.pcard}
-<img class="pcard-media" src="hardware/climbing/green-led.png" alt="Green-lit climbing assay rig inside the incubator">
+<img class="pcard-media" style="object-position: center 20%" src="hardware/climbing/green-led.png" alt="Green-lit climbing assay rig inside the incubator">
 
 ::: {.pcard-body}
 ### [Climbing chamber](hardware/climbing/index.qmd){.stretched-link}

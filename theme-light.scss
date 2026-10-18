@@ -538,8 +538,11 @@ a.scard-title::after { content: ""; position: absolute; inset: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .slide { transition: none; } }
 .debates { margin: 2rem 0 3rem; }
-.debates .show-top { justify-content: flex-end; }
 .slide-stack { display: block; }
+.debates .slide:not(.is-active) { display: none; }
+.debates .slide.is-active { animation: slide-in .45s ease; }
+@keyframes slide-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .debates .slide.is-active { animation: none; } }
 .slide-stack .txt { display: block; margin-top: 1.6rem; }
 .slide-stack h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 .slide-stack p { font-size: 1.05rem; margin: 0 0 1rem; }
@@ -559,6 +562,29 @@ a.scard-title::after { content: ""; position: absolute; inset: 0; }
 .nav-btn:hover { background: var(--paper-2); border-color: var(--blue); }
 .nav-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .nav-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.slides { position: relative; touch-action: pan-y; }
+.slides > .show-nav { position: absolute; top: 1.2rem; right: 1.4rem; z-index: 2; gap: .15rem; padding: .25rem;
+  background: var(--blue); border-radius: 999px; box-shadow: 0 4px 14px rgba(38, 66, 111, .28); }
+.slides > .show-nav .nav-btn { width: 36px; height: 36px; border: 0; color: #fff; background: transparent; }
+.slides > .show-nav .nav-btn:hover { background: rgba(255, 255, 255, .16); }
+.slides > .show-nav .nav-btn svg { stroke-width: 2.6; }
+.slides > .show-nav .nav-btn:focus-visible { outline-color: #fff; outline-offset: -3px; }
+.slides > .show-nav .counter { color: #fff; font-weight: 600; padding: 0 .35rem; }
+.debates .slides > .show-nav { top: 1.55rem; }
+.slides > .slide-stack h3 { padding-right: 10rem; }
+.slides > .slide { padding-bottom: 3.6rem; }
+.slides > .dots { position: absolute; left: 0; right: 0; bottom: 1.1rem; z-index: 2;
+  display: flex; justify-content: center; align-items: center; gap: .15rem; }
+.dots button { box-sizing: content-box; width: 9px; height: 9px; padding: 6px; border: 0; border-radius: 999px;
+  background: #B9C7DA; background-clip: content-box; cursor: pointer; transition: width .2s ease, background-color .2s ease; }
+.dots button:hover { background-color: #8FA3BF; }
+.dots button.is-active { width: 24px; background-color: var(--blue); }
+.dots button:focus-visible { outline: 2px solid var(--blue); outline-offset: 0; }
+@media (max-width: 700px) {
+  .slides > .show-nav, .debates .slides > .show-nav { top: .9rem; right: .9rem; }
+  .slides > .slide { padding-top: 4.4rem; }
+  .slides > .slide-stack h3 { padding-right: 0; }
+}
 
 // --- Figure lightbox: click a figure to zoom into a full-screen overlay; click or Esc closes ---
 .zoomable { cursor: zoom-in; }
