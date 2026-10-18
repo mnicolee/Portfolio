@@ -21,17 +21,15 @@ A big thank you to the speakers, Prof Ehsan Saffari, Dr Yilin Ning, Prof Bibhas 
 What I found most interesting was that the course left me with more questions than answers about how machine learning should actually be used in science and medicine. I ended up reading more about some of the debates happening in the field now, and these are the four I dug into.
 
 :::::: {.show .debates aria-roledescription="carousel" aria-label="Four debates"}
+::::: {.slides}
+
 ```{=html}
-<div class="show-top">
 <div class="show-nav">
 <button class="nav-btn prev" type="button" aria-label="Previous debate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
 <span class="counter" aria-live="polite">1 / 4</span>
 <button class="nav-btn next" type="button" aria-label="Next debate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
 </div>
-</div>
 ```
-
-::::: {.slides}
 
 :::: {.slide .slide-stack .is-active}
 ### 1. Is more complex actually better?
@@ -47,7 +45,7 @@ There are striking examples of this in biology too. A 2025 *Nature Methods* stud
 
 That does not mean complex models are pointless. TabPFN, for example, is pre-trained on millions of synthetic datasets and has shown that a more sophisticated approach can outperform well-tuned tree-based models on small tabular datasets, sometimes without any task-specific tuning ([Hollmann et al., 2025](https://doi.org/10.1038/s41586-024-08328-6)).
 
-So perhaps the more useful question is not whether simple or complex models are better. It is: **what does the extra complexity actually buy us?**
+So perhaps the more useful question is not whether simple or complex models are better. It is, "**what does the extra complexity actually buy us?**"
 :::
 ::::
 
@@ -148,21 +146,40 @@ document.querySelectorAll('.show').forEach(function (show) {
   var timer = null, stopped = reduce;
   function play() { if (!stopped && !timer) timer = setInterval(function () { go(i + 1); }, 8000); }
   function pause() { clearInterval(timer); timer = null; }
+  var dots = document.createElement('div');
+  dots.className = 'dots';
+  slides.forEach(function (s, j) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', 'Go to debate ' + (j + 1));
+    b.addEventListener('click', function () { step(j - i); });
+    dots.appendChild(b);
+  });
+  show.querySelector('.slides').appendChild(dots);
   function go(k) {
     i = (k + n) % n;
-    slides.forEach(function (s, j) { s.classList.toggle('is-active', j === i); });
+    slides.forEach(function (s, j) { s.classList.toggle('is-active', j === i); dots.children[j].classList.toggle('is-active', j === i); });
     counter.textContent = (i + 1) + ' / ' + n;
   }
   function step(d) {
     go(i + d);
     if (show.getBoundingClientRect().top < 0) show.scrollIntoView({ behavior: 'smooth' });
   }
+  go(0);
   play();
   show.addEventListener('click', function () { stopped = true; pause(); });
   show.addEventListener('mouseenter', pause);
   show.addEventListener('mouseleave', play);
   show.querySelector('.prev').addEventListener('click', function () { step(-1); });
   show.querySelector('.next').addEventListener('click', function () { step(1); });
+  var x0 = null, y0 = null;
+  show.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+  show.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { stopped = true; pause(); step(dx < 0 ? 1 : -1); }
+    x0 = null;
+  }, { passive: true });
 });
 </script>
 ```
