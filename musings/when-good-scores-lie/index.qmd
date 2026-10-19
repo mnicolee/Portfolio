@@ -1,5 +1,8 @@
 ---
 title: "When Good Scores Lie"
+# Old address before the folder was renamed; keeps existing links working.
+aliases:
+  - ../machine-learning-course/index.html
 ---
 
 [← Back to my musings](../../musings.qmd){.back-link}
@@ -10,7 +13,9 @@ title: "When Good Scores Lie"
 
 On 28 and 29 September, I attended a two-day course at Duke-NUS on [*Introduction to Machine Learning and Deep Learning with Applications to Clinical and Biological Data*]{.underline}.
 
-The course covered everything from data preparation and model evaluation to supervised and unsupervised learning, reinforcement learning, deep learning and explainable AI, all in the context of clinical and biological data. I've tried to summarise the main ideas in the map below.
+I had first learnt the basics of machine learning at the University of Washington and used some of it again in my PhD thesis, such as hierarchical clustering and PCA, but this course was a chance to revisit the foundations properly.
+
+It covered everything from data preparation and model evaluation to supervised and unsupervised learning, reinforcement learning, deep learning and explainable AI, all in the context of clinical and biological data. I've tried to summarise the main ideas in the map below.
 
 ![](fig1-course-map.png){style="display:block; max-width:1000px; width:100%; margin:1.6rem auto .6rem" fig-alt="A one-page map of the course in seven panels: foundations, data, supervised learning, unsupervised learning, reinforcement learning, deep learning, and rules that cut across everything, such as split first, start small and validate the biology."}
 

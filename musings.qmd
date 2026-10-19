@@ -12,10 +12,10 @@ Thinking out loud, wherever my curiosity may wander.
 ::::: {.card-grid}
 
 :::: {.pcard}
-<img class="pcard-media" style="object-position:70% 50%" src="musings/machine-learning-course/course-photo.jpg" alt="A lecture room at Duke-NUS with the course title slide on the projector screen and trainers at the front">
+<img class="pcard-media" style="object-position:70% 50%" src="musings/when-good-scores-lie/course-photo.jpg" alt="A lecture room at Duke-NUS with the course title slide on the projector screen and trainers at the front">
 
 ::: {.pcard-body}
-### [When Good Scores Lie](musings/machine-learning-course/index.qmd){.stretched-link}
+### [When Good Scores Lie](musings/when-good-scores-lie/index.qmd){.stretched-link}
 [Oct 2026]{.paper-meta}
 
 A machine learning course left me with more questions than answers, and this is my exploration of
