@@ -16,7 +16,7 @@ The course covered everything from data preparation and model evaluation to supe
 
 [**Figure 1.** A mind map of the course, from the foundations of machine learning and data preparation to supervised, unsupervised and reinforcement learning, deep learning, and the rules that cut across them all. Image generated with ChatGPT.]{.figure-credit style="max-width:1000px"}
 
-A big thank you to the speakers, Prof Ehsan Saffari, Dr Yilin Ning, Prof Bibhas Chakraborty, Asst Prof Regina Hoo and Dr John Ouyang, as well as the Duke-NUS AI + Medical Sciences Initiative (DAISI) and the Centre for Biomedical Data Science (CBDS) for organising the course.
+A big thank you to the speakers, Prof Ehsan Saffari, Prof Bibhas Chakraborty, Prof Regina Hoo, Dr Yilin Ning and Dr John Ouyang, as well as the Duke-NUS AI + Medical Sciences Initiative (DAISI) and the Centre for Biomedical Data Science (CBDS) for organising the course.
 
 What I found most interesting was that the course left me with more questions than answers about how machine learning should actually be used in science and medicine. I ended up reading more about some of the debates happening in the field now, and these are the four I dug into.
 
