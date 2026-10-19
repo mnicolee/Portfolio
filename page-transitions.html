@@ -1,0 +1,68 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Serif+Display&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Space+Grotesk:wght@400;500;700&family=Inter:ital,wght@0,600;0,700;1,400&family=Jost:wght@400;500&display=swap">
+<!-- Don't paint (or snapshot for the slide) until the page content has been parsed. -->
+<link rel="expect" href="#quarto-content" blocking="render">
+<!-- Prerender pages so the slide starts the moment a link is clicked (Chromium): the navbar tabs
+     straight away, so every tab responds the same; other links once hovered. -->
+<script type="speculationrules">
+{
+  "prerender": [{
+    "where": { "selector_matches": "#navbarCollapse .navbar-nav.me-auto .nav-link:not(.active)" },
+    "eagerness": "eager"
+  }, {
+    "where": { "and": [
+      { "href_matches": "/*" },
+      { "not": { "selector_matches": "[target=_blank], [href$='.pdf'], [href$='.zip']" } }
+    ] },
+    "eagerness": "moderate"
+  }]
+}
+</script>
+<script>
+// Navbar tab slide: moving to a tab on the right slides the page left, and vice versa.
+// Uses cross-document View Transitions (styles in theme-light.scss); browsers without
+// support just navigate normally.
+(function () {
+  var KEY = "nav-slide-from";
+
+  function norm(url) {
+    return new URL(url, location.href).pathname.replace(/index\.html$/, "").replace(/\.html$/, "/");
+  }
+
+  // Index of the navbar tab a URL belongs to: an exact match, else the tab whose page is
+  // the longest parent folder of it (e.g. a musings post belongs to "my musings").
+  function tabFor(url) {
+    var path = norm(url), best = -1, bestLen = -1;
+    document.querySelectorAll("#navbarCollapse .navbar-nav.me-auto .nav-link").forEach(function (a, i) {
+      var base = norm(a.href);
+      if (path === base) { best = i; bestLen = Infinity; }
+      else if (path.indexOf(base) === 0 && base.length > bestLen) { best = i; bestLen = base.length; }
+    });
+    return best;
+  }
+
+  // Fallback for browsers without the Navigation API (Safari): remember where we left from.
+  window.addEventListener("pageswap", function () {
+    try { sessionStorage.setItem(KEY, location.href); } catch (err) {}
+  });
+
+  window.addEventListener("pagereveal", function (e) {
+    // Quarto sizes the space under the fixed navbar only after load, which would shift the page
+    // right after the slide; size it now, before the first frame is painted.
+    var header = document.getElementById("quarto-header");
+    if (header && document.body.classList.contains("nav-fixed")) {
+      document.body.style.paddingTop = header.offsetHeight + "px";
+    }
+    if (!e.viewTransition) return;
+    var from = null;
+    try {
+      from = (window.navigation && navigation.activation && navigation.activation.from && navigation.activation.from.url)
+        || sessionStorage.getItem(KEY);
+    } catch (err) {}
+    var a = from ? tabFor(from) : -1, b = tabFor(location.href);
+    if (a < 0 || b < 0 || a === b) { e.viewTransition.skipTransition(); return; }
+    e.viewTransition.types.add(b > a ? "forward" : "back");
+  });
+})();
+</script>

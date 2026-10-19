@@ -1,5 +1,8 @@
 ---
 title: "When Good Scores Lie"
+# Old address before the folder was renamed; keeps existing links working.
+aliases:
+  - ../machine-learning-course/index.html
 ---
 
 [← Back to my musings](../../musings.qmd){.back-link}
@@ -10,13 +13,15 @@ title: "When Good Scores Lie"
 
 On 28 and 29 September, I attended a two-day course at Duke-NUS on [*Introduction to Machine Learning and Deep Learning with Applications to Clinical and Biological Data*]{.underline}.
 
-The course covered everything from data preparation and model evaluation to supervised and unsupervised learning, reinforcement learning, deep learning and explainable AI, all in the context of clinical and biological data. I've tried to summarise the main ideas in the map below.
+I had first learnt the basics of machine learning at the University of Washington and used some of it again in my PhD thesis, such as hierarchical clustering and PCA, but this course was a chance to revisit the foundations properly.
+
+It covered everything from data preparation and model evaluation to supervised and unsupervised learning, reinforcement learning, deep learning and explainable AI, all in the context of clinical and biological data. I've tried to summarise the main ideas in the map below.
 
 ![](fig1-course-map.png){style="display:block; max-width:1000px; width:100%; margin:1.6rem auto .6rem" fig-alt="A one-page map of the course in seven panels: foundations, data, supervised learning, unsupervised learning, reinforcement learning, deep learning, and rules that cut across everything, such as split first, start small and validate the biology."}
 
 [**Figure 1.** A mind map of the course, from the foundations of machine learning and data preparation to supervised, unsupervised and reinforcement learning, deep learning, and the rules that cut across them all. Image generated with ChatGPT.]{.figure-credit style="max-width:1000px"}
 
-A big thank you to the speakers, Prof Ehsan Saffari, Dr Yilin Ning, Prof Bibhas Chakraborty, Asst Prof Regina Hoo and Dr John Ouyang, as well as the Duke-NUS AI + Medical Sciences Initiative (DAISI) and the Centre for Biomedical Data Science (CBDS) for organising the course.
+A big thank you to the speakers, Prof Ehsan Saffari, Prof Bibhas Chakraborty, Prof Regina Hoo, Dr Yilin Ning and Dr John Ouyang, as well as the Duke-NUS AI + Medical Sciences Initiative (DAISI) and the Centre for Biomedical Data Science (CBDS) for organising the course.
 
 What I found most interesting was that the course left me with more questions than answers about how machine learning should actually be used in science and medicine. I ended up reading more about some of the debates happening in the field now, and these are the four I dug into.
 

@@ -6,7 +6,7 @@ The course covered everything from data preparation and model evaluation to supe
 
 **[Figure: course mind map]**
 
-A big thank you to the speakers, Prof Ehsan Saffari, Dr Yilin Ning, Prof Bibhas Chakraborty, Asst Prof Regina Hoo and Dr John Ouyang, as well as DAISI and CBDS for organising the course.
+A big thank you to the speakers, Prof Ehsan Saffari, Prof Bibhas Chakraborty, Prof Regina Hoo, Dr Yilin Ning and Dr John Ouyang, as well as DAISI and CBDS for organising the course.
 
 What I found most interesting was that the course left me with more questions than answers about how machine learning should actually be used in science and medicine. I ended up reading more about some of the debates happening in the field now. The rest of this post looks at four of them.
 

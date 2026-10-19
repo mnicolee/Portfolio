@@ -73,12 +73,12 @@ pagetitle: "Nicole M. Lee"
         <button class="nav-btn next" type="button" aria-label="Next news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
       </div>
       <div class="slide is-active">
-        <img class="show-pic" src="musings/machine-learning-course/fig2-cartoon.jpg" alt="Cartoon of a scientist in a huge, smoking machine racing a scientist on a simple bicycle to the finish line">
+        <img class="show-pic" src="musings/when-good-scores-lie/fig2-cartoon.jpg" alt="Cartoon of a scientist in a huge, smoking machine racing a scientist on a simple bicycle to the finish line">
         <div class="txt">
           <div class="m"><time>Oct 2026</time><span class="tag">Musings</span><span class="tag tag-new">Just out</span></div>
           <h3>When Good Scores Lie</h3>
           <p>A machine learning course left me with more questions than answers, and this is my exploration of the debates behind them.</p>
-          <a class="read" href="musings/machine-learning-course/index.html">read more →</a>
+          <a class="read" href="musings/when-good-scores-lie/index.html">read more →</a>
         </div>
       </div>
       <div class="slide">

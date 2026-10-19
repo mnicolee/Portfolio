@@ -34,7 +34,7 @@ high-throughput behavioral data.
 :::
 
 ::: {.scard}
-[Introduction to Machine Learning and Deep Learning with Applications to Clinical and Biological Data workshop](musings/machine-learning-course/index.qmd){.scard-title}
+[Introduction to Machine Learning and Deep Learning with Applications to Clinical and Biological Data workshop](musings/when-good-scores-lie/index.qmd){.scard-title}
 [Duke-NUS Centre for Biomedical Data Science · September 2026]{.scard-meta}
 
 I attended a two-day hands-on workshop run by the Duke-NUS Centre for Biomedical Data Science,
