@@ -21,18 +21,18 @@ It covered everything from data preparation and model evaluation to supervised a
 
 [**Figure 1.** A mind map of the course, from the foundations of machine learning and data preparation to supervised, unsupervised and reinforcement learning, deep learning, and the rules that cut across them all. Image generated with ChatGPT.]{.figure-credit style="max-width:1000px"}
 
-A big thank you to the speakers, Prof Ehsan Saffari, Prof Bibhas Chakraborty, Prof Regina Hoo, Dr Yilin Ning and Dr John Ouyang, as well as the Duke-NUS AI + Medical Sciences Initiative (DAISI) and the Centre for Biomedical Data Science (CBDS) for organising the course.
+A big thank you to the speakers, Prof Ehsan Saffari, Prof Bibhas Chakraborty, Prof Regina Hoo, Dr Yilin Ning and Dr John Ouyang, for turning what I had picked up in pieces over the years into a clearer whole, and to the Duke-NUS AI + Medical Sciences Initiative (DAISI) and the Centre for Biomedical Data Science (CBDS) for organising the course.
 
-What I found most interesting was that the course left me with more questions than answers about how machine learning should actually be used in science and medicine. I ended up reading more about some of the debates happening in the field now, and these are the four I dug into.
+What I found most interesting was that the course left me with more questions than answers about how machine learning should actually be used in science and medicine. I ended up reading more about some of the open questions in the field, and these are the four I dug into.
 
-:::::: {.show .debates aria-roledescription="carousel" aria-label="Four debates"}
+:::::: {.show .debates aria-roledescription="carousel" aria-label="Four open questions"}
 ::::: {.slides}
 
 ```{=html}
 <div class="show-nav">
-<button class="nav-btn prev" type="button" aria-label="Previous debate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button class="nav-btn prev" type="button" aria-label="Previous question"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
 <span class="counter" aria-live="polite">1 / 4</span>
-<button class="nav-btn next" type="button" aria-label="Next debate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+<button class="nav-btn next" type="button" aria-label="Next question"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
 </div>
 ```
 
@@ -121,7 +121,7 @@ So there are several steps between a good model and a better outcome. The predic
 
 Machine learning is becoming easier to use almost by the day. Training a model can now take only a few lines of code, and AI tools can increasingly do much of the setup for us. The harder part is knowing **what to use**, **when to use it**, and **how much confidence to place in the result**.
 
-Looking back, the four debates were less about building the most advanced model and more about using models carefully. Sometimes a simpler model is enough. Sometimes a model performs well for the wrong reason. Sometimes the test itself is misleading. And sometimes a good prediction still does not lead to a better decision.
+Looking back, all four questions were less about building the most advanced model and more about using models carefully. Sometimes a simpler model is enough. Sometimes a model performs well for the wrong reason. Sometimes the test itself is misleading. And sometimes a good prediction still does not lead to a better decision.
 
 That is probably the main thing I am taking away from the course. As machine learning becomes more common in research and medicine, knowing the newest model may matter less than knowing when a model is actually useful. For my own work, I want machine learning to be something I use because it answers the question well, not simply because it is there.
 
@@ -156,7 +156,7 @@ document.querySelectorAll('.show').forEach(function (show) {
   slides.forEach(function (s, j) {
     var b = document.createElement('button');
     b.type = 'button';
-    b.setAttribute('aria-label', 'Go to debate ' + (j + 1));
+    b.setAttribute('aria-label', 'Go to question ' + (j + 1));
     b.addEventListener('click', function () { step(j - i); });
     dots.appendChild(b);
   });
