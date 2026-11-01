@@ -24,6 +24,18 @@ member names inside each region, making set comparisons far easier to interpret.
 
 ::::
 
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
+
+::: {.pcard-body}
+### Eunoia
+[Rust library with Python, R, Julia and JavaScript packages · open source · contributor]{.paper-meta}
+
+How I went from using an area-proportional set diagram package to helping build its features.
+:::
+
+::::
+
 :::::
 
 [Lifestyle]{.eyebrow}
