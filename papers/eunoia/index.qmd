@@ -3,15 +3,15 @@ title: "Eunoia"
 draft: true
 ---
 
-[← Back to tools](../../tools.qmd){.back-link}
+[← Back to research](../../research.qmd){.back-link}
 
 [Rust library with Python, R, Julia and JavaScript packages · open source · contributor]{.paper-meta}
 
-While building [VISET](../viset/index.qmd), I reached out to [Johan Larsson](https://jolars.co/), the creator of [**eunoia**](https://github.com/jolars/eunoia), the package I was using to draw my set diagrams. VISET could already print the actual genes inside each region, so I asked if eunoia could do that too. Johan is a statistician, and I was hoping to get some ideas from him on how to better develop itemization in set diagrams. I already had a rough version working in VISET to show him, and he was happy to collaborate, which turned into a wonderful opportunity to work on itemization together.
+While building [VISET](../../tools/viset/index.qmd), I reached out to [Johan Larsson](https://jolars.co/), the creator of [**eunoia**](https://github.com/jolars/eunoia), the package I was using to draw my set diagrams. VISET could already print the actual genes inside each region, so I asked if eunoia could do that too. Johan is a statistician, and I was hoping to get some ideas from him on how to better develop itemization in set diagrams. I already had a rough version working in VISET to show him, and he was happy to collaborate, which turned into a wonderful opportunity to work on itemization together.
 
 ## So how does eunoia work?
 
-Eunoia draws area-proportional Euler and Venn diagrams. It tries to make each region reflect the number of items it holds, as closely as the shapes allow. With three or more sets, there often is no exact fit, so eunoia finds the closest layout it can and tells you how close it got. If you prefer exactly proportional itemized diagrams, I'd recommend [VISET's UpSet plot](../viset/index.qmd). Johan wrote the core in Rust, so eunoia works in many languages, Python, R, Julia and JavaScript, and there's also the [web app](https://eunoia.bz/), which makes it really accessible whether you code every day or not at all. For a more detailed look at how eunoia works and its pipelines, see [Johan's blog post](https://jolars.co/blog/2026-07-04-eunoia/).
+Eunoia draws area-proportional Euler and Venn diagrams. It tries to make each region reflect the number of items it holds, as closely as the shapes allow. With three or more sets, there often is no exact fit, so eunoia finds the closest layout it can and tells you how close it got. If you prefer exactly proportional itemized diagrams, I'd recommend [VISET's UpSet plot](../../tools/viset/index.qmd). Johan wrote the core in Rust, so eunoia works in many languages, Python, R, Julia and JavaScript, and there's also the [web app](https://eunoia.bz/), which makes it really accessible whether you code every day or not at all. For a more detailed look at how eunoia works and its pipelines, see [Johan's blog post](https://jolars.co/blog/2026-07-04-eunoia/).
 
 ![](shape_families.svg){.paper-figure style="max-width:560px" fig-alt="The same three sets fitted with circles, ellipses, squares and rectangles"}
 
@@ -43,7 +43,7 @@ VISET handles the names differently. For each curved region, it tries between on
 
 [How VISET places names in a curved region. Schematic based on the VISET source code, with the same example genes.]{.fig-legend style="max-width:800px"}
 
-![](../viset/venn-drug-targets.png){.paper-figure style="max-width:760px" fig-alt="A VISET area-proportional Venn diagram of the drug-target genes for Fluoxetine, Ibuprofen and Acetaminophen, with every gene name printed inside its region"}
+![](../../tools/viset/venn-drug-targets.png){.paper-figure style="max-width:760px" fig-alt="A VISET area-proportional Venn diagram of the drug-target genes for Fluoxetine, Ibuprofen and Acetaminophen, with every gene name printed inside its region"}
 
 [Three drug-target gene sets drawn with VISET. Each region sets its own text size, so the font varies
 across the diagram. Gene sets from the [DGIdb_Drug_Targets_2024 library in Enrichr](https://maayanlab.cloud/Enrichr/#libraries).]{.fig-legend style="max-width:760px"}
