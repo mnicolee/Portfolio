@@ -8,3 +8,8 @@ tools/reminder-bot/*.pdf
 
 # Quarto scss compile-error dump (build artifact)
 _quarto_internal_scss_error.scss
+
+# Private working notes, kept local
+_TODO.md
+_HOUSESTYLE.md
+_sleep-notes.md

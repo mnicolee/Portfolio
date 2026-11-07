@@ -73,9 +73,18 @@ pagetitle: "Nicole M. Lee"
         <button class="nav-btn next" type="button" aria-label="Next news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
       </div>
       <div class="slide is-active">
+        <img class="show-pic" src="papers/eunoia/card.svg" alt="A three-set eunoia Euler diagram with gene names packed inside each region">
+        <div class="txt">
+          <div class="m"><time>Nov 2026</time><span class="tag">Preprint</span><span class="tag tag-new">Just out</span></div>
+          <h3>Eunoia - preprint out on arXiv</h3>
+          <p>How I went from using an area-proportional set diagram package to helping build its features in Python.</p>
+          <a class="read" href="papers/eunoia/index.html">read more →</a>
+        </div>
+      </div>
+      <div class="slide">
         <img class="show-pic" src="musings/when-good-scores-lie/fig2-cartoon.jpg" alt="Cartoon of a scientist in a huge, smoking machine racing a scientist on a simple bicycle to the finish line">
         <div class="txt">
-          <div class="m"><time>Oct 2026</time><span class="tag">Musings</span><span class="tag tag-new">Just out</span></div>
+          <div class="m"><time>Oct 2026</time><span class="tag">Musings</span></div>
           <h3>When Good Scores Lie</h3>
           <p>A machine learning course left me with more questions than answers, and this is my exploration of the debates behind them.</p>
           <a class="read" href="musings/when-good-scores-lie/index.html">read more →</a>
@@ -88,15 +97,6 @@ pagetitle: "Nicole M. Lee"
           <h3>DABEST 2.0 - out now in <em>Nature Methods</em></h3>
           <p>Estimation graphics for multi-group comparisons. I built the proportion plot for binary data and ran the literature survey behind it.</p>
           <a class="read" href="papers/dabest/index.html">read more →</a>
-        </div>
-      </div>
-      <div class="slide">
-        <img class="show-pic" src="tools/viset/venn-drug-targets.png" alt="ViSet set-overlap figure">
-        <div class="txt">
-          <div class="m"><time>Jul 2026</time><span class="tag">Tool</span></div>
-          <h3>VISET - interactive itemized set visualization</h3>
-          <p>An nbdev Python package on GitHub for itemizing and comparing sets, not just viewing them interactively.</p>
-          <a class="read" href="tools/viset/index.html">read more →</a>
         </div>
       </div>
     </div>
