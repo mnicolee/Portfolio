@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
+  <info>
+    <title>Portfolio publications</title>
+    <id>portfolio-publications</id>
+    <updated>2026-11-07T00:00:00+00:00</updated>
+  </info>
+  <citation>
+    <layout>
+      <text variable="title"/>
+    </layout>
+  </citation>
+  <bibliography entry-spacing="0" hanging-indent="false">
+    <sort>
+      <key variable="issued" sort="descending"/>
+    </sort>
+    <layout>
+      <group delimiter=" ">
+        <names variable="author" suffix=".">
+          <name name-as-sort-order="all" sort-separator=", " initialize-with=". " delimiter=", " and="symbol" delimiter-precedes-last="always"/>
+        </names>
+        <text variable="title" suffix="."/>
+        <group delimiter=", " suffix=".">
+          <choose>
+            <if variable="container-title">
+              <text variable="container-title" font-style="italic"/>
+            </if>
+            <else>
+              <text variable="publisher" font-style="italic"/>
+            </else>
+          </choose>
+          <date variable="issued" form="text" date-parts="year-month"/>
+        </group>
+        <text variable="DOI" prefix="https://doi.org/"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>
