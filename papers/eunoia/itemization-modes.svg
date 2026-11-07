@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 275" width="768" height="275" role="img" aria-label="The same twelve members printed inside a circle three ways: eunoia list mode as one block with one name per line, eunoia packed mode with each name placed separately in rows, and VISET as two aligned columns with the count on top.">
+<text x="128.0" y="18.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#2F6360" font-weight="600">eunoia</text>
+<text x="128.0" y="34.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6F6068">list mode</text>
+<circle cx="128.0" cy="145" r="98" fill="#E3EEEC" stroke="#2F6360" stroke-width="1.5"/>
+<text x="128.0" y="265.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6F6068">one block, one name per line</text>
+<text x="128.0" y="71.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">AANAT</text>
+<text x="128.0" y="84.5" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">ACE</text>
+<text x="128.0" y="98.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">ATXN2</text>
+<text x="128.0" y="111.5" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">CRHR1</text>
+<text x="128.0" y="125.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">DRD1</text>
+<text x="128.0" y="138.5" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">GSK3B</text>
+<text x="128.0" y="152.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">HTR1B</text>
+<text x="128.0" y="165.5" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">HTR2A</text>
+<text x="128.0" y="179.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">HTR7</text>
+<text x="128.0" y="192.5" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">IGF2</text>
+<text x="128.0" y="206.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">KCNH2</text>
+<text x="128.0" y="219.5" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#2B2226">NOS2</text>
+<text x="384.0" y="18.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#2F6360" font-weight="600">eunoia</text>
+<text x="384.0" y="34.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6F6068">packed mode</text>
+<circle cx="384.0" cy="145" r="98" fill="#E3EEEC" stroke="#2F6360" stroke-width="1.5"/>
+<text x="384.0" y="265.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6F6068">each name placed on its own</text>
+<text x="384.0" y="113.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2B2226">AANAT&#160;&#160;ACE</text>
+<text x="384.0" y="133.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2B2226">ATXN2&#160;&#160;CRHR1&#160;&#160;DRD1</text>
+<text x="384.0" y="153.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2B2226">GSK3B&#160;&#160;HTR1B&#160;&#160;HTR2A</text>
+<text x="384.0" y="173.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2B2226">HTR7&#160;&#160;IGF2&#160;&#160;KCNH2</text>
+<text x="384.0" y="193.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2B2226">NOS2</text>
+<text x="640.0" y="18.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#9C3F63" font-weight="600">VISET</text>
+<text x="640.0" y="34.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6F6068">aligned columns</text>
+<circle cx="640.0" cy="145" r="98" fill="#F6EAEE" stroke="#9C3F63" stroke-width="1.5"/>
+<text x="640.0" y="265.0" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6F6068">a small table, count on top</text>
+<text x="640.0" y="89.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="14" fill="#9C3F63" font-weight="600">12</text>
+<text x="608.0" y="109.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">AANAT</text>
+<text x="672.0" y="109.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">HTR1B</text>
+<text x="608.0" y="126.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">ACE</text>
+<text x="672.0" y="126.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">HTR2A</text>
+<text x="608.0" y="143.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">ATXN2</text>
+<text x="672.0" y="143.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">HTR7</text>
+<text x="608.0" y="160.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">CRHR1</text>
+<text x="672.0" y="160.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">IGF2</text>
+<text x="608.0" y="177.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">DRD1</text>
+<text x="672.0" y="177.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">KCNH2</text>
+<text x="608.0" y="194.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">GSK3B</text>
+<text x="672.0" y="194.0" text-anchor="middle" font-family="Consolas, IBM Plex Mono, ui-monospace, monospace" font-size="12.5" fill="#2B2226">NOS2</text>
+</svg>
