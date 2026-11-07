@@ -437,6 +437,8 @@ a.scard-title::after { content: ""; position: absolute; inset: 0; }
 
 // Extra breathing room below the last home section so it doesn't crowd the footer
 .hsec-last { padding-bottom: 3.6rem; }
+.pubs .csl-entry { border-left: 3.5px solid var(--lemon-deep); padding: .2rem 0 .2rem 1rem;
+  margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.6; }
 
 // Page footer: smaller and grey
 .nav-footer { font-size: .8rem; color: var(--muted); }

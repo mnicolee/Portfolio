@@ -1,5 +1,9 @@
 ---
 pagetitle: "Nicole M. Lee"
+bibliography: publications.bib
+csl: _publications/publications.csl
+nocite: |
+  @*
 ---
 
 ```{=html}
@@ -61,7 +65,7 @@ pagetitle: "Nicole M. Lee"
      RULE: the gold <span class="tag tag-new">Just out</span> badge belongs to the newest slide
      only. Move it onto the incoming slide and strip it from the one it used to be on, so exactly
      one slide carries it at a time. -->
-<div class="hsec hsec-last">
+<div class="hsec">
   <div class="show" data-interval="5000" aria-roledescription="carousel" aria-label="Recent news">
     <div class="show-top">
       <div class="eyebrow">Recent news</div>
@@ -102,6 +106,23 @@ pagetitle: "Nicole M. Lee"
     </div>
   </div>
 </div>
+```
+
+[]{.section-rule}
+
+::: {.hsec .hsec-last .pubs}
+[Selected publications]{.eyebrow}
+
+::: {#refs}
+:::
+:::
+
+```{=html}
+<script>
+document.querySelectorAll("#refs .csl-entry").forEach(function (e) {
+  e.innerHTML = e.innerHTML.replace(/Lee, N\.(?:\s(?:M\.))?/, "<strong>$&</strong>");
+});
+</script>
 
 <script>
 (function () {
