@@ -12,11 +12,23 @@ to switch those circuits on and off in the fly brain.
 ::::: {.card-grid}
 
 :::: {.pcard}
+<img class="pcard-media" src="papers/eunoia/card.svg" alt="A three-set eunoia Euler diagram with gene names packed inside each region">
+
+::: {.pcard-body}
+### [Eunoia](papers/eunoia/index.qmd){.stretched-link}
+[co-author · arXiv, 2026]{.paper-meta}
+
+How I went from using an area-proportional set diagram package to helping build its features.
+:::
+
+::::
+
+:::: {.pcard}
 <img class="pcard-media" src="papers/opn3/graphical-abstract.png" alt="Graphical abstract of the OPN3 silencing paper">
 
 ::: {.pcard-body}
 ### [The silence after the light](papers/opn3/index.qmd){.stretched-link}
-[co-first author · preprint · bioRxiv, 2026]{.paper-meta}
+[co-first author · bioRxiv, 2026]{.paper-meta}
 
 A bistable opto-GPCR that lets us silence *Drosophila* neurons for minutes with a single brief
 flash of green light, providing a low-toxicity optogenetic tool for studying neural circuits and behavior.
@@ -73,18 +85,6 @@ and nuclear envelope boundaries.
 
 Investigating how hydrostatic pressure and cortical actomyosin work together to produce two
 unequal-sized daughter cells during neural stem cell division.
-:::
-
-::::
-
-:::: {.pcard .is-soon}
-<div class="pcard-ph">Coming soon</div>
-
-::: {.pcard-body}
-### Eunoia
-[Rust library with Python, R, Julia and JavaScript packages · open source · contributor]{.paper-meta}
-
-How I went from using an area-proportional set diagram package to helping build its features.
 :::
 
 ::::
