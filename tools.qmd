@@ -31,27 +31,27 @@ member names inside each region, making set comparisons far easier to interpret.
 ::::: {.card-grid}
 
 :::: {.pcard}
-<img class="pcard-media" style="object-fit:cover;object-position:top" src="tools/reminder-bot/card.svg" alt="A Discord message from Reminder Bot pinging @Nicole to take her vitamins, with checkmark and cross reactions below">
+<img class="pcard-media" src="tools/focus-pocus/card.png" alt="The Focus Pocus main window during a session, with a running timer, a countdown to the next nudge, and START, PAUSE, PLAY and STOP buttons">
 
 ::: {.pcard-body}
-### [Reminder Bot](tools/reminder-bot/index.qmd){.stretched-link}
-[Discord bot · runs locally]{.paper-meta}
+### [Focus Pocus](tools/focus-pocus/index.qmd){.stretched-link}
+[Productivity app · 2026]{.paper-meta}
 
-A self-hosted Discord bot that turns reminders into a shared accountability system, complete with
-scoreboards, weekly reports, and a healthy amount of roasting.
+A privacy-first focus timer that notices when you've drifted off, whether it's an idle mouse or a
+site on your blocklist, and nudges you back before distractions take over.
 :::
 
 ::::
 
-:::: {.pcard .is-soon}
-<div class="pcard-ph">Coming soon</div>
+:::: {.pcard}
+<img class="pcard-media" style="object-fit:cover;object-position:top" src="tools/reminder-bot/card.svg" alt="A Discord message from Reminder Bot pinging @Nicole to take her vitamins, with checkmark and cross reactions below">
 
 ::: {.pcard-body}
-### Focus Pocus
-[Desktop app · Windows · in development]{.paper-meta}
+### [Reminder Bot](tools/reminder-bot/index.qmd){.stretched-link}
+[Discord bot · Productivity · 2026]{.paper-meta}
 
-A privacy-first focus timer that notices when you've drifted off, whether it's an idle mouse or a
-site on your blocklist, and nudges you back before distractions take over.
+A self-hosted Discord bot that turns reminders into a shared accountability system, complete with
+scoreboards, weekly reports, and a healthy amount of roasting.
 :::
 
 ::::

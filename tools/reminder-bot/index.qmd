@@ -4,7 +4,7 @@ title: "Reminder Bot"
 
 [← Back to tools](../../tools.qmd){.back-link}
 
-[Discord bot · Python · runs locally]{.paper-meta}
+[Discord bot · Productivity · 2026]{.paper-meta}
 
 Procrastination and ADHD are things my friends and I have always struggled with, and the research says we are not uniquely broken, just part of a very large club: Steel's meta-analysis estimates that [80 to 95 percent of college students procrastinate](https://psycnet.apa.org/record/2006-23058-004), and a [global review](https://jogh.org/the-prevalence-of-adult-attention-deficit-hyperactivity-disorder-a-global-systematic-review-and-meta-analysis/) puts symptomatic ADHD at roughly 6.8 percent of adults. What I wanted was accountability I could not dodge, so I moved the nagging into the one place I already have open all day: Discord. **Reminder Bot** is a Discord bot you host yourself that pings you and your friends on your own schedule, **keeps a scoreboard of who followed through**, and keeps every scrap of its data on your own machine.
 
