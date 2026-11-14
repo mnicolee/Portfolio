@@ -18,8 +18,7 @@ Thinking out loud, wherever my curiosity may wander.
 ### [What My Focus Logs Say](musings/focus-pocus-data/index.qmd){.stretched-link}
 [Nov 2026]{.paper-meta}
 
-Five weeks of thesis writing, logged by my own focus timer, and what the numbers could and couldn't
-tell me.
+Logging my final weeks of thesis writing with my own focus timer.
 :::
 
 ::::
