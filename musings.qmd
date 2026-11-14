@@ -50,4 +50,17 @@ papers to find out.
 
 ::::
 
+:::: {.pcard .is-soon}
+<div class="pcard-ph">Coming soon</div>
+
+::: {.pcard-body}
+### What My Focus Logs Say
+[Nov 2026]{.paper-meta}
+
+Five weeks of thesis writing, logged by my own focus timer, and what the numbers could and couldn't
+tell me.
+:::
+
+::::
+
 :::::
