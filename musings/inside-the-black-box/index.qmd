@@ -2,6 +2,7 @@
 title: "Inside the Black Box"
 aliases:
   - ../../writing/ai-bootcamp/index.html
+  - ../ai-bootcamp/index.html
 ---
 
 [← Back to my musings](../../musings.qmd){.back-link}

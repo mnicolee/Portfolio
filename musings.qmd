@@ -12,6 +12,19 @@ Thinking out loud, wherever my curiosity may wander.
 ::::: {.card-grid}
 
 :::: {.pcard}
+<img class="pcard-media" style="object-fit:contain" src="musings/focus-pocus-data/figures/when-clock-bars.png" alt="A 24-hour clock of when I worked during my thesis, with bars longest from about 1pm to 1am">
+
+::: {.pcard-body}
+### [What My Focus Logs Say](musings/focus-pocus-data/index.qmd){.stretched-link}
+[Nov 2026]{.paper-meta}
+
+Five weeks of thesis writing, logged by my own focus timer, and what the numbers could and couldn't
+tell me.
+:::
+
+::::
+
+:::: {.pcard}
 <img class="pcard-media" style="object-position:70% 50%" src="musings/when-good-scores-lie/course-photo.jpg" alt="A lecture room at Duke-NUS with the course title slide on the projector screen and trainers at the front">
 
 ::: {.pcard-body}
@@ -25,10 +38,10 @@ the debates behind them.
 ::::
 
 :::: {.pcard}
-<img class="pcard-media" src="musings/ai-bootcamp/fig1-schema.svg" alt="Synaptic neuroscience drawn as a knowledge graph: presynaptic neuron, postsynaptic neuron, neurotransmitter, receptor and brain region, joined by named arrows such as synapses onto, releases and binds to">
+<img class="pcard-media" src="musings/inside-the-black-box/fig1-schema.svg" alt="Synaptic neuroscience drawn as a knowledge graph: presynaptic neuron, postsynaptic neuron, neurotransmitter, receptor and brain region, joined by named arrows such as synapses onto, releases and binds to">
 
 ::: {.pcard-body}
-### [Inside the Black Box](musings/ai-bootcamp/index.qmd){.stretched-link}
+### [Inside the Black Box](musings/inside-the-black-box/index.qmd){.stretched-link}
 [Jul 2026]{.paper-meta}
 
 An exploration of the concepts that underpin modern AI, and why they felt unexpectedly familiar

@@ -13,3 +13,11 @@ _quarto_internal_scss_error.scss
 _TODO.md
 _HOUSESTYLE.md
 _sleep-notes.md
+
+# Focus logs post: only the figures the post and its card use are published
+musings/focus-pocus-data/figures/*
+!musings/focus-pocus-data/figures/Figure 1.png
+!musings/focus-pocus-data/figures/dabest-panels.png
+!musings/focus-pocus-data/figures/paper-clippings.png
+!musings/focus-pocus-data/figures/when-i-worked-morph.gif
+!musings/focus-pocus-data/figures/when-clock-bars.png

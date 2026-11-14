@@ -24,7 +24,7 @@ Symposium (Suzhou, China).
 :::: {.stack}
 
 ::: {.scard}
-[Chen Institute—Duke-NUS AI Bootcamp](musings/ai-bootcamp/index.qmd){.scard-title}
+[Chen Institute—Duke-NUS AI Bootcamp](musings/inside-the-black-box/index.qmd){.scard-title}
 [Duke-NUS · June 2026]{.scard-meta}
 
 I attended a selective four-day AI Bootcamp run by Duke-NUS and Duke University's Department of
