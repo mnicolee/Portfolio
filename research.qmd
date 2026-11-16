@@ -64,7 +64,7 @@ system, and testing pipeline.
 ::::
 
 :::: {.pcard}
-<img class="pcard-media" src="papers/chromosomes/figure1.jpg" alt="Figure 1 from the chromosomes-in-fused-cells paper">
+<img class="pcard-media" src="papers/chromosomes/figure2.jpg" alt="Figure 2 from the chromosomes-in-fused-cells paper">
 
 ::: {.pcard-body}
 ### [Separating chromosomes in fused cells](papers/chromosomes/index.qmd){.stretched-link}
